@@ -1,0 +1,68 @@
+/* 
+#002e5f -> blu (font, sfondi, bottoni, decorazioni, etc)
+#000000 -> nero (font main) refuso?
+#333333 -> grigio scuro (font base)
+#Eaedf2 -> grigio (sfondi strutture e navigazione)
+#BCBCBC -> grigio chiaro (bordi input e bottoni)
+#707070 -> grigio chiaro (placeholder)
+#D7D7D7 -> grigio chiaro (bordi menu responsive)
+
+#1E6665 -> verde petrolio (colore a contrasto: bottone servizi e altre funzionalità dinamiche)
+
+css per archivio news - newsletter
+*/
+
+/* multimedia */
+
+
+body.multimedia main div.content h3
+{
+margin-top:0;
+font-size: 1.4em; /* Ninni 07/03/17 aggiunto per personalizzare lo stile del titolo rispetto al custom */
+text-transform: none; /*Ninni 07/03/17 aggiunto per personalizzare lo stile del titolo rispetto al custom */
+}
+
+
+body.multimedia main h3
+{
+background-color:none;
+margin-left:0;
+color: #002e5f;
+font-family: "Open Sans semibold",sans-serif !important;
+}
+
+
+.multimedia main div.content h3
+{
+margin:10px 0;
+color: #002e5f;
+}
+
+.multimedia main div.content h3 a
+{
+background-color: inherit;
+color: #002e5f;
+}
+
+.multimedia main h4
+{
+margin:3px 0 5px 0;
+text-transform: none;
+font-size: 1.1em !important;
+font-family: "Open Sans semibold",sans-serif !important;
+}
+
+.multimedia main h4 a
+{
+background-color:none;
+color: #002e5f !important;
+}
+
+@media (max-width: 766px){
+
+	.multimedia main div.vedi_tutti
+	{
+	border:1px solid lime;
+	}
+}
+

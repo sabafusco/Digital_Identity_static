@@ -1,0 +1,35 @@
+body.cerca.intranet form select:disabled,
+body.cerca.intranet form input:disabled {
+    color: #444444;
+    background-color: #e4e4e4;
+}
+
+.box-loading {
+	position: absolute;
+	float: left;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	display: block;
+	z-index: 9999;
+	background: url(/static_intra/img/Preloader_3.gif) center 10% no-repeat rgba(255,255,255,.9);
+	font-size: 0;
+}
+
+.uppercase { 
+	text-transform: uppercase;
+}
+
+body.cerca.intranet table .box-pulsanti {
+    white-space: nowrap;
+}
+
+.form-modifica{
+	outline:none;
+}
+
+.form-amministrazione-profilo img{
+	max-height : 200px;
+}

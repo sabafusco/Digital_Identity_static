@@ -1,0 +1,116 @@
+/* 
+#002e5f -> blu (font, sfondi, bottoni, decorazioni, etc)
+#000000 -> nero (font main) refuso?
+#333333 -> grigio scuro (font base)
+#Eaedf2 -> grigio (sfondi strutture e navigazione)
+#BCBCBC -> grigio chiaro (bordi input e bottoni)
+#707070 -> grigio chiaro (placeholder)
+#D7D7D7 -> grigio chiaro (bordi menu responsive)
+
+#1E6665 -> verde petrolio (colore a contrasto: bottone servizi e altre funzionalit� dinamiche)
+
+css per glossario
+*/
+
+/* glossario */
+
+.glossario ul.alfabeto
+{
+background-color:#012c5f;
+padding:0;
+float:left;
+width:100%;
+margin-bottom: 40px;
+}
+
+.glossario ul.alfabeto li
+{
+display:inline;
+padding:6px 9px;
+float:left;
+}
+
+.glossario ul.alfabeto li a
+{
+color:#fff;
+text-decoration:none;
+}
+
+.glossario ul.alfabeto li.selected
+{
+background-color:#eaedf2;
+
+}
+
+.glossario ul.alfabeto li.selected a
+{
+color:#012c5f;
+}
+
+.glossario ul.glossario_item
+{
+padding:0;
+margin:0;
+}
+
+
+.glossario ul.glossario_item li
+{
+border-bottom:1px solid #012b65;
+list-style:none;
+margin-bottom:40px;
+padding-bottom:10px;
+}
+
+.glossario ul.glossario_item li p
+{
+color:#000;
+}
+
+.glossario h3 {
+	font-size: 1.25em;
+	text-transform: none;
+	margin: 0 0 10px;
+	font-family: 'Open Sans semibold',sans-serif;
+}
+
+.glossario footer h3 {
+	text-transform: uppercase !important;
+	font-size: 1.1em !important;
+	font-family: 'Open Sans',sans-serif;
+}
+
+.glossario h3.faq
+{
+	font-size: 1em;
+display:inline;
+}
+
+.glossario p.link_faq
+{
+margin-top:10px;
+}
+
+.pls_open {
+background-image:url(../img/icona_accordion_open.png);
+background-repeat:no-repeat;
+background-position:center right;
+width:35px;
+height:35px;
+float:right;
+margin:-8px 0 0 0;
+
+}
+
+.pls_close
+{
+background-image:url(../img/icona_accordion_close.png);
+background-repeat:no-repeat;
+background-position:center right;
+width:35px;
+height:35px;
+float:right;
+margin:-8px 0 0 0;
+}
+
+/* fine glossario */

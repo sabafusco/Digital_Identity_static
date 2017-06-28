@@ -1,0 +1,2567 @@
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+a {
+    color: #002e5f;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+}
+
+.btn-social {
+    background-color: #116766;
+    /*line-height: 2em;*/ /*commentato per uniformarlo a versione portale*/
+    width: auto;
+    float: right;
+    padding: 6px 10px;
+    white-space: normal;
+    /*Ninni - per uniformare il comportamento in Firefox e IE */
+    margin: 15px 0 0;
+    font-size: .9em;
+}
+
+.btn-social:hover,
+.btn-social:focus {
+    background-color: #1A4F4E;
+}
+
+.btn-light {
+    background: #eaedf2;
+    /*#eaedf2;*/
+    color: #002e5f;
+    float: left;
+}
+
+.btn-light:hover,
+.btn-light:focus {
+    background: #ddd;
+    color: #000;
+}
+
+.fa.fa-close {
+    cursor: pointer;
+}
+
+body.intranet.home .collapsing {
+    -webkit-transition: none;
+    transition: none;
+}
+
+.feedback-header {
+    height: 40px;
+    line-height: 2.85714em;
+    color: #fff;
+    background-color: #0e821a;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+
+.feedback-header span {
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.feedback-header-error {
+    height: 40px;
+    line-height: 2.85714em;
+    color: #fff;
+    background-color: #C8281A;
+    padding-left: 30px;
+}
+
+.feedback-header-error {
+    background-color: #c9291b !important;
+}
+
+.intranet .feedback-header-error {
+    height: 50px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+}
+
+.intranet .feedback-header-error .fa-exclamation-circle {
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.white-check {
+    padding-right: 13px;
+}
+
+.utente-loggato {
+    background-color: #1E6665;
+    padding: 0;
+    /*z-index: 1000;*/
+    float: left;
+}
+
+.utente-loggato + .col-xs-1.pull-right {
+    background-color: #1E6665;
+    padding: 0;
+}
+
+.utente-loggato a {
+    color: #fff;
+    text-decoration: none;
+    display: table; /* era: block;*/
+    width: 100%;
+    /*height: 100%;*/
+    min-height: 54px;
+}
+
+.utente-loggato img {
+    float: left;
+    margin-bottom: 0 !important;
+    width: 54px !important;
+    height: 54px;
+}
+
+.utente-loggato-nome,
+.utente-loggato-ruolo {
+    font-size: 1em;
+    line-height: 1em;
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+    padding-left: 5px;
+    text-decoration: underline;
+}
+
+.utente-loggato-ruolo {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.utente-loggato .lync {
+    height: 54px;
+    position: relative;
+    float: left;
+    margin-top: 0;
+    right: 4px;
+}
+
+.strumenti-profilo {
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    padding: 12px;
+}
+
+.strumenti-profilo:hover,
+.strumenti-profilo:active,
+.strumenti-profilo:focus {
+    color: #fff !important;
+}
+
+.strumenti-profilo-menu {
+    background-color: #fff !important;
+    border: 1px solid #002e5f !important;
+    min-width: initial !important;
+    left: -100px !important;
+}
+
+
+/* LYNC*/
+
+.lync {
+    font-size: 0;
+    width: 4px;
+    height: 100%;
+    /*era: 60px;*/
+    position: absolute;
+    float: right;
+    top: 0;
+    right: 0;
+}
+
+.lync.available {
+    background-color: #00CC33;
+}
+
+.lync.offline {
+    background-color: #999999;
+}
+
+.lync.away {
+    background-color: #cc0000;
+}
+
+#menusecondario,
+#menusecondarioelenco {
+    min-height: 0;
+    background: #1E6665;
+    border-radius: 0;
+}
+
+#menusecondario .navbar {
+    padding: 0;
+}
+
+#menusecondario .navbar-toggle {
+    margin-top: -42px !important;
+    background-image: none;
+    color: #ffffff;
+}
+
+#menusecondarioelenco li a {
+    font-size: 1em;
+    color: #fff;
+    padding: 0 10px;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+#menusecondarioelenco li a:focus,
+#menusecondarioelenco li a:hover,
+#menusecondarioelenco li.selected > a {
+    background-color: inherit;
+    color: #fff;
+    background: url(../img/icona_menuprincipale-sel.png) no-repeat 10px 37px;
+}
+
+.notifiche-utente {
+    /*border-left: 1px solid #fff;*/
+    height: 50px;
+}
+
+a.strumenti-profilo {
+    width: 45px;
+    text-decoration: none;
+    font-size: .8em;
+    margin-top: -7px;
+    padding-left: 5px;
+}
+
+.strumenti-profilo span.fa-user {
+    margin-top: 10px;
+}
+
+.strumenti-profilo span.fa.fa-circle {
+    margin-top: 15px;
+    margin-left: 6px;
+    color: #1E6665;
+}
+
+.strumenti-profilo span.fa.fa-search {
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.notifica-social {
+    position: relative;
+    height: 12px;
+    width: 15px;
+    background: #990000;
+    box-shadow: 2px 2px 3px #222;
+    font-size: .8em;
+    /* top: 10px; */
+    /* left: 50%; */
+    margin-top: -28px;
+    margin-left: 15px;
+    text-decoration: none !important;
+}
+
+.notifica-social:empty {
+    display: none;
+}
+
+.notifica-social.hidden {
+    display: block !important;
+    visibility: hidden;
+}
+
+#menucercautente {
+    background-color: #1E6665;
+}
+
+.container > header .searchsite.utente {
+    position: relative !important;
+    margin-top: 0 !important;
+    float: right !important;
+}
+
+.servizionline .utente-loggato span {
+    font-style: italic;
+    font-size: 1em !important;
+}
+
+.servizionline .utente-loggato span.hidden-xs.hidden-sm {
+    padding-top: 16px;
+    float: left;
+}
+
+.servizionline .utente-loggato span.utente-loggato-nome {
+    font-style: normal;
+    /*font-weight: bold;*/ /* Mko 2017_01_11 - commentato per uniformare lo stile al resto della intranet */
+}
+
+.servizionline .utente-loggato span.utente-loggato-ruolo {
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none;
+    border-left: 1px solid #fff;
+    padding-left: 5px;
+}
+
+.servizionline #menusecondarioelenco {
+    margin-right: 20px;
+}
+
+.servizionline #menusecondarioelenco li a {
+    text-transform: none;
+}
+
+.servizionline #menusecondarioelenco span.fa {
+    margin-right: 8px;
+}
+
+.servizionline #menusecondarioelenco .notifica-social {
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background: #990000;
+    box-shadow: 2px 2px 3px #222;
+    font-size: .7em;
+    margin-top: -38px;
+    margin-left: 7px;
+    text-decoration: none !important;
+    line-height: 12px;
+    padding: 1px 3px;
+    border-radius: 6px;
+}
+
+
+/*BOX PROFILO UTENTE ONLINE*/
+
+.box-profilo-utente-online img,
+.box-modifica-profilo img {
+    width: 150px;
+}
+
+.box-profilo-utente-online span.info-utente {
+    font-size: .7em;
+    border-left: 1px solid;
+    padding-left: 10px;
+    margin-left: 5px;
+}
+
+.box-profilo-utente-online a.btn.btn-social.pull-right {
+    width: 180px;
+}
+
+.box-modifica-profilo .btn.btn-social.torna-indietro {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+ul.dati-profilo-online {
+    list-style: none;
+    line-height: 2em;
+}
+
+ul.dati-profilo-online li {
+    font-weight: bold;
+    margin: 5px 0 5px -35px;
+}
+
+ul.dati-profilo-online li span,
+.box-modifica-profilo label {
+    font-weight: normal;
+    display: inline-block;
+}
+
+.box-modifica-profilo .form-control {
+    margin-bottom: 15px;
+    display: inline-block;
+    width: 100%;
+}
+
+.box-modifica-profilo input {
+    height: 46px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 0 !important;
+}
+
+
+/* breadcrumb */
+
+ul.breadcrumb {
+    margin-top: 20px;
+}
+
+
+/* fine breadcrumb */
+
+
+/* menu laterale */
+
+#navigazionesecondaria .box-menu-contestuale > ul {
+    margin-bottom: 50px;
+    margin-right: 20px;
+}
+
+
+/* fine menu laterale */
+
+
+/*HOMEPAGE INTRANET */
+
+body.intranet.home header {
+    margin-bottom: 50px;
+}
+
+body.intranet.home main#contenutoprincipale {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+body.intranet.home .content {
+    margin-bottom: 10px;
+    clear: left;
+}
+
+body.intranet.home .box-home-intra {
+    float: left;
+    width: 100%;
+    margin-top: 0 !important;
+}
+
+body.intranet.home .box-home-intra .home-box-loading, body.intranet.home .box-home-intra + .home-box-loading {
+    background: center 10% no-repeat rgba(255,255,255,.6);
+    background-image: none;
+    min-height: unset; /*era: auto*/
+    display:none !important;
+}
+
+/*Homepage modal*/
+body.intranet.home .box-home-intra .modal .modal-content{
+    border-radius: 0;
+}
+
+body.intranet.home .box-home-intra .modal .modal-body {
+    padding: 30px 0;
+    text-align: center;
+    font-size: 1.3em;
+
+}
+
+body.intranet.home .box-home-intra .modal .modal-body strong {
+    color: #002e5f;
+}
+
+
+/*FINE Homepage modal*/
+
+/* box minisito */
+body.intranet.home .box-minisito .box-home-intra .media-left {
+    min-width: 70px;
+}
+
+/* FINE box minisito */
+
+body.intranet.home .box-home-intra hr {
+    height: 1px;
+    color: #CFD2D7;
+    background-color: #CFD2D7;
+    border: none;
+}
+
+.content.box-home-intra {
+    background: #ffffff;
+    border: 1px solid #EAEDF2;
+    padding: 10px;
+}
+
+h2.box-home-intra {
+    background-color: #002e5f;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 10px 10px 10px 20px;
+    font-size: 1em;
+    color: #fff;
+}
+
+h2.box-home-intra a {
+    display: inline-block;
+    font-size: 1em;
+    color: #fff;
+}
+
+
+
+/*.box-home-intra h2 {
+    margin-bottom: 10px;
+}*/
+
+.personalizza h2 {
+    background: #1E6665;
+}
+
+.personalizza h2 a.pull-right {
+    text-transform: none;
+    margin-left: 10px;
+    font-size: .8em;
+}
+
+.personalizza .content h3 {
+    margin-top: 0;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.personalizza div.box-home-intra {
+    background-color: #eaedf2;
+}
+
+.personalizza .content.box-home-intra .col-sm-7 {
+    padding-left: 0;
+}
+
+.personalizza .content.box-home-intra .col-sm-5 {
+    border-left: 1px solid #EAEDF2 !important;
+    padding-right: 0;
+}
+
+
+.personalizza .content.box-home-intra #cercaApplicativiInputStr , 
+.personalizza .content.box-home-intra #cercaApplicativiInputMinisiti , 
+.personalizza .content.box-home-intra #cercaCruscottiInputStr , 
+.personalizza .content.box-home-intra #cercaApplicativiInput {
+    width: 85%;
+    margin: 0;
+    display: inline;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+    padding: 6px 12px !important;
+    height: auto;
+    border: 1px solid #BCBCBC;
+}
+
+.personalizza .content.box-home-intra #cercaApplicativiInputStr+.btn ,
+.personalizza .content.box-home-intra #cercaApplicativiInputMinisiti+.btn ,
+.personalizza .content.box-home-intra #cercaCruscottiInputStr+.btn ,
+.personalizza .content.box-home-intra #cercaApplicativiInput+.btn {
+    background: #002e5f url(../img/ricerca_blu.png) no-repeat center center;
+    color: #fff;
+    border: 1px solid #002e5f;
+    margin-left: -4px;
+    padding: 7px 16px;
+    border-radius: 0;
+    text-indent: -9999px;
+    top: -1px;
+    position: relative;
+}
+
+.checkbox-counter.error {
+    text-transform: uppercase;
+    color: #ff0000;
+    font-weight: bold;
+    font-size: .9em;
+}
+
+.personalizza .content.box-home-intra li {
+    background: none;
+}
+
+.personalizza .content.box-home-intra + a.btn {
+    margin: -10px 0 10px 0;
+    width: 100%;
+}
+
+body.intranet.home .box-home-intra .tag { /*Mko 2017_03_28 modificato per "formazione su richiesta di Francesco"*/
+    padding: 3px;
+    background-color: #eaedf2; /*Ninni 29/03 - modificato con sfondo palette linee guida */
+    text-transform: uppercase;
+    float: right;
+    font-size: .8em;
+    color: #333;
+    font-family: 'Open Sans semibold', sans-serif !important;
+    font-weight: normal;
+}
+
+h2.box-home-intra a.fa {
+    text-decoration: none;
+}
+
+.content.box-home-intra ul {
+    padding-left: 5px;
+    border-bottom: none;
+	clear: both;
+}
+
+.personalizza .content.box-home-intra ul.ko-edit-strumenti-disp-list li { /*Ninni 14/04 - lista applicativi in widget*/
+    padding-bottom: 2px;
+}
+
+.personalizza .content.box-home-intra ul.ko-edit-strumenti-disp-list li h3{ /*Ninni 14/04 - lista applicativi in widget*/
+    margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+.content.box-home-intra ul.box-lista-spalla {
+    padding-left: 0px; /* Ninni 13/03 - modificato stile per uniformarlo al box formazione*/
+}
+
+.content.box-home-intra li {
+    background: url(../img/icona_freccia-azzurra.png) no-repeat left 0.4em;
+    list-style: none;
+    font-family: 'Open Sans semibold', sans-serif; /* Ninni 13/03 - ripristinato per uniformare gli stili nella pagina*/
+    /*font-family: 'Open Sans', sans-serif !important;*/
+    font-weight: normal;
+    padding-left: 8px;
+    padding-bottom: 10px;
+}
+
+.content.box-home-intra li a {
+    color: #333333;
+    /* font-weight: bold;*/  /* Ninni 13/03 - commentato per uniformare gli stili nella pagina*/
+}
+
+.content.box-home-intra .box-lista-spalla li a {
+    color: #002e5f; /* Ninni 13/03 - sovrascritto per uniformare lo stile al box formazione*/
+}
+
+.content.box-home-intra li span a {
+    color: #002e5f;
+}
+
+body.intranet.home .box-lista-spalla li {
+    display: inline-block;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #CFD2D7;
+    width: 100%;
+	background: none; /* Ninni 13/03 - modificato stile per uniformarlo al box formazione*/
+    padding-left: 0
+}
+
+
+body.intranet.home .box-lista-spalla p {
+    display: -webkit-box;
+    height: 60px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	font-family: 'Open Sans', sans-serif; /* Ninni 29/03 - modificato stile per uniformarlo al box formazione*/
+}
+
+.content.box-home-intra.condividi-messaggio {
+    margin: 0 !important;
+    background-color: #eaedf2;
+}
+
+.content.box-home-intra.condividi-messaggio label, body.intranet.home .content.box-home-intra label {
+    display: none;
+}
+
+.condividi-messaggio input {
+    border: 1px solid #9e9e9e;
+    box-shadow: none;
+    padding: 0 5px !important;
+    width: 100%;
+    border-radius: 0 !important;
+    background: #ffffff url("../img/icona_condividi.jpg") no-repeat center right !important;
+}
+
+body.intranet.home .content.box-home-intra input[type="text"]{
+    border: 1px solid #9e9e9e;
+    box-shadow: none;
+    padding: 0 5px !important;
+    width: 100%;
+    border-radius: 0 !important;
+    margin-bottom: 10px;
+}
+
+.condividi-messaggio-allega {
+    color: #000;
+}
+
+.condividi-messaggio-allega a {
+    margin-left: 10px;
+    /*color: #000;  Ninni 13/03 - commentato per uniformare lo stile con esc*/
+}
+
+.box-home-intra .condividi-messaggio-allega a {
+    margin-left: 0;
+}
+
+.condividi-messaggio-allega a span {
+    margin-right: 3px;
+}
+
+.condividi-messaggio button {
+    padding: 6px 20px;
+    width: inherit;
+}
+
+.btn-social.condividi-messaggio-pubblica {
+    margin-top: 0;
+}
+
+.box-comunita-attivita {
+    margin: 10px 0;
+}
+
+.box-comunita-attivita .media {
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 10px;
+}
+
+.box-comunita-attivita .media h3.media-heading {
+    margin-top: 0;
+    padding-top: 0;
+    border: none;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    font-weight: bold;
+}
+
+.box-comunita-attivita .testo-commento img {
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+
+.box-comunita-attivita .box-testo-contenuto .documento {
+    margin-right: 5px;
+    height: 54px;
+    font-size: 1.2em;
+    color: #002e5f;
+    font-weight: bold;
+    float: left;
+    /*background: url("../img/ico_file.png") no-repeat;*/
+    background-position: top left;
+    padding-left: 50px;
+    background-size: contain !important;
+    width: 100% !important;
+    margin-bottom: 10px;
+}
+
+.box-comunita-attivita .meta-info {
+    margin-top: 10px;
+}
+
+.box-comunita-attivita .meta-info > *:after {
+    content: "\f111";
+    display: inline-block;
+    font: normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, -3px);
+    font-size: 3px;
+    margin: 5px;
+}
+
+.box-comunita-attivita .meta-info > *:last-child:after,
+.box-comunita-attivita .meta-info > span.fa-thumbs-up:after,
+.box-comunita-attivita .meta-info > span.fa-thumbs-up + a:after {
+    content: "" !important;
+    margin-right: 0 !important;
+}
+
+.box-home-intra.box-comunita-attivita .meta-info {
+    margin-top: 0;
+}
+
+.box-home-intra.box-comunita-attivita .meta-info > *:after {
+    content: "" !important;
+    margin-left: 0 !important;
+}
+
+.box-comunita-attivita .media.annidato {
+    border-bottom: none;
+    margin-bottom: 5px;
+}
+
+.box-comunita-attivita .media.annidato img {
+    border: 4px solid #ccc;
+    margin-right: 5px;
+    max-width: 140px;
+    height: inherit;
+}
+
+.box-comunita-attivita .lync {
+    position: relative;
+    margin-top: -60px;
+}
+
+.box-comunita-attivita .box-tags {
+    display: inherit;
+}
+
+.box-home-intra.in-evidenza {
+    /*background-color: #eaedf2;*/
+    padding: 0;
+    border: 0;
+}
+
+.box-home-intra.in-evidenza > div div.row {
+    border: 1px solid #EAEDF2;
+    /*padding: 10px;*/ /* Mko 16/03 regola commentata perché era sovrascritta dalla riga successiva */
+    padding: 0;
+    min-height: 280px;
+	/*background-color: #eaedf2;*/ /* Mko 2017_03_17 - commentato su richiesta per la fase di test. Poi andrà ripristinato */ /* Ninni 13/03 - aggiunto per ripristinare lo sfondo previsto in origine per il box news e avvisi */
+}
+
+
+
+.box-home-intra.in-evidenza .media {
+    border-bottom: 1px solid #EAEDF2;
+    margin: 10px;
+    width: inherit;
+}
+
+.box-home-intra.in-evidenza .media:last-of-type {
+    border: 0;
+}
+
+.box-home-intra.in-evidenza h3 {
+    background-image: url(../img/icona_titoli.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    color: #002e5f;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 0 0 15px;
+    padding: 0 0 8px;
+}
+
+.box-home-intra.in-evidenza > div:first-of-type {
+    padding-left: 0 !important;
+}
+
+.box-home-intra.in-evidenza > div:last-of-type {
+    padding-right: 0 !important;
+}
+
+.box-home-intra.in-evidenza h4 {
+    font-size: 1em;
+    margin-top: 0 !important;
+    margin-bottom: 20px;
+    font-family: 'Open Sans semibold', sans-serif;
+}
+
+.box-home-intra .media img {
+    float: left;
+    max-width: 60px;
+}
+
+.box-home-intra .media-heading {
+    margin-top: 0;
+}
+.box-home-intra .media-heading a{
+    color: #002e5f !important;
+}
+
+.box-home-intra.in-evidenza img+h4 {
+    font-size: 1em;
+    padding-left: 70px;
+}
+
+.box-home-intra.in-evidenza h4 a {
+    background-color: inherit;
+    color: #002e5f;
+    /*color: #333;*/
+    font-weight: bold;
+}
+
+.content.box-home-intra.titolografico {
+    margin: 0 !important;
+}
+
+.titolografico + .content.box-home-intra h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.content.box-home-intra h3.media-heading {
+    font-size: 1em; /* Mko - Modificato su richiesta. Era: font-size: 1.2em;*/
+    font-weight: normal;
+    font-family: 'Open Sans semibold', sans-serif;
+}
+
+
+/*body.home #spalla-dx .content.box-home-intra ul {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+}*/
+
+body.home #spalla-dx .datepicker-inline {
+    width: auto;
+}
+
+body.home #spalla-dx .datepicker-inline table thead th {
+    background-color: #fff !important;
+    color: #333;
+}
+
+body.home #spalla-dx .tipologia {
+    margin: 0 -10px 10px -10px;
+    background-color: #eaedf2;
+    padding: 10px;
+}
+
+body.home #spalla-dx .tipologia p {
+    margin-bottom: 0;
+}
+
+body.home #spalla-dx .tipologia p input {
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+body.home #spalla-dx .content.box-home-intra .media {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+body.home #spalla-dx .content.box-home-intra .media:last-of-type,
+body.home #spalla-sx .media:last-of-type {
+    border-bottom: 0 !important;
+}
+
+/* CAROUSEL*/
+
+.box-home-intra .carousel {
+    padding-bottom: 30px;
+}
+
+.box-home-intra .carousel li {
+    background-image: none;
+}
+
+.box-home-intra .carousel .carousel-indicators {
+    bottom: -12px;
+    margin: 10px 0;
+     left: 46%;
+    /* right: 50%; */
+    width: auto;
+}
+
+.box-home-intra .carousel .carousel-indicators li {
+    display: inline-block;
+    width: 14px;
+    height: 12px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000 \9;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.box-home-intra .carousel .carousel-indicators li {
+    height: 12px;
+    width: 14px;
+    border: 2px solid #002e5f;
+    text-indent: -9999px;
+}
+.box-home-intra .carousel .carousel-indicators .active {
+    width: 14px;
+    height: 12px;
+    margin: 0;
+    background-color: #002e5f;
+}
+
+.box-home-intra .carousel .carousel-control .glyphicon {
+    display: none;
+    background-color: transparent;
+}
+
+.box-home-intra .carousel .carousel-control {
+    z-index: 20;
+    text-shadow: none;
+    filter: alpha(opacity=100);
+    opacity: 1;
+    background-image: url(../img/icona_freccia-blu-reverse_carousel.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.box-home-intra .carousel .carousel-control.left {
+    top: auto;
+    left: 40%;
+    right: auto;
+    bottom: 0;
+    height: 25px;
+    width: 25px;
+    background-image: url(../img/icona_freccia-blu_carousel.png);
+}
+
+.box-home-intra .carousel .carousel-control.right {
+    top: auto;
+    left: auto;
+    right: 40%;
+    bottom: 0;
+    height: 25px;
+    width: 25px;
+}
+
+
+/* Filtri di ricerca */
+
+#spalla-dx div.filtro_supporto {
+    background-color: #fff !important;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    float: left;
+    margin-bottom: 20px;
+}
+
+#spalla-dx div.filtro_supporto div {
+    padding: 0 0 10px 0;
+    margin: 10px 0 0 0;
+    width: 100%;
+    padding-top: 5px;
+}
+
+#spalla-dx .content.box-home-intra .nav-tabs li, #spalla-dx .content.box-home-intra #impostaDataFiltro li {
+    background: none;
+    border: 0;
+    border-radius: 0;
+    display: inline-block;
+}
+
+#spalla-dx .content.box-home-intra #impostaDataFiltro .date input {
+    width: 50%;
+    background: #fff url("../img/icona_calendario.png") no-repeat scroll right center;
+    padding: 6px 36px 6px 12px;
+    border: 1px solid #bcbcbc;
+}
+
+#spalla-dx .content.box-home-intra .nav-tabs li a {
+    padding: 0;
+    text-decoration: none;
+	border: 1px solid #BCBCBC;  /* Ninni 08/03/2017 aggiunto per stile tab */
+	color: #002e5f;
+	font-weight: normal;
+	margin-right: 0;
+	padding:3px;
+	margin-right:0;
+}
+
+#spalla-dx .content.box-home-intra .nav-tabs li.active a {
+    /*font-weight: bold;
+    border: 0;    
+    text-decoration: underline; */ /* Ninni 08/03/2017 commentato per stile tab */
+	background-color: #eaedf2; /* Ninni 08/03/2017 aggiunto per stile tab */
+	text-decoration: none;
+	font-family: open sans semibold;
+}
+#spalla-dx .content.box-home-intra ul.nav.nav-tabs { /* Ninni 08/03/2017 aggiunto per stile tab */
+    padding-left: 0px;
+}
+#spalla-dx .content.box-home-intra ul.nav.nav-tabs li { /* Ninni 08/03/2017 aggiunto per stile tab */
+    padding-bottom: 0px;
+	padding-left: 0px;
+}
+#spalla-dx .content.box-home-intra ul.nav.nav-tabs li:first-child { /* Ninni 08/03/2017 aggiunto per allineare a sx i tab */
+    padding-left: 0px;
+}
+
+#spalla-dx #cercaPersoneInput, #spalla-dx #cercaStruttureInput, #spalla-dx #cercaNumeroInput {
+    width: 85%;
+    margin: 0;
+    display: inline;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+    padding: 6px 12px !important;
+    height: auto;
+    border: 1px solid #BCBCBC;
+}
+
+#spalla-dx #cercaPersoneInput+.btn,#spalla-dx #cercaStruttureInput+.btn, #spalla-dx #cercaNumeroInput+.btn  {
+    background: #002e5f url(../img/ricerca_blu.png) no-repeat center center;
+    color: #fff;
+    border: 1px solid #002e5f;
+    margin-left: -4px;
+    padding: 7px 16px;
+    border-radius: 0;
+    text-indent: -9999px;
+    top: -1px;
+    position: relative;
+}
+
+#cercaPersone a.pull-right,
+#cercaStrutture a.pull-right {
+    font-size: .8em;
+    padding-right: 10px;
+	padding-top:5px; /* Ninni 08/03/2017 agginto per distanziare il link avanzate dal bottone*/
+}
+
+#spalla-dx .form-group {
+    margin-bottom: 30px;
+}
+
+body.home #spalla-dx .box-numeri-utili .content.box-home-intra .media,body.home #spalla-dx .box-numeri-utili-edit .content.box-home-intra .media {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.media,body.home #spalla-dx .box-numeri-utili-edit input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+/*body.home #spalla-dx .box-contatti-utili .content.box-home-intra .media,body.home #spalla-dx .box-contatti-utili-edit .content.box-home-intra .media {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}*/
+
+.media,body.home #spalla-dx .box-contatti-utili-edit input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+a.ko-item-numeriutili-vis-email {
+    text-decoration: none;
+}
+
+span.text-label.ko-item-numeriutili-vis-email-label {
+    text-decoration: underline !important;
+}
+
+/*#spalla-dx div.filtro_supporto.box-home-intra ul {
+    margin-left: 20px;
+}
+
+#spalla-dx div.filtro_supporto.box-home-intra li {
+    background: none;
+    list-style: none;
+    padding-bottom: 0;
+}*/
+
+@media (min-width: 480px) {
+    div.filtro_supporto div {
+        /*float: left;*/
+        width: 48%;
+    }
+}
+
+@media (min-width: 768px) {
+    div.filtro_supporto {
+        background-color: #fff !important;
+        overflow: hidden;
+        padding: 0;
+        margin: 20px 0 0 -60px;
+        /*float:left;*/
+    }
+    #navigazionesecondaria.nonav div.filtro_supporto {
+        margin-top: -20px;
+    }
+}
+
+/*div.filtro_supporto div {
+    padding: 0 0 10px 0;
+    background-color: #eaedf2;
+    margin: 20px 0 0 0;
+    *//*float:left;*//*
+    width: 100%;
+}*/
+
+div.filtro_supporto div:last-child {
+    margin-bottom: 20px;
+}
+
+div.filtro_supporto div h3 {
+    background-color: #002e5f;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: #fff;
+    padding: 10px 10px 10px 30px;
+}
+
+@media (min-width: 768px) {
+    div.filtro_supporto div h3 {
+        padding: 10px 10px 10px 60px;
+    }
+}
+
+div.filtro_supporto div h3.supporto {
+    background-color: #054a8d;
+    background-image: url('../img/icona_supporto.png');
+    background-position: 70px center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding-left: 100px;
+}
+
+div.filtro_supporto div ul {
+    padding: 0;
+    margin: 20px 30px;
+}
+
+@media (min-width: 768px) {
+    div.filtro_supporto div ul {
+        margin: 20px 30px 20px 60px;
+    }
+}
+
+div.filtro_supporto div ul li {
+    padding: 10px 0 0 0;
+    margin: 0;
+}
+
+div.filtro_supporto div p.pulsante {
+    margin: 10px 20px 10px 10px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    div.filtro_supporto div p.pulsante {
+        margin: 10px 20px 10px 40px;
+    }
+}
+
+div.filtro_supporto div p.pulsante a.btnfake {
+    background-color: #002e5f;
+    margin: 5px 10px 5px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+div.filtro_supporto div p.pulsante a.cerca {
+    background-color: #054a8d;
+}
+
+div.filtro_supporto div p.annulla {
+    /*float:left;*/
+    margin-left: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    div.filtro_supporto div p.annulla {
+        margin-left: 60px;
+    }
+}
+
+div.filtro_supporto div p.annulla a {
+    color: #002e5f;
+}
+
+div.filtro_supporto div ul li {
+    background-image: none;
+    position: relative;
+}
+
+div.filtro_supporto div ul li > ul {
+    margin: 5px 0 0 20px !important;
+}
+
+div.filtro_supporto div ul li label {
+    width: auto;
+    margin-right: 30px;
+    font-weight: normal;
+}
+
+div.filtro_supporto div ul li a {
+    text-decoration: underline
+}
+
+div.filtro_supporto div ul li > ul label {
+    font-weight: normal;
+}
+
+div.filtro_supporto div ul li input {
+    position: absolute;
+    padding: 10px 0 0 0;
+    right: 0;
+    top: 10px;
+}
+
+div.filtro_supporto div .campo_ricerca {
+    margin: 10px 10px 10px 60px;
+    display: block;
+    padding: 5px 10px;
+}
+
+div.filtro_supporto div ul li .campo_ricerca {
+    position: static;
+    float: none;
+    margin-left: 0;
+    width: 100%;
+    border: 1px solid #bcbcbc;
+}
+
+div.filtro_supporto div ul li div.panel-group {
+    margin: 0;
+    padding: 0;
+}
+
+div.filtro_supporto div ul li div.panel-group div.panel.panel-primary {
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+div.filtro_supporto div ul li div.panel-group div.panel.panel-primary div h4 a.accordion-toggle {
+    font-family: 'Open Sans semibold', sans-serif;
+    font-size: 0.95em !important;
+    font-weight: normal;
+}
+
+div.filtro_supporto div ul li div.panel-group div.panel.panel-primary div h4 a.accordion-toggle.collapsed {
+    background: url('../img/icona-filtri_freccia-giu.png')no-repeat right top;
+    padding: 0 20px 0 0;
+}
+
+div.filtro_supporto div ul li div.panel-group div.panel.panel-primary div h4 a.accordion-toggle {
+    padding: 0 20px 0 0;
+    background: url('../img/icona-filtri_freccia-su.png')no-repeat right top;
+    text-decoration: none;
+}
+
+div.filtro_supporto div ul li div.panel-group div.panel.panel-primary div.panel-heading {
+    margin-top: 0;
+}
+
+div.filtro_supporto div ul li div.panel-group div.panel.panel-primary div:last-child {
+    margin: 0;
+    padding: 0;
+}
+
+div.filtro_supporto div ul li div.panel-group div.panel.panel-primary div.panel-collapse {
+    padding-top: 10px;
+}
+
+div.filtro_supporto div ul li div.panel-group div.panel.panel-primary div.panel-collapse ul {
+    margin: -10px 0 0 0;
+    padding: 0;
+}
+
+div.filtro_supporto div ul li div.panel-group div.panel.panel-primary div.panel-collapse ul li:last-child {
+    padding-bottom: 20px;
+}
+
+div.filtro_supporto div ul li div.panel-group div.panel.panel-primary div.panel-collapse ul li ul {
+    margin-bottom: -22px !important;
+}
+
+@media (max-width: 767px) {
+    div.filtro_supporto ul li {
+        list-style: none !important;
+    }
+}
+
+
+/* Gestione filtri */
+
+
+/*FINE HOMEPAGE INTRANET */
+
+
+/* pagina subhome */
+
+
+/* BOX ATTIVITA' COMUNITA'*/
+
+.row.additional-content {
+    padding-right: 30px;
+}
+
+.additional-content .box-commenti,
+.additional-content .box {
+    background-color: #eaedf2;
+    color: #333;
+    padding: 20px 15px;
+    margin-bottom: 45px;
+}
+
+.additional-content section {
+    margin-top: 20px;
+}
+
+.additional-content h3,
+.additional-content h4 {
+    margin: 0;
+}
+
+.additional-content .data,
+.additional-content a {
+    color: #002e5f;
+    margin-bottom: 0;
+}
+
+.box-home-intra p.data,.box-home-intra span.data-attivita {
+    font-size: 0.8em;
+    color: #002e5f;
+    padding: 0 0 5px 0;
+    margin: 0;
+}
+
+.box-commenti .media {
+    padding-bottom: 10px;
+}
+
+.box-commenti .media h3.media-heading {
+    margin-top: 0;
+    padding-top: 0;
+    border: none;
+    font-size: 1em;
+    line-height: 1.2em;
+    font-weight: normal;
+}
+
+.box-commenti .box-testo-contenuto {
+    display: inline-block;
+    padding-top: 5px;
+}
+
+.box-commenti .box-testo-contenuto .documento {
+    margin-right: 5px;
+    height: 54px;
+    width: auto !important;
+    font-size: 1.2em;
+    color: #002e5f;
+    font-weight: bold;
+    float: left;
+    /*background: url("../img/ico_file.png") no-repeat;*/
+    background-position: top left;
+    padding-left: 50px;
+    background-size: contain !important;
+    width: 100% !important;
+    margin-bottom: 10px;
+}
+
+.box-commenti .hashtag {
+    font-weight: bold;
+    color: #002e5f;
+    margin-bottom: 0;
+}
+
+.box-commenti .meta-info {
+    margin-top: 10px;
+    border-top: 1px solid #cccfd8;
+    padding-top: 5px;
+    text-align: right;
+}
+
+.box-commenti .meta-info > *:after {
+    content: " ";
+    display: inline-block;
+    font: normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, -3px);
+    font-size: 3px;
+    margin: 5px;
+}
+
+.box-commenti .meta-info > *:last-child:after,
+.box-commenti .meta-info > span.fa-thumbs-up:after,
+.box-commenti .meta-info > span.fa-thumbs-up + a:after {
+    content: "" !important;
+    margin-right: 0 !important;
+}
+
+.box-commenti .media.annidato {
+    border-bottom: none;
+    margin-bottom: 5px;
+}
+
+.box-commenti .media.annidato img {
+    border: 4px solid #ccc;
+    margin-right: 5px;
+    max-width: 140px;
+    height: inherit;
+}
+
+.box-commenti .lync {
+    position: absolute;
+    top: 20px;
+    left: 72px;
+    height: 60px;
+}
+
+.box-commenti .box-tags {
+    display: inherit;
+}
+
+
+/* fine pagina subhome */
+
+
+/* pagina archivio */
+
+.lista_archivio.intranet main ul.nav-tabs {
+    margin-bottom: 20px;
+}
+
+.intranet main .gestfiltri {
+    text-transform: uppercase;
+}
+
+.intranet main .gestfiltri p {
+    font-size: 0.85em;
+}
+
+.lista_archivio.intranet main .gestfiltri ul {
+    font-size: 0.85em;
+    color: #002e5f;
+    font-weight: bold;
+}
+
+.lista_archivio.intranet p.data_simple {
+    display: inline;
+}
+
+/*.intranet span.categoria-intranet, .intranet span.fuori-catalogo, .intranet span.tag-categoria {
+    font-size: 0.9em;
+    background-color: #002e5f;
+    color: #fff;
+    padding: 0 4px;
+    margin-left: 10px;
+}*/
+
+
+/* fine pagina archivio */
+
+
+/* pagina foglia */
+
+.intranet span.filetype {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.foglia.intranet .box ul.allegati p.note{
+    font-style: italic;
+    margin-left: -70px;
+}
+
+/* fine foglia*/
+
+
+/* pagina applicativi */
+
+body.servizi.intranet div.bordo {
+    min-height: 150px;
+    position: relative;
+    margin-bottom: 0;
+}
+
+body.servizi.intranet div.bordo div.panel-group.nopaddingbottom {
+    margin-bottom: 5px;
+}
+
+body.servizi p.pulsante {
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+
+body.servizi p.pulsante a {
+    display: block;
+    margin-bottom: 30px;
+}
+
+body.servizi.intranet div.bordo .allegati {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+body.servizi.intranet div.bordo .allegati a {
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+body.servizi.intranet div.bordo .allegati a span.fa {
+    font-size: 1.5em;
+    color: #002e5f;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+body.servizi.intranet span.screen-reader-text {
+    font-size: 0;
+}
+
+body.servizi.intranet .box .row {
+    border-bottom: 1px solid gray;
+}
+
+body.servizi.intranet table .box-pulsanti {
+    text-align: right;
+    min-width: 80px;
+}
+
+body.servizi.intranet table .box-pulsanti a {
+    text-decoration: none;
+    padding: 0 5px;
+    font-size: 18px;
+}
+
+
+body.servizi.intranet form label {
+    display: block;
+}/*modificata da c.baldassarre 20_05_2016 - rimuovere in caso di problemi */
+
+/*fine pagina applicativi */
+
+
+/*pagine home sezione e subhome*/
+
+.intranet .row .triplets {
+    margin: 30px 0 0;
+}
+
+.intranet .row .triplets h3,
+.intranet .row.multimedia h3,
+.intranet .row .comunicati h3,
+.intranet .row .contatti h3 {
+    margin: 3px 0 5px 0;
+    color: #002e5f;
+    font-weight: normal;
+    background-image: none;
+    text-transform: uppercase;
+}
+
+.intranet .row .triplets h4 {
+    font-size: 1em;
+}
+
+.intranet main .multimedia a {
+    background-color: inherit;
+    color: #002e5f;
+}
+
+.intranet .row .triplets .etichetta {
+    font-size: 0.8em;
+}
+
+.intranet .row .triplets .etichetta,
+.intranet .row .bgtriplets .etichetta,
+.intranet .row .comunicati p.etichetta {
+    background-color: inherit;
+    color: #002e5f;
+    float: none;
+    padding: 0;
+    min-height: inherit;
+}
+
+.intranet main div ul.in_breve {
+    margin-left: 0;
+    padding: 0;
+}
+
+.intranet main div ul.in_breve li {
+    background-image: url(../img/icona_freccia-azzurra.png);
+    background-repeat: no-repeat;
+    background-position: left 0.4em;
+    background-color: transparent;
+    color: #333;
+    margin: 0 0 5px;
+    padding: 0 0 0 10px;
+    text-align: left;
+    list-style: none;
+}
+
+.intranet main div ul.in_breve li a {
+    color: #333;
+}
+
+
+/*pagina cerca persone strutture*/
+
+body.intranet .form_cerca_persone,
+body.intranet .form_modifica_persone,
+body.intranet .form_modifica_allocazione,
+body.intranet .form_cerca_struttura,
+body.intranet .form_cerca_bando,
+body.intranet .form_invia_bando,
+body.intranet .form_cerca_comitato,
+body.intranet .form_cerca_cruscotto,
+body.intranet .form-modifica,
+body.intranet .form_aggiungi_persone,
+body.intranet .form_richiesta_info_applicazioni,
+body.intranet .form_cerca_assistenza_tecnica,
+body.intranet .form_nuova_assistenza_tecnica,
+body.intranet .form_cerca_applicazione_procedura
+
+{
+    padding-top: 0;
+}
+
+body.cerca.intranet form.form_aggiungi_comitati .bottoni,
+body.cerca.intranet form.form_aggiungi_sovvenzioni .bottoni {
+    margin-bottom: 40px;
+    margin-right: 0;
+}
+
+body.intranet .form_cerca_persone select,
+body.intranet .form_cerca_struttura select {
+    width: 100%;
+}
+
+/*body.intranet table.tabella_cerca_utenti {
+    display: inline-table;
+}*/
+
+body.intranet table.tabella_cerca_utenti tbody tr:nth-child(odd),
+body.intranet table.tabella_cerca_utenti tbody tr:nth-child(even),
+body.intranet table.tabella_report tbody tr:nth-child(odd),
+body.intranet table.tabella_report tbody tr:nth-child(even) {
+    background-color: unset;
+}
+
+body.intranet table.tabella_cerca_utenti tbody tr.tr_odd,
+body.intranet table.tabella_report tbody tr.tr_odd {
+    background-color: #eaedf2;
+}
+
+body.intranet table.tabella_cerca_utenti tbody tr.tr_even,
+body.intranet table.tabella_report tbody tr.tr_even {
+    background-color: #e4e5e9;
+}
+
+body.cerca.intranet .box-lista-persone-strutture {
+    padding-left: 0;
+}
+
+body.cerca.intranet .box-lista-persone-strutture .media-right .row {
+    background-color: #eaedf2;
+    margin-bottom: 10px;
+}
+
+body.cerca.intranet .box-profilo-utente {
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+body.cerca.intranet .box-profilo-utente .media-left a img {
+    width: 100px;
+    object-fit: cover;
+    height: 100px;
+}
+
+body.cerca.intranet .box-profilo-utente .media-left .btn {
+    max-width: 100%;
+    width: 100%;
+    padding-left: initial;
+    padding-right: initial;
+}
+
+body.cerca.intranet .box-profilo-utente h2 {
+    margin-bottom: 20px;
+}
+
+body.cerca.intranet h3.media-heading {
+    /* Ninni 22/02 - per gestire lo spazio in dettaglio struttura */
+    margin-bottom: 20px;
+}
+
+body.cerca.intranet .box-lista-persone-strutture .media-right .row .info-struttura {
+    font-weight: 700;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+/*body.cerca.intranet .box-lista-persone-strutture .media-right .row .contatti-utente span {
+    clear: left;
+}*/
+
+body.cerca.intranet .box-lista-persone-strutture .mostra-post {
+    background-color: #e4e4e4;
+    height: 40px;
+    line-height: 40px;
+    color: #002D62;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+body.cerca.intranet .box-lista-persone-strutture .media,
+.box-lista-inviti .media {
+    padding: 10px;
+    border: 1px solid #eaedf2;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+body.cerca.intranet .box-lista-persone-strutture .media h3,
+.box-lista-inviti .media h3 {
+    border-top: 0 !important;
+    margin-top: 5px !important;
+    padding-top: 0 !important;
+    color: #002e5f;
+    font-size: 1.3em !important;
+    line-height: 1.5;
+}
+
+body.cerca.intranet .box-lista-persone-strutture .btn-social,
+.box-lista-inviti .btn-social {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+body.cerca.intranet img.media-object {
+    /*width: 100%;*/
+}
+
+body.cerca.intranet .media-right .contatti-utente {
+    display: inline-block;
+}
+
+body.cerca.intranet .contatti-utente a,
+body.cerca.intranet .contatti-utente span {
+    color: #000;
+	word-wrap: break-word; /* Ninni 13/03 - aggiunto per gestire le mail troppo lunghe a 768 */
+}
+
+body.cerca.intranet .contatti-utente span {
+    margin-left: 0;
+    margin-right: 3px;
+    font-weight: bold;
+}
+
+body.cerca.intranet .contatti-utente span:first-child {
+    margin-left: 0;
+}
+
+body.cerca.intranet .media-right .contatto-utente {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+body.cerca.intranet fieldset h4 {
+    padding-left: 15px;
+}
+
+
+body.cerca.intranet fieldset p {
+    min-height: 65px !important;
+}
+
+body.cerca.intranet form fieldset + p.bottoni {
+    padding-right: 20px;
+    background: #f2f2f2;
+    margin-top: -30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+body.cerca.intranet form p.bottoni {
+    margin-right: 20px;
+}
+
+body.cerca.intranet form div.bottoni {
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+body.cerca.intranet .bottoni input[type="reset"]:disabled {
+    background-color: transparent;
+}
+
+body.cerca.intranet form label {
+    display: block;
+}
+
+body.cerca.intranet form input:disabled,
+body.cerca.intranet form select:disabled,
+{
+    color: #444444;
+    background-color: #e4e4e4;
+}
+
+body.cerca.intranet form p select {
+    padding: 7px 12px 4.5px;
+    width: 100%;
+}
+
+body.servizi.intranet form p input[type="checkbox"] ,
+body.cerca.intranet form p input[type="checkbox"] {
+    text-align: left;
+    float: left;
+    width: initial;
+    margin-top: -20px;
+}
+
+body.cerca.intranet .input-group-lg > .form-control,.form-group-lg .form-control {
+    height: auto;
+    padding: 6px 12px;
+    font-size: 1em;
+}
+
+body.cerca.intranet form.form_aggiungi_sovvenzioni h3 {
+    margin-top: 0;
+    margin-left: 20px;
+}
+
+body.cerca.intranet form.form_aggiungi_sovvenzioni input[type="radio"] {
+    float: left;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+body.servizi.intranet form label[for="preferenzaVisibileHP"],
+body.servizi.intranet form label[for="preferenzaNascosta"],
+body.servizi.intranet form label[for="assistenzaTecnicaNascosta"],
+body.cerca.intranet form label[for="barriere_archittettoniche"],
+body.cerca.intranet form label[for="abilita_modifica"] {
+    margin-top: 35px;
+    margin-left: 20px;
+}
+
+/*body.cerca.intranet form#form-email-struttura {
+    display: none;
+}*/
+
+body.cerca.intranet p span.santo-patrono {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+body.cerca.intranet form label[for="giorno_patrono"],
+body.cerca.intranet form label[for="mese_patrono"] {
+    width: auto !important;
+    display: inline;
+}
+
+body.cerca.intranet form label[for="inputFlagConsensoFoto"] {
+    margin-left: 3px;
+    margin-bottom: 10px;
+    display: block;
+    float: right;
+}
+
+body.cerca.intranet #inputCellulareVisibile {
+    height: 15px;
+    width: inherit;
+}
+
+body.cerca.intranet form select.select-patrono {
+    width: auto !important;
+    margin-right: 10px;
+}
+
+body.cerca.intranet span.screen-reader-text, body span.screen-reader-text {
+    font-size: 0;
+}
+
+body.cerca.intranet .box .row {
+    border-bottom: 1px solid gray;
+}
+
+body.cerca.intranet table .box-pulsanti {
+    text-align: right;
+}
+
+body.cerca.intranet table .box-pulsanti a {
+    text-decoration: none;
+    padding: 0 5px;
+    font-size: 18px;
+}
+
+body.intranet .contatto {
+    margin: 0;
+    padding: 5px 0 0 30px;
+    min-height: 30px;
+    /*margin-bottom: 10px;
+    padding: 5px 0 15px 30px;
+    min-height: 60px;
+    margin-left: -15px;  Ninni - 19-02  */
+}
+
+body.intranet .contatto span {
+    display: block;
+}
+
+body.intranet .contatto.telefono {
+    background: rgba(0, 0, 0, 0) url("../img/Telefono_20px.png") no-repeat scroll left 0.4em;
+    color: #333;
+}
+
+body.intranet .box-numeri-utili .contatto.telefono {
+    background: rgba(0, 0, 0, 0) url("../img/tel_fisso.png") no-repeat scroll left 0.4em;
+    color: #333;
+    padding-left: 50px;
+}
+
+body.intranet .contatto.skype {
+    background: rgba(0, 0, 0, 0) url("../img/skype.png") no-repeat scroll left 0.4em;
+    color: #333;
+}
+
+body.intranet .contatto.indirizzo {
+    background: rgba(0, 0, 0, 0) url("../img/Indirizzo_20px.png") no-repeat scroll left 0.4em;
+    color: #333;
+}
+
+body.intranet .contatto.mail {
+    background: rgba(0, 0, 0, 0) url("../img/Mail_20px.png") no-repeat scroll left 0.4em;
+    color: #333;
+}
+
+p.contatto.mail a {
+    /*overflow: hidden;
+    display: inherit;
+    white-space: nowrap;
+    text-overflow: ellipsis;*/
+    word-wrap: break-word;
+}
+
+body.intranet .contatto.fax {
+    background: rgba(0, 0, 0, 0) url("../img/Fax_20px.png") no-repeat scroll left 0.4em;
+    color: #333;
+}
+/* Ninni 04/04 - inserite regole di seguito per eliminare spazio bianco nella pagina applicazioni e procedure*/
+body.intranet form#cercaApplicazioneProcedura {
+    margin-bottom: 10px;
+}
+
+body.intranet form#cercaApplicazioneProcedura fieldset{
+    margin-bottom: 0px;
+	padding-bottom: 5px;
+}
+
+body.intranet form#cercaApplicazioneProcedura p.bottoni{
+    margin-top: 0px;
+}
+
+body.intranet .link_applicazioni_procedure h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/* Ninni 04/04 - fine*/
+
+body.intranet .link_applicazioni_procedure {
+    margin-bottom: 30px;
+}
+
+body.intranet .link_applicazioni_procedure .link {
+    background: rgba(0, 0, 0, 0) url("../img/Link_20px.png") no-repeat scroll left 0.4em;
+    color: #333;
+}
+
+body.intranet .link_applicazioni_procedure .link a {
+    font-weight: bold;
+}
+
+
+body.cerca.intranet .triplets .col-md-4 {
+    /* padding-right: 30px; */
+    margin-bottom: 0;
+}
+
+body.cerca.intranet p span.text-label,
+body.assistenza.intranet p span.text-label,
+body.minisiti p span.text-label,
+.box-contatti-utili p span.text-label {
+    display: inline-block;
+    color: #002e5f;
+    font-weight: 700;
+    text-decoration: inherit;
+}
+
+body.foglia.intranet p span.text-label span, .box-contatti-utili p span.text-label span
+{
+    margin-right: 5px;
+}
+
+body.foglia.intranet p span.text-label span.fa, .box-contatti-utili p span.text-label span.fa {
+    font-weight: bold;
+    color: #323232;
+    float: left;
+    padding-top: 3px;
+}
+
+body.assistenza.intranet h4 {
+    text-transform: uppercase;
+}
+
+body.assistenza main {
+    margin-bottom: 40px;
+}
+
+body.assistenza main div ul li {
+    background-image: url(../img/icona_freccia-azzurra.png);
+    background-repeat: no-repeat;
+    background-position: left 0.4em;
+    background-color: transparent;
+    margin: 0 0 5px;
+    padding: 0 0 0 10px;
+    text-align: left;
+    list-style: none;
+    margin-left: -35px;
+}
+
+body.intranet.assistenza .row.negative div.box-assistenza { /*regola introdotta per gestire i box nel caso in cui ce ne siano più di due per riga */
+    min-height: 220px;
+}
+
+body.intranet.assistenza span.text-label.ko_span_tel {
+    float: right;
+}
+
+body.intranet.assistenza .ko_assistenza_colonna_email_HREF[href="mailto:null"] + span.text-label.ko_span_tel {
+    float: none !important;
+}
+
+/* MINISITI */
+
+.minisiti .box-menu-contestuale .box-home-intra,
+.minisiti .box-menu-contestuale .content.box-home-intra.condividi-messaggio {
+    margin: 20px 0 0 -60px;
+}
+
+.minisiti .box-menu-contestuale .box-home-intra span.data-attivita.pull-right {
+    clear: both;
+}
+
+.minisiti .box-menu-contestuale .content.box-home-intra.condividi-messaggio {
+    padding-bottom: 30px;
+}
+
+main div ul.elenco_minisiti {
+    margin-left: 0;
+    padding: 0;
+}
+
+main div ul.elenco_minisiti li {
+    background-image: url(../img/icona_freccia-azzurra.png);
+    background-repeat: no-repeat;
+    background-position: left 0.4em;
+    background-color: transparent;
+    margin: 0 0 5px;
+    padding: 0 0 0 10px;
+    text-align: left;
+    list-style: none;
+}
+
+.minisiti .comunicati {
+    margin-bottom: 30px;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.minisiti .tile {
+    display: block;
+    cursor: pointer;
+    -webkit-perspective: 0;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform .2s;
+    float: left;
+    width: 25%;
+    min-width: 60px;
+    /* era: 25%; */
+    /* height: 60px; */
+    text-align: center;
+    /* background-color: #2e8bcc; */
+    z-index: 1;
+    border: 0 #fff solid;
+    color: #fff;
+}
+
+.minisiti .media-left a.tile {
+    background-color: #eaedf2;
+    padding: 5px;
+}
+
+.minisiti .media-left a.tile span {
+    color: #002e5f;
+    width: 100%;
+    float: left;
+}
+
+.minisiti .media-left a.tile span:first-of-type {
+    font-weight: bold;
+}
+
+.minisiti .google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.minisiti .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.minisiti .immagine_allegato {
+    margin-bottom: 30px;
+}
+
+body.minisiti .box-lista-persone-strutture img.media-object {
+    width: initial;
+    float: left;
+    margin-right: 10px;
+}
+
+
+
+/* / MINISITI */
+
+
+/* AGENDA SIMPLE WEB*/
+.riga .bottoni form {
+    max-width: 50%;
+    float: right;
+    margin: 20px 0 20px 10px;
+}
+
+
+
+/* RESPONSIVE */
+
+@media (min-width: 1366px) {
+    .container {
+        max-width: 1366px;
+        width: auto;
+    }
+}
+
+
+/*min-width 1366px*/
+
+@media (min-width: 1200px) {
+    /* .utente-loggato {
+         margin-top: -50px;
+     }*/
+}
+
+
+/*min-width 1200px*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .menu-attivita ul li a {
+        padding: 3px;
+    }
+}
+
+
+/*(min-width: 992px) and (max-width: 1199px)*/
+
+@media (min-width: 992px) {
+    .nav-exit {
+        margin-top: -50px;
+    }
+    .nav-exit a {
+        padding: 15px 57px !important;
+    }
+    #menusecondario .navbar {
+        padding: 0;
+    }
+    #menusecondario .navbar-utente {
+        padding: 0;
+        padding-left: 60px;
+    }
+}
+
+
+/*min-width 992px*/
+
+@media (max-width: 991px) {
+    .nav-exit {
+        margin-top: -40px;
+    }
+    .nav-exit a {
+        padding: 15px 57px !important;
+    }
+    .servizionline #menusecondarioelenco {
+        margin-right: 0;
+    }
+    div#menusecondario {
+        min-height: 54px;
+    }
+    #menusecondario .navbar {
+        font-size: .85em;
+    }
+    .utente-loggato .lync {
+        right: 0;
+    }
+    .utente-loggato-nome {
+        font-size: 1.2em;
+        line-height: 1em;
+    }
+    .container > header .navbar-toggle {
+        height: 40px;
+    }
+    .notifiche-utente {
+        padding: 0;
+    }
+    .servizionline .utente-loggato {
+        margin-left: 5px;
+    }
+    .servizionline .utente-loggato span {
+        font-size: 1.1em !important;
+        padding: 10px 0 10px 5px !important;
+        margin: 10px 2px !important;
+    }
+    a.strumenti-profilo {
+        width: 40px;
+    }
+}
+
+
+/*max-width 991px*/
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 768px) {
+    .container > header .navbar-nav {
+        padding-left: 0;
+    }
+    #menusecondarioelenco li a {
+        padding: 0 10px;
+    }
+    .dati-profilo-online li span {
+        width: 160px;
+    }
+}
+
+
+/*min-width 768px*/
+
+@media (max-width: 767px) {
+    .nav-exit {
+        position: absolute;
+        right: 15px;
+        z-index: 999;
+        margin-top: 0;
+    }
+    .nav-exit li {
+        border: none !important;
+    }
+    .nav-exit a {
+        width: 100px !important;
+        margin: 0 !important;
+        padding: 15px 0 !important;
+    }
+    #menuprincipale,
+    #navigazioneprincipale {
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 -15px;
+    }
+    .utente-loggato {
+        padding-left: 50px;
+    }
+    .utente-loggato .lync {
+        margin-left: 10px;
+    }
+    .utente-loggato-nome {
+        max-width: 200px;
+    }
+    #menusecondario .navbar-toggle {
+        /*margin-top: -90px !important;*/
+    }
+    .notifiche-utente {
+        padding: 0;
+        padding-left: 60px;
+        border: none !important;
+    }
+    #menusecondario nav.navbar.pull-right {
+        position: absolute;
+        right: 90px;
+    }
+    .servizionline #menusecondarioelenco {
+        float: left !important;
+        width: 100%;
+    }
+    .servizionline .utente-loggato span {
+        font-size: 1.2em !important;
+    }
+    .servizionline #menusecondarioelenco li a {
+        margin-left: 20px;
+        font-size: 1.2em;
+    }
+    .servizionline #menusecondarioelenco span.fa {
+        margin-right: 10px;
+    }
+    #menusecondarioelenco li a:focus,
+    #menusecondarioelenco li a:hover,
+    #menusecondarioelenco li.selected > a {
+        background: url(../img/icona_menuprincipale-sel.png) no-repeat 0 37px;
+    }
+    .strumenti-profilo {
+        width: 45px !important;
+        font-size: 1em !important;
+    }
+    .minisiti #navigazionesecondaria {
+        padding-bottom: 0;
+    }
+    .minisiti .box-menu-contestuale .box-home-intra,
+    .minisiti .box-menu-contestuale .content.box-home-intra.condividi-messaggio {
+        margin: 20px 0 0 -30px;
+    }
+}
+
+
+/*max-width 767px*/
+
+@media (max-width:480px) {
+    .utente-loggato-nome {
+        max-width: unset;
+    }
+    #menusecondario nav.navbar.pull-right {
+        position: relative;
+        float: left !important;
+        right: 0 !important;
+    }
+    .servizionline .utente-loggato span {
+        display: inline-block;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        line-height: 56px;
+        float: left;
+        clear: both;
+    }
+    /*.servizionline#menusecondario .navbar-toggle {
+        margin-top: -70px !important;
+    }*/
+    #menusecondario nav.navbar.pull-right {
+        position: relative;
+        float: left !important;
+        right: 0 !important;
+    }
+    .servizionline .utente-loggato a {
+        min-height: 56px;
+    }
+    .servizionline span.utente-loggato-ruolo {
+        display: none !important;
+    }
+}
+
+
+/*max-device-width:480px*/
+
+/* iPad Portrait */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+    h2.box-home-intra {
+        padding-left: 15px;
+    }
+
+    h2.box-home-intra a {
+        display: inline-block;
+        font-size: .95em;
+        color: #fff;
+    }
+
+    #spalla-dx #cercaPersoneInput, #spalla-dx #cercaStruttureInput, #spalla-dx #cercaNumeroInput {
+        width: 75%;
+    }
+}
+
+/*Ninni 23/05 - aggiunto stile per box allegati e link - sovrascrive lo stile previsto in foglia.css*/
+
+.foglia .box_sfondo.allegati, .foglia .box_sfondo.link, .foglia .box_sfondo.link_ext, .foglia .box_sfondo.servizi{
+    padding: 15px 20px 5px 0px;
+	margin-bottom: 20px;
+	margin-left: -15px;
+}
+.foglia .box_sfondo.allegati h3, .foglia .box_sfondo.link h3, .foglia .box_sfondo.link_ext h3, .foglia .box_sfondo.servizi h3 {
+   margin-left: 60px;
+   margin-top: 0px;
+   margin-bottom: 10px;
+}
+.foglia .box_sfondo.allegati ul, .foglia .box_sfondo.link ul, .foglia .box_sfondo.link_ext ul, .foglia .box_sfondo.servizi ul{
+   margin-left: 60px;
+   padding-left: 0px;
+}
+.foglia .box_sfondo.allegati>p, .foglia .box_sfondo.link>p, .foglia .box_sfondo.link_ext>p, .foglia .box_sfondo.servizi>p {
+   margin-left: 50px;
+}
+.foglia .box_sfondo.allegati p, .foglia .box_sfondo.link p, .foglia .box_sfondo.link_ext p, .foglia .box_sfondo.servizi p {
+   font-family: 'Open Sans', sans-serif;
+   padding-left: 10px;
+}
+
+/* Ninni 05/05 - Box di avviso agli utenti */
+
+.avviso{
+	background-color: #F7CFD0;
+	color: #762629;
+	/*margin: 0 15px 45px !important;*/
+	margin: -20px 15px 30px !important;
+	clear: both;
+}
+
+.avviso h3{
+	background-image: none;
+	background-color: #F7CFD0;
+	color: #762629;
+	display: block;
+	text-align: center;
+	margin: 0;
+	padding: 20px 0 0;
+	/* font-weight: bold; */
+	font-size: 1.25em;
+	text-transform: uppercase;
+	font-family: 'Open Sans semibold', sans-serif;
+}
+
+.avviso p{
+	padding: 14px 10px;
+	margin: 0;
+}
+
+@media (min-width: 992px){
+
+	.avviso h3{
+		padding: 15px 0 0 !important;
+	}
+
+	.avviso p{
+		margin: 0;
+		padding: 14px 10px;
+	}
+	
+}
+@media (max-width: 992px){
+
+	.avviso p{
+		padding: 14px 15px;
+	}
+	
+}

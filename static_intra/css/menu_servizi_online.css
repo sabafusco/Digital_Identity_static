@@ -1,0 +1,838 @@
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+}
+
+
+.utente-loggato {
+    background-color: #1E6665;
+    padding: 0;
+    /*z-index: 1000;*/
+    float: left;
+}
+
+.utente-loggato + .col-xs-1.pull-right{
+    background-color: #1E6665;
+    padding: 0;
+}
+
+.utente-loggato a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    min-height: 54px;
+}
+
+.utente-loggato-nome, .utente-loggato-ruolo {
+    padding: 10px 0;
+    font-size: 1.2em;
+    line-height: 50px; /* was: 1.5em; */
+}
+
+.utente-loggato-ruolo {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#menusecondario,#menusecondarioelenco  {
+    min-height: 0;
+    background: #1E6665;
+    border-radius: 0;
+}
+
+#menusecondario .navbar {
+    padding: 0;
+}
+
+#menusecondario .navbar-toggle {
+    margin-top: -42px !important;
+    background-image: none;
+    color: #ffffff;
+}
+
+#menusecondarioelenco li a {
+    /* height: 42px;
+     font-size: 1em;
+     text-transform: uppercase;
+     color: #fff;
+     padding: 10px;
+     text-decoration: none;*/
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0px 10px 0px 0px;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+#menusecondarioelenco li a:focus, #menusecondarioelenco li a:hover, #menusecondarioelenco li.selected > a {
+    background-color: inherit;
+    color: #fff;
+    background: url(../img/icona_menuprincipale-sel.png) no-repeat 0px 37px;
+}
+
+
+.servizionline .utente-loggato span {
+    font-style: italic;
+    font-size: 1em !important;
+}
+
+.servizionline .utente-loggato span.utente-loggato-nome {
+    font-style: normal;
+   /* font-weight: bold;*/
+}
+
+.servizionline .utente-loggato span.utente-loggato-ruolo {
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none;
+    border-left: 1px solid #fff;
+    padding-left: 5px;
+}
+
+.servizionline #menusecondarioelenco {
+    margin-right: 20px;
+}
+
+.servizionline #menusecondarioelenco li a {
+    text-transform: none;
+}
+
+.servizionline #menusecondarioelenco span.fa {
+    margin-right: 8px;
+}
+
+.servizionline #menusecondarioelenco .notifica-social {
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background: #990000;
+    box-shadow: 2px 2px 3px #222;
+    font-size: .7em;
+    margin-top: -38px;
+    margin-left: 7px;
+    text-decoration: none !important;
+    line-height: 12px;
+    padding: 1px 3px;
+    border-radius: 6px;
+}
+
+
+/* RESPONSIVE */
+@media (min-width: 1366px) {
+    .container {
+        max-width: 1366px;
+        width: auto;
+    }
+}/*min-width 1366px*/
+
+@media (min-width: 1200px){
+    /* .utente-loggato {
+         margin-top: -50px;
+     }*/
+}/*min-width 1200px*/
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .menu-attivita ul li a {
+        padding: 3px;
+    }
+}/*(min-width: 992px) and (max-width: 1199px)*/
+
+@media (min-width: 992px){
+
+    .nav-exit {
+        margin-top: -50px;
+    }
+
+    .nav-exit a {
+        padding: 15px 57px !important;
+    }
+
+    #menusecondario .navbar {
+        padding: 0;
+    }
+    #menusecondario .navbar-utente {
+        padding: 0;
+        padding-left: 60px;
+    }
+}/*min-width 992px*/
+
+@media (max-width: 991px){
+
+    .nav-exit {
+        margin-top: -40px;
+    }
+
+    .nav-exit a {
+        padding: 15px 57px !important;
+    }
+
+    .servizionline #menusecondarioelenco {
+        margin-right: 0px;
+    }
+
+    #menusecondario .navbar {
+        font-size: .85em;
+    }
+
+    .utente-loggato-nome {
+        margin: 10px 10px;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        display: inline-block;
+    }
+
+    .notifiche-utente {
+        padding: 0;
+    }
+
+    .servizionline .utente-loggato {
+        margin-left: 5px;
+    }
+
+    .servizionline .utente-loggato span {
+        font-size: 1.1em !important;
+        padding: 10px 0 10px 5px !important;
+        margin: 10px 2px !important;
+    }
+
+    a.strumenti-profilo {
+        width: 40px;
+    }
+}/*max-width 991px*/
+
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+
+@media (min-width: 768px){
+    .container > header .navbar-nav {
+        padding-left: 0px;
+    }
+
+    #menusecondarioelenco li a {
+        padding: 0px 10px 0px 10px;
+    }
+}/*min-width 768px*/
+
+@media (max-width: 767px){
+
+    .nav-exit {
+        position: absolute;
+        right: 15px;
+        z-index: 999;
+        margin-top: 0;
+    }
+
+    .nav-exit li {
+        border: none !important;
+    }
+
+    .nav-exit a {
+        width: 100px !important;
+        margin: 0px !important;
+        padding: 18px 0 !important;
+    }
+
+    #menuprincipale, #navigazioneprincipale {
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 -15px;
+    }
+
+    .utente-loggato {
+        padding-left: 50px;
+    }
+
+    #menusecondario .navbar-toggle {
+        position: absolute;
+        margin-top: 15px !important;
+        margin-left: 15px;
+    }
+
+    .notifiche-utente {
+        padding: 0;
+        padding-left: 60px;
+        border: none !important;
+    }
+
+    #menusecondario nav.navbar.pull-right {
+        position: absolute;
+        right: 90px;
+    }
+
+    .servizionline #menusecondarioelenco {
+        float: left !important;
+        width: 100%;
+    }
+
+    .servizionline .utente-loggato span {
+        font-size: 1.2em !important;
+    }
+
+    .servizionline #menusecondarioelenco li a {
+        margin-left: 20px;
+        font-size: 1.2em;
+    }
+
+    .servizionline #menusecondarioelenco span.fa {
+        margin-right: 15px;
+    }
+
+
+}/*max-width 767px*/
+
+@media (max-device-width:480px) {
+    .servizionline .utente-loggato span {
+        display: inline-block;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        line-height: 56px;
+        float: left;
+        clear: both;
+    }
+
+    /*.servizionline#menusecondario .navbar-toggle {
+        margin-top: -70px !important;
+    }*/
+
+    #menusecondario nav.navbar.pull-right {
+        position: relative;
+        float: left !important;
+        right: 0 !important;
+    }
+
+    .servizionline .utente-loggato a {
+        min-height: 56px;
+    }
+
+    .servizionline span.utente-loggato-ruolo {
+        display: none !important;
+    }
+
+}/*max-device-width:480px*/
+
+
+ul.dati-profilo-online {
+    line-height: 2em;
+    list-style: outside none none;
+}
+ul.dati-profilo-online li {
+    font-weight: bold;
+    margin: 5px 0 5px -35px;
+}
+ul.dati-profilo-online li span, .box-modifica-profilo label {
+    display: inline-block;
+    font-weight: normal;
+}
+
+ul.breadcrumb {
+    margin-top: 20px;  ---> aggiungere
+}
+
+
+
+
+/*REGOLE AGGIUNTE PER IL MERGE INTERNET-INTRANET 2016_05_02 */
+.utente-loggato {
+    background-color: #1E6665;
+    padding: 0;
+    /*z-index: 1000;*/
+    float: left;
+}
+
+.utente-loggato + .col-xs-1.pull-right {
+    background-color: #1E6665;
+    padding: 0;
+}
+
+.utente-loggato a {
+    color: #fff;
+    text-decoration: none;
+    display: table; /*era: block;*/
+    width: 100%;
+    height: 100%;
+    min-height: 54px;
+}
+
+.utente-loggato img {
+    float: left;
+    margin-bottom: 0 !important;
+    width: 54px !important;
+    height: 54px;
+}
+
+.utente-loggato-nome,
+.utente-loggato-ruolo {
+    font-size: 1em;
+    line-height: 1em;
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+    padding-left: 5px;
+    text-decoration: underline;
+}
+
+.utente-loggato-ruolo {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.utente-loggato .lync {
+    height: 54px;
+    position: relative;
+    float: left;
+    margin-top: 0;
+    right: 4px;
+}
+
+.strumenti-profilo {
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    padding: 12px;
+}
+
+.strumenti-profilo:hover,
+.strumenti-profilo:active,
+.strumenti-profilo:focus {
+    color: #fff !important;
+}
+
+.strumenti-profilo-menu {
+    background-color: #fff !important;
+    border: 1px solid #002e5f !important;
+    min-width: initial !important;
+    left: -100px !important;
+}
+
+
+/* LYNC*/
+
+.lync {
+    font-size: 0;
+    width: 4px;
+    height: 100%;
+    /*era: 60px;*/
+    position: absolute;
+    float: right;
+    top: 0;
+    right: 0;
+}
+
+.lync.available {
+    background-color: #00CC33;
+}
+
+.lync.offline {
+    background-color: #999999;
+}
+
+.lync.away {
+    background-color: #cc0000;
+}
+
+#menusecondario,
+#menusecondarioelenco {
+    min-height: 0;
+    background: #1E6665;
+    border-radius: 0;
+}
+
+#menusecondario .navbar {
+    padding: 0;
+}
+
+#menusecondario .navbar-toggle {
+    margin-top: -42px !important;
+    background-image: none;
+    color: #ffffff;
+}
+
+#menusecondarioelenco li a {
+    font-size: 1em;
+    color: #fff;
+    padding: 0px 10px;
+    text-decoration: none;
+    line-height: 50px;
+    text-transform: inherit;
+}
+
+#menusecondarioelenco li a:focus,
+#menusecondarioelenco li a:hover,
+#menusecondarioelenco li.selected > a {
+    background-color: inherit;
+    color: #fff;
+    background: url(../img/icona_menuprincipale-sel.png) no-repeat 10px 37px;
+}
+
+.notifiche-utente {
+    /*border-left: 1px solid #fff;*/
+    height: 50px;
+}
+
+a.strumenti-profilo {
+    width: 45px;
+    text-decoration: none;
+    font-size: .8em;
+    margin-top: -7px;
+    padding-left: 5px;
+}
+
+.strumenti-profilo span.fa-user {
+    margin-top: 10px;
+}
+
+.strumenti-profilo span.fa.fa-circle {
+    margin-top: 15px;
+    margin-left: 6px;
+    color: #1E6665;
+}
+
+.strumenti-profilo span.fa.fa-search {
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.notifica-social {
+    position: relative;
+    height: 12px;
+    width: 15px;
+    background: #990000;
+    box-shadow: 2px 2px 3px #222;
+    font-size: .8em;
+    /* top: 10px; */
+    /* left: 50%; */
+    margin-top: -28px;
+    margin-left: 15px;
+    text-decoration: none !important;
+}
+
+.notifica-social.hidden {
+    display: block !important;
+    visibility: hidden;
+}
+
+#menucercautente {
+    background-color: #1E6665;
+}
+
+.container > header .searchsite.utente {
+    position: relative !important;
+    margin-top: 0 !important;
+    float: right !important;
+}
+
+.servizionline .utente-loggato span {
+    font-style: italic;
+    font-size: 1em !important;
+}
+
+.servizionline .utente-loggato span.hidden-xs {
+    float: left;
+    padding-top: 15px;
+    margin-right: 5px;
+}
+
+.servizionline .utente-loggato span.utente-loggato-nome {
+    /*font-style: normal;
+    font-weight: bold;*/
+    font-size: 1.2em !important;
+    line-height: 1em;
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+    padding-left: 5px;
+}
+
+.servizionline .utente-loggato span.utente-loggato-ruolo {
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none;
+    border-left: 1px solid #fff;
+    padding-left: 5px;
+}
+
+.servizionline #menusecondarioelenco {
+    margin-right: 20px;
+}
+
+.servizionline #menusecondarioelenco li a {
+    text-transform: none;
+}
+
+.servizionline #menusecondarioelenco span.fa {
+    margin-right: 8px;
+}
+
+.servizionline #menusecondarioelenco .notifica-social {
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background: #990000;
+    box-shadow: 2px 2px 3px #222;
+    font-size: .7em;
+    margin-top: -38px;
+    margin-left: 7px;
+    text-decoration: none !important;
+    line-height: 12px;
+    padding: 1px 3px;
+    border-radius: 6px;
+}
+
+
+/*BOX PROFILO UTENTE ONLINE*/
+
+.box-profilo-utente-online img,
+.box-modifica-profilo img {
+    width: 150px;
+}
+
+.box-profilo-utente-online span.info-utente {
+    font-size: .7em;
+    border-left: 1px solid;
+    padding-left: 10px;
+    margin-left: 5px;
+}
+
+.box-profilo-utente-online a.btn.btn-social.pull-right {
+    width: 180px;
+    float: left !important;
+    padding: 6px 12px !important;
+}
+
+.box-modifica-profilo .btn.btn-social.torna-indietro {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+ul.dati-profilo-online {
+    list-style: none;
+    line-height: 2em;
+}
+
+ul.dati-profilo-online li {
+    font-weight: bold;
+    margin: 5px 0 5px -35px;
+}
+
+ul.dati-profilo-online li span,
+.box-modifica-profilo label {
+    font-weight: normal;
+    display: inline-block;
+}
+
+.box-modifica-profilo .form-control {
+    margin-bottom: 15px;
+    display: inline-block;
+    width: 100%;
+}
+
+.box-modifica-profilo input {
+    height: 46px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 0 !important;
+}
+
+
+/*(min-width: 992px) and (max-width: 1199px)*/
+
+@media (min-width: 992px) {
+    .nav-exit {
+        margin-top: -50px;
+    }
+    .nav-exit a {
+        padding: 15px 57px !important;
+    }
+    #menusecondario .navbar {
+        padding: 0;
+    }
+    #menusecondario .navbar-utente {
+        padding: 0;
+        padding-left: 60px;
+    }
+}
+
+
+/*min-width 992px*/
+
+@media (max-width: 991px) {
+    .nav-exit {
+        margin-top: -40px;
+    }
+    .nav-exit a {
+        padding: 15px 57px !important;
+    }
+    .servizionline #menusecondarioelenco {
+        margin-right: 0px;
+    }
+    div#menusecondario {
+        min-height: 54px;
+    }
+    #menusecondario .navbar {
+        font-size: .85em;
+    }
+    .utente-loggato .lync {
+        right: 0px;
+    }
+    .utente-loggato-nome {
+        font-size: 1.2em;
+        line-height: 1em;
+    }
+    .container > header .navbar-toggle {
+        height: 40px;
+    }
+    .notifiche-utente {
+        padding: 0;
+    }
+    .servizionline .utente-loggato {
+        margin-left: 5px;
+    }
+    .servizionline .utente-loggato span {
+        font-size: 1.1em !important;
+        padding: 10px 0 10px 5px !important;
+        margin: 10px 2px !important;
+    }
+    a.strumenti-profilo {
+        width: 40px;
+    }
+}
+
+
+/*max-width 991px*/
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 768px) {
+    .container > header .navbar-nav {
+        padding-left: 0px;
+    }
+    #menusecondarioelenco li a {
+        padding: 0px 10px 0px 10px;
+    }
+    .dati-profilo-online li span {
+        width: 160px;
+    }
+}
+
+
+/*min-width 768px*/
+
+@media (max-width: 767px) {
+    .nav-exit {
+        position: absolute;
+        right: 15px;
+        z-index: 999;
+        margin-top: 0;
+    }
+    .nav-exit li {
+        border: none !important;
+    }
+    .nav-exit a {
+        width: 100px !important;
+        margin: 0 !important;
+        padding: 15px 0 !important;
+    }
+    #menuprincipale,
+    #navigazioneprincipale {
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 -15px;
+    }
+    .utente-loggato {
+        padding-left: 50px;
+    }
+    .utente-loggato .lync {
+        margin-left: 10px;
+    }
+    .utente-loggato-nome {
+        max-width: 200px;
+    }
+    #menusecondario .navbar-toggle {
+        /*margin-top: -90px !important;*/
+    }
+    .notifiche-utente {
+        padding: 0;
+        padding-left: 60px;
+        border: none !important;
+    }
+    #menusecondario nav.navbar.pull-right {
+        position: absolute;
+        right: 90px;
+    }
+    .servizionline #menusecondarioelenco {
+        float: left !important;
+        width: 100%;
+    }
+    .servizionline .utente-loggato span {
+        font-size: 1.2em !important;
+    }
+    .servizionline #menusecondarioelenco li a {
+        margin-left: 20px;
+        font-size: 1.2em;
+    }
+    .servizionline #menusecondarioelenco span.fa {
+        margin-right: 10px;
+    }
+    #menusecondarioelenco li a:focus,
+    #menusecondarioelenco li a:hover,
+    #menusecondarioelenco li.selected > a {
+        background: url(../img/icona_menuprincipale-sel.png) no-repeat 0px 37px;
+    }
+    .strumenti-profilo {
+        width: 45px !important;
+        font-size: 1em !important;
+    }
+    .minisiti #navigazionesecondaria {
+        padding-bottom: 0;
+    }
+    .minisiti .box-menu-contestuale .box-home-intra,
+    .minisiti .box-menu-contestuale .content.box-home-intra.condividi-messaggio {
+        margin: 20px 0 0 -30px;
+    }
+}
+
+
+/*max-width 767px*/
+
+@media (max-width:480px) {
+    .utente-loggato-nome {
+        max-width: unset;
+    }
+    #menusecondario nav.navbar.pull-right {
+        position: relative;
+        float: left !important;
+        right: 0 !important;
+    }
+    .servizionline .utente-loggato span {
+        display: inline-block;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        line-height: 56px;
+        float: left;
+        clear: both;
+    }
+    /*.servizionline#menusecondario .navbar-toggle {
+        margin-top: -70px !important;
+    }*/
+    #menusecondario nav.navbar.pull-right {
+        position: relative;
+        float: left !important;
+        right: 0 !important;
+    }
+    .servizionline .utente-loggato a {
+        min-height: 56px;
+    }
+    .servizionline span.utente-loggato-ruolo {
+        display: none !important;
+    }
+}
+
+
+/*max-device-width:480px*/

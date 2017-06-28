@@ -1,0 +1,287 @@
+/* 
+#002e5f -> blu (font, sfondi, bottoni, decorazioni, etc)
+#000000 -> nero (font main) refuso?
+#333333 -> grigio scuro (font base)
+#Eaedf2 -> grigio (sfondi strutture e navigazione)
+#BCBCBC -> grigio chiaro (bordi input e bottoni)
+#707070 -> grigio chiaro (placeholder)
+#D7D7D7 -> grigio chiaro (bordi menu responsive)
+
+#1E6665 -> verde petrolio (colore a contrasto: bottone servizi e altre funzionalità dinamiche)
+*/
+
+
+
+
+body.servizi div.bordo
+{
+border:1px solid #eaedf2;
+padding:15px 15px 0 15px;
+margin:0 0 30px 0;
+}
+
+body.servizi div.bordo h3{
+	margin:0 0 7px 0;
+	text-transform: none;
+	min-height: 50px;
+}
+
+body.servizi div.bordo > p{
+	font-size: 0.85em;
+}
+
+body.servizi div.bordo div.panel
+{
+box-shadow: none;
+}
+/*
+body.servizi .panel-primary > .panel-heading + .panel-collapse > .panel-body
+{
+border-top:0;
+border-bottom:0;
+}*/
+
+
+body.servizi main  .panel-primary > .panel-heading 
+{
+padding:6px 15px;
+}
+
+body.servizi main  .panel-primary > .panel-heading.servizi_azienda
+{
+background-color:#eaedf2;
+border:0;
+}
+
+body.servizi main .panel-primary.extended
+{
+margin-left:-15px;
+margin-right:-15px;
+border:0;
+}
+
+body.servizi main .panel-primary div h4{
+	font-family: 'Open Sans semibold', sans-serif;
+	text-align:center;
+	color:#000;
+}
+
+body.servizi main .panel-primary div h4 a{
+	font-size: 0.85em;
+	font-weight: normal;
+padding: 1px 40px;
+}
+
+body.servizi .panel-primary div h4 a.collapsed
+{
+background-image:url(../img/icona_accordion_open.png);
+background-repeat:no-repeat;
+background-position:center right;
+padding: 2px 40px; /* Ninni 08/03/2017 - modificato padding (era 1px) perchè l'icona veniva tagliata in alto */ 
+display:block;
+
+}
+
+body.servizi div.bordo div.panel-group.nopaddingbottom
+{
+margin-bottom:0;
+}
+
+body.servizi div.bordo .panel-heading {
+    
+    border-radius: 0;
+}
+
+body.servizi p.pulsante
+{
+text-align:center;
+margin:5px -15px 0;
+}
+
+body.servizi div.bordo p.pulsante a
+{
+	font-size: 1em;
+display:block;
+text-decoration:none;
+}
+
+body.servizi .petblue
+{
+background-color:#1E6665;
+}
+
+body.servizi div.bordo div.panel-body ul
+{
+margin:0;
+}
+
+body.servizi div.bordo div.panel-body ul li
+{
+list-style-image:url('../img/icona_freccia-azzurra.png');
+list-style-position:top left;
+	font-size: 0.85em;
+}
+
+
+/*  paginaFoglia/ufficiTerritoriali/regione/layout && 
+	inail_contenuto/struttureInail/detail &&
+	inail_contenuto/orariSportello/detail box strutture Inail - Thomas - 23.09 */
+
+body.servizi div.bordo .struttura_titolo{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+body.servizi div.bordo .struttura_campo_titolo{
+	padding: 0;
+	font-weight: 600;
+	font-size: 14px;
+}
+body.servizi div.bordo .struttura_campo_testo{
+	font-size: 14px;
+}
+body.servizi div.bordo .struttura_pulsante_mappa{
+	margin-top: 1em;
+}
+body.servizi div.bordo .struttura_pulsante_mappa a.accordion_toggle_mappa{
+	/*background-image: url("../img/icona_freccia-blu-reverse_carousel.png");*/
+}
+body.servizi div.bordo .struttura_pulsante_orari{
+	
+}
+body.servizi div.bordo ul.lista_orari_sportello{
+	list-style-image: none;
+	list-style-type: none;
+	background: none;
+	padding: 0;
+	margin: 0;
+}
+body.servizi div.bordo ul.lista_orari_sportello li.struttura_orari_sportello{
+	background: transparent url("../img/icona_orari_sportello.png") no-repeat scroll 0px 0px;
+	list-style-type: none;
+	list-style-image: none;
+	padding: 0px 50px;
+	margin-bottom: 2em;
+}
+body.servizi div.bordo ul.lista_orari_sportello li.struttura_orari_sportello .orari_sportello_header {
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-top: 3px;
+	font-size: 14px;
+}
+body.servizi div.bordo ul.lista_orari_sportello li.struttura_orari_sportello .orari_sportello_testo.giorni_apertura {
+	text-transform: lowercase;	
+}
+body.servizi div.bordo ul.lista_orari_sportello li.struttura_orari_sportello hr.divisore_orari {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/* fine paginaFoglia/ufficiTerritoriali/regione/layout && 
+		inail_contenuto/struttureInail/detail &&
+		inail_contenuto/orariSportello/detail: box strutture Inail - Thomas - 23.09 */
+		
+		
+/* inail_contenuto/struttureInail/map - Thomas - 04/10 */
+
+body.servizi #form_ricerca_percorso .bottoni > span#errore_ricerca{
+	color: red;
+	text-align: left;
+}
+body.servizi #form_ricerca_percorso div.input_partenza h3{
+	font-size: 16px;
+}
+body.servizi #form_ricerca_percorso div.input_arrivo h3{
+	font-size: 16px;
+	margin-top: 0.5em;
+}
+body.servizi #form_ricerca_percorso div.input_arrivo .nome_struttura{
+	text-transform: uppercase;
+	font-weight: 600;
+}
+body.servizi #form_ricerca_percorso div.input_arrivo .indirizzo_struttura{
+	color: gray;
+}
+body.servizi div.indicazioni_percorso > h3.header_indicazioni{
+	line-height: 4;
+	font-size: 16px;
+	margin-bottom: 0;
+	margin-top: 1em;
+}
+body.servizi div.indicazioni_percorso > h3.footer_indicazioni{
+	margin-top: 1em;
+	margin-left: 23px;
+}
+/***** Elementi nascosti (placemark, avvisi e sommario) ******/
+body.servizi div.indicazioni_percorso #map_directions .adp-warnbox,
+body.servizi div.indicazioni_percorso #map_directions .adp-summary, 
+body.servizi div.indicazioni_percorso #map_directions .adp-placemark{
+	display: none;
+}
+/****** Riga indicazione *****/
+body.servizi div.indicazioni_percorso #map_directions .adp-directions tr{
+	line-height: 2;
+	position:relative;
+}
+body.servizi div.indicazioni_percorso #map_directions .adp-directions .adp-substep{
+	border: none;
+}
+body.servizi div.indicazioni_percorso #map_directions .adp-directions .adp-stepicon{
+	display: block !important;
+}
+/****** Numero indicazione (nascosta) ******/
+body.servizi div.indicazioni_percorso #map_directions .adp-directions td:nth-child(2) {
+	display:none;
+}
+/****** Testo indicazione *****/
+body.servizi div.indicazioni_percorso #map_directions .adp-directions td:nth-child(3) {
+	text-decoration: underline;
+	padding-top: 20px;
+	font-weight: 400;
+}
+/****** Testo di arrivo (nascosto, sostituito da "ARRIVO") *****/
+body.servizi div.indicazioni_percorso #map_directions .adp-directions td:nth-child(3) div{
+	display: none;
+}
+/****** Distanza in km ******/
+body.servizi div.indicazioni_percorso #map_directions .adp-directions td:nth-child(4) {
+	text-decoration: none;
+	position: absolute;
+	top: 0;
+	left: 25px;
+	padding: 0;
+	font-size: 13px;
+}
+/****** Copyright google (nascosto) ******/
+body.servizi div.indicazioni_percorso #map_directions .adp-legal{
+	display: none;
+}
+/* fine inail_contenuto/struttureInail/map - Thomas - 04/10 */
+
+/***** Inizio boxServiziOnline Anna 30.11 *****/
+body.servizi div.bordo div.pulsante a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 1em
+}
+body.servizi div.pulsante {
+	text-align: center;
+	margin: 5px -15px 0;
+	height: 30px;
+}
+body.servizi div.bordo > p:nth-child(2){
+    min-height: 85px;
+}
+body.servizi div.bordo h3{
+    min-height: 50px;
+}
+body.servizi div.pulsante ul{
+	list-style: none;
+	margin-bottom: 0px;
+    padding-left: 0px;
+}
+/***** Fine boxServiziOnline Anna 30.11 *****/
+
+

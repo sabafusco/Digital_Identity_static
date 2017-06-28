@@ -1,0 +1,158 @@
+/*CSS di stampa per Intranet*/
+
+.home header {
+    border: none !important;
+    padding-bottom: 20px;
+}
+
+/*aside#spalla-sx,*/ main {
+    /*border-top: 1px solid #002e5f !important;*/
+    padding: 20px 0 !important;
+}
+
+
+div#menucercautente, .condividi-messaggio, p.meta-info,.box-angolo-dipendente,.box-applicativi-strumenti, .ko-edit-preferiti-show, .box-preferiti-edit,.ko_activity_actoricon, .personalizza, .modal, .fa-edit, .fa-close,.btn-default, .fa span, .tag, .media-left, form, p.form-group, ol.carousel-indicators, .carousel-control, ul[role="tablist"], .fa-calendar span,#datetimepicker,.tipologia {
+    display: none;
+}
+
+.box-angolo-dipendente h2.box-home-intra, .box-applicativi-strumenti h2.box-home-intra, .in-evidenza h2.box-home-intra, .box-minisito h2.box-home-intra {
+    display: inherit !important;
+}
+
+h2.box-home-intra {
+    border-top: 1px solid #002e5f !important;
+    padding: 20px 0 0 0 !important;
+    clear: both;
+}
+
+.content.box-home-intra {
+    padding-bottom: 20px;
+}
+
+.content.box-home-intra li {
+    background: url(../img/icona_freccia-azzurra.png) no-repeat left 0.4em;
+    list-style: none;
+    font-family: 'Open Sans semibold', sans-serif !important;
+    font-weight: normal;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+/*
+.box-comunita-attivita .media:nth-child(odd) {
+    padding-right: 20px !important;
+}
+*/
+
+.media {
+    padding: 20px 20px 20px 0 !important;
+}
+
+.box-comunita-attivita .media, .box-minisito .media {
+   /* display: table-cell;*/
+    position: relative;
+    /*width: 50% !important;*/
+    padding-bottom: 20px;
+    vertical-align: top;
+}
+
+.in-evidenza {
+    page-break-before: always;
+}
+
+.in-evidenza > div {
+    clear: both;
+}
+
+.in-evidenza h2+.media,.box-minisito h2+.media {
+    padding-right: 20px !important;
+}
+
+.in-evidenza .media,.box-minisito .media, #spalla-dx .media {
+   /* float: left;
+    display: inherit;*/
+    box-sizing: border-box;
+   /* width: 50% !important;*/
+    padding: 20px 0;
+}
+
+.in-evidenza img {
+    margin-right: 10px;
+}
+
+.box-minisito .media {
+    margin-top: 20px;
+}
+
+.tab-content + .media {
+    float: none !important;
+}
+
+#spalla-dx {
+    page-break-before: always;
+}
+
+#spalla-dx .box-numeri-utili .media {
+    float: none;
+    padding: 0;
+}
+
+.media-left,.media-body {
+    display: inline-block;
+    vertical-align: top;
+}
+.media-left {
+    padding-right: 10px !important;
+}
+
+.media-body h3 {
+    padding: 0;
+}
+
+h2.box-home-intra {
+    page-break-after: avoid;
+}
+
+.box-home-intra {
+    page-break-inside: avoid;
+}
+
+.box-home-intra .media img {
+    float: left;
+    max-width: 60px;
+    margin-bottom: 20px;
+}
+
+.box-minisito {
+    clear: both;
+}
+
+div.carousel {
+    clear: both;
+    width: 100%;
+    border-top: 1px solid #002e5f !important;
+}
+
+.carousel .item {
+    /* border-top: 1px solid #002e5f !important; */
+    padding: 15px 0 !important;
+    float: left;
+    display: inline-block;
+    max-width: 25%;
+}
+
+.carousel img.img-responsive {
+    display: inline-block;
+    max-width: 90%;
+    margin-right: 20px;
+}
+
+aside#spalla-dx {
+    display: block;
+    clear: left;
+}
+
+.fa-calendar:before {
+    margin: 0 5px;
+}
+

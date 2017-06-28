@@ -1,0 +1,368 @@
+main .box.content {
+    padding-bottom: 30px;
+}
+/*     Ninni 07/03/17 commentato per uniformare lo stile dei titoli nel content
+main .box.content h3 {
+    background-color: inherit;
+    color: #002e5f;
+    font-family: 'Open Sans semibold', sans-serif;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-weight: normal;
+} */
+
+main .box.content h4 {
+    margin-bottom: 15px;
+    margin-top:0;
+}
+
+.box.content img.pull-left {
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.box-loading {
+    position: absolute;
+    float: left;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    display: block;
+    z-index: 9999;
+    background: url(../img/Preloader_3.gif) center 10% no-repeat rgba(255,255,255,.9);
+    font-size: 0;
+}
+p span.text-label {
+     display: inline-block;
+     color: #012c5f;
+     font-weight: 700;
+ }
+
+p span.sottotitolo {
+    display: inline-block;
+    font-weight: 700;
+}
+
+
+div.meta-info {
+    margin: 15px -15px;
+}
+
+.media-left {
+    padding-right: 20px;
+    min-width: 80px;
+}
+
+/* LISTA ALBERATURA*/
+.tree-structure .panel {
+    border: none;
+    box-shadow: none;
+}
+
+.tree-structure .panel-default > .panel-heading {
+    background: #Eaedf2;
+}
+
+.tree-structure .panel a > span {
+    font-size: 0;
+}
+
+.tree-structure a[data-toggle="collapse"]{
+    text-decoration: none;
+}
+
+.tree-structure a[data-toggle="collapse"]:before {
+    content: "\f067";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+
+}
+
+.tree-structure a[aria-expanded="true"]:before {
+    content: "\f068";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+
+.tree-structure .panel-group .panel + .panel {
+    margin-top: 10px;
+}
+
+.tree-structure .panel-heading {
+    font: 1.2em "Open Sans semibold";
+}
+
+.tree-structure .panel ul li{
+    list-style: none;
+}
+
+.tree-structure .sub-panel {
+    padding-left: 40px;
+    border: none;
+    margin-top: 10px;
+}
+
+.tree-structure .panel-heading a + a {
+    margin-left: 10px;
+}
+
+.tree-structure .sub-panel .panel a {
+    font: 1em/2em "Open Sans semibold";
+    margin-bottom: 10px;
+}
+/* /fine lista alberatura*/
+
+
+/* FLEXBOX */
+/*.bw-flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+}*/
+
+.bw-flex__item {
+    /*flex-grow: 1;*/
+    background: #fff;
+    /*border: 1px solid #eaedf2;*/
+
+    border: 1px solid #eaedf2;
+    padding: 15px 15px 0 15px;
+    margin-bottom: 20px;
+    /*margin-left: 5px;
+    margin-right: 5px;*/
+    line-height: auto;
+    /*width: 30%;*/
+}
+
+.bw-flex__item-title{
+    width: 100%;
+    /*padding: 10px;*/
+    display: inline-flex;
+    font-family: 'Open Sans semibold', sans-serif;
+    color: #002e5f;
+    margin: 0 0 20px;
+    background: none !important;
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+.bw-flex__article-list {
+
+}
+
+/*.bw-flex__article-list a {
+    font-family: 'Open Sans semibold', sans-serif;
+    background: rgba(0, 0, 0, 0) url("../img/icona_freccia-azzurra.png") no-repeat scroll left 0.4em;
+    color: #333;
+    margin: 0 0 10px;
+    padding: 0 0 0 8px;
+    list-style: none;
+    text-decoration: underline;
+
+    display: flex;
+    margin-left: 30px;
+}*/
+
+
+.bw-flex__panel {
+    margin-left: -15px;
+    margin-right: -15px;
+    border: 0;
+    margin-top: 0 !important;
+    padding-top: 5px;
+}
+
+.bw-flex__panel-heading {
+    background-color: #eaedf2;
+    border: 0;
+    padding: 6px 15px;
+}
+
+
+.bw-flex__panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+}
+
+.bw-flex__panel-heading a {
+    background-image: url(../img/icona_accordion_close.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    color: #000;
+    display: block;
+    padding:0;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Open Sans semibold', sans-serif;
+    text-align: left;
+    margin-top:0;
+}
+
+.bw-flex__panel-heading a.collapsed {
+    background-image: url(../img/icona_accordion_open.png);
+}
+
+.bw-flex__panel--empty a {
+    background: none;
+}
+
+div.panel-body ul li {
+    list-style-image: url('../img/icona_freccia-azzurra.png');
+    list-style-position: top left;
+    font-size: 0.85em;
+}
+
+/* table metadata */
+table.detailtable {
+    display: table;
+}
+
+table.detailtable td.label-cell {
+    font-weight: bold;
+}
+
+table.detailtable tbody tr:nth-child(odd) {
+    background-color: #Eaedf2;
+    color: inherit;
+}
+
+.word-break {
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+/* read more less*/
+ul.readMoreReadLess_item
+{
+    padding:0;
+    margin:0;
+    padding-bottom: 10px;
+}
+
+ul.readMoreReadLess_item > li
+{
+    border-bottom:1px solid #002e5f;
+    list-style:none;
+    margin-bottom: 40px;
+    padding-bottom:10px;
+    color: #002e5f;
+}
+
+ul.readMoreReadLess_item > li h3
+{
+    color: #002e5f;
+}
+ul.readMoreReadLess_item > li p
+{
+    color:#000;
+}
+
+h3.faq
+{
+    display:block;
+}
+
+p.link_faq
+{
+    margin-top:10px;
+}
+
+.pls_open {
+    background-image:url(../img/icona_accordion_open.png);
+    background-repeat:no-repeat;
+    background-position:center right;
+    width:35px;
+    height:35px;
+    float:right;
+    margin:-8px 0 0 0;
+
+}
+
+.pls_close
+{
+    background-image:url(../img/icona_accordion_close.png);
+    background-repeat:no-repeat;
+    background-position:center right;
+    width:35px;
+    height:35px;
+    float:right;
+    margin:-8px 0 0 0;
+}
+
+.lista_archivio .tab-content li {
+    padding-bottom: 10px;
+}
+
+ul.elenco_collection ul.allegati {
+    margin-bottom: 20px !important;
+}
+
+
+/*SCROLLSPY*/
+
+[data-spy] {
+    position: relative;
+}
+
+#bwNavbar {
+   /*position: fixed;
+    right: 0;
+    top: 200px;*/
+    z-index: 3000;
+    background: rgba(255,255,255,.6);
+   /* max-width: 180px;*/
+}
+
+#bwNavbar.affix {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#bwNavbar li {
+    float: none;
+    background: url(../img/icona_freccia-azzurra.png) no-repeat left 1.2em;
+    list-style: none;
+    padding: 10px 0 0 15px;
+    margin: 0;
+}
+
+#bwNavbar li a{
+    padding: 0;
+    color: #333;
+    font-size: 1.1em;
+    background-color: transparent;
+}
+
+#bwNavbar li.active a {
+    font-weight: bold;
+
+}

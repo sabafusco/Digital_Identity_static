@@ -1,0 +1,323 @@
+/* homePage canali tematici - Sabrina - 07.09 */
+	.home main .boxtemi > div div{
+		padding: 0px 15px;
+	}
+	/* .home main .boxtemi > div{
+		height: 18em;
+		margin-bottom: 45px;
+	} */
+	.boxCanaleTematico{
+		min-height: 17em;
+	}
+	.boxCanaleTematico .fwEmptySlot .emptyIndicator, .editBoxGenerico .fwEmptySlot .emptyIndicator{
+		height: 10px;
+		margin-top: 5px;
+	}
+	.boxCanaleTematico .emptyIndicator .emptyIndicatorInner, .editBoxGenerico .emptyIndicator .emptyIndicatorInner{
+		background: none;
+	}
+	.boxCanaleTematico .emptyIndicatorInner .emptyIndicatorText, .editBoxGenerico .emptyIndicatorInner .emptyIndicatorText{
+		margin-top: -10px !important;
+		width: 0px !important;
+		display: block !important;
+		padding: 0px;
+	}
+	.boxCanaleTematico .emptyIndicatorText .avatar, .editBoxGenerico .emptyIndicatorText .avatar{
+		background: none !important;
+		padding: 0px !important;
+	}
+	.boxCanaleTematico .emptyIndicatorText .left, .editBoxGenerico .emptyIndicatorText .left{
+		display: none !important;
+	}
+	.boxCanaleTematico .emptyIndicatorText .fwContent, .editBoxGenerico .emptyIndicatorText .fwContent{
+		color: gray !important;
+	}
+	.boxCanaleTematico .emptyIndicatorText .right, .editBoxGenerico .emptyIndicatorText .right{
+		display: none!important;
+	}
+/* fine homePage canali tematici - Sabrina - 07.09 */
+
+/* homePage boxBanner - Sabrina - 15.09 */
+	.editBannerHP > h4 > a > span{
+		width: 200%;
+	}
+	.editBannerHP > h4 > a > span > span{
+		left: -47%;
+	}
+	.home main .boxbanner > div > div{
+		width: 48%;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.home main .boxbanner .lightblue, .home main .boxbanner .blue, .home main .boxbanner .petblue{
+		width: 100%;
+		padding-right: 0px;
+		padding-left: 0px;
+		height: 135px;
+	}
+	@media (max-width: 992px){
+		.home main .boxbanner .lightblue, .home main .boxbanner .blue, .home main .boxbanner .petblue{
+			height: 170px;
+		}	
+	} 
+	@media (min-width: 1200px){
+		.home main .boxbanner div img{
+			width: 41% !important;
+		}
+	}
+/* fine homePage boxBanner - Sabrina - 15.09 */
+
+/* home_sezione box primo piano - Anna - 15.09 */
+	.home_sezione main .boxpp div div{
+		padding-bottom: 5px !important;
+	}
+	.home_sezione  main .boxservizi .fwMultiSlot .slotOverlay{
+		position: absolute !important;
+	}
+	.home_sezione  main .boxservizi .fwMultiSlot .slotOverlay .slotOverlayBackground{
+		position: absolute !important;
+	}
+/* fine home_sezione box primo piano - Anna - 15.09 */
+
+/* home box attività - Anna - 15.09 */
+	.home main .boxservizi div div {
+		padding-bottom: 15px !important;
+		position: none !important;
+	}
+	.home  main .boxservizi .fwMultiSlot .slotOverlay{
+		position: absolute !important;
+	}
+	.home main .boxservizi .fwMultiSlot .slotOverlay .slotOverlayBackground{
+		position: absolute !important;
+	}
+	.home main .boxservizi .inlineEditorNode > .inlineEditorWrapper, .home main .boxbanner .inlineEditorNode > .inlineEditorWrapper{
+		z-index: 20 !important;
+		height: 0px;
+	}
+/* fine home box attività - Anna - 15.09 */
+
+/* homePage boxAvvisiScadenze - Sabrina - 16.09 */
+	.home main .boxavvisiscadenze div div{
+		padding-bottom: 10px;
+	}
+/* fine homePage boxAvvisiScadenze - Sabrina - 16.09 */
+
+/* homePage menuUtenti - Sabrina - 17.09 */
+	.home #navigazioneutente > div > ul > div{
+		float: left;
+	}
+	.home #navigazioneutente > div > ul > div > div{
+		margin-right: 60px;
+		width: 150px;
+		height: 50px;
+	}
+	.home #navigazioneutente div ul div div .emptyIndicatorText {
+		display: block !important;
+	}
+	.home #navigazioneutente ul li{
+		width: auto !important;
+	}
+/* fine homePage menuUtenti - Sabrina - 17.09 */
+
+/* home ckeditor - Anna - 17.09 */
+	/* .home .carousel.slide .inlineEditorNode > .inlineEditorWrapper{
+		z-index: 20 !important;
+	} */
+/* fine home ckeditor - Anna - 17.09 */
+
+/* inizio pagina foglia - Rosario - 26.09 */
+	.foglia .imgContent {
+		display: block;
+		width: 100%;
+		margin: 20px 0;
+		min-height: 100px;
+	}
+	@media ( min-width : 480px) {
+		.foglia .imgContent {
+			float: right;
+			width: 33%;
+			margin: 0 0 30px 30px;
+			min-width: 235px;
+		}
+	}
+	.foglia main .imgContent img.contimg {
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+	@media ( min-width : 480px) {
+		.foglia main .imgContent img.contimg {
+			float: right;
+			width: 100%;
+			margin: 0;
+		}
+	}
+	.foglia .content {
+		min-height: 100px;
+	}
+	.foglia .box .cke_button a {
+		background: none;
+		margin: 0;
+	}
+	.foglia .box .cke_toolbox+a {
+		background-image: url("../img/sprites.png");
+		background-position: 3px -1366px;
+		background-repeat: no-repeat;
+		border: 1px outset #d3d3d3;
+		cursor: pointer;
+		float: right;
+		height: 11px;
+		margin: 11px 0 2px;
+		width: 11px;
+	}
+	.foglia .box .cke_rcombo a {
+		background-image: url("../img/sprites.png");
+		background-position: 0 -100px;
+		background-repeat: repeat-x;
+		border-bottom: 1px solid #dad9d9;
+		border-radius: 5px;
+		border-right: 1px solid #dad9d9;
+		float: left;
+		height: 21px;
+		margin-bottom: 5px;
+		margin-right: 6px;
+		padding: 2px;
+	}
+	.foglia .box a .dijitInlineEditBoxDisplayMode {
+		display: inline-block;
+	}
+	.foglia .box .inlineEditorNode {
+		 width: auto;
+	}
+/* fine pagina foglia - Rosario - 26.09 */
+
+/* Inizio pagina badge - Anna - 05.10*/
+	/*.servizi main > h2{
+		text-transform: lowercase;
+		text-decoration: underline;
+	}*/
+	.servizi .allegati .fw .fwEmptySlot .emptyIndicator{
+		background-color: transparent;
+	}
+	.servizi .allegati .fw .fwEmptySlot .emptyIndicator, .servizi .allegati .fw .fwEmptyMultiSlot .emptyIndicator{
+		background-color: transparent;
+		background-image: none;
+	}
+	/* Fine pagina badge - Anna - 05.10*/
+	
+	/* Foglia link - Sabrina - 12.10 */
+	.foglia .box ul li{
+		min-height: 40px;
+	}
+/* fine Foglia link - Sabrina - 12.10 */
+
+/* homePage newsEventi - Sabrina - 15.10 */
+	.home main .boxnewseventi {
+		width: 100%;
+	}
+	.home main .boxnewseventi .spiano.row{
+		position: unset;
+	}
+	.titoloboxnewseventi{
+		width: 100%;
+	}
+/* fine homePage newsEventi - Sabrina - 15.10 */
+
+/* footer - Sabrina - 02.11 */
+	footer .emptyIndicator{
+		background-color: transparent !important;
+		height: 10px !important;
+	}
+	footer .emptyIndicatorInner{
+		background: none !important;
+	}
+	footer .emptyIndicatorText{
+		display: block !important;
+		margin-top: -10px !important;
+	}
+	footer .avatar{
+		background: none !important;
+	}
+	footer .left, footer .right{
+		display: none !important;
+	}
+	footer .fwContent{
+		margin-left: -55% !important;
+	}
+	#menusocial{
+		position: unset;
+	}
+	#subfooter{
+		padding: 10px 60px 15px;
+	}
+	#subfooter #menuservizio li{
+		padding: 0px;
+		border-right: 0px
+	}
+	#menuservizio li > div {
+		width: -moz-fit-content;
+		float: left;
+		padding: 0px 12px;
+		border-right: 1px solid #002E5F;
+	}
+	#subfooter #menuservizio li.last > div{
+	    padding-right: 0px;
+	    border-right: 0px none;
+	}
+	#menuservizio > div .editOverlay{
+		height: 25px;
+	}
+	#menuservizio > div .slotOverlay{
+		height: 20px;
+	}
+	@media (max-width: 991px){
+		#subfooter #menulingua {
+			margin-top: 50px !important;
+		}
+	}
+	@media (min-width: 992px){
+		#subfooter > span {
+			width: 50%;
+			height: 10%;
+		}
+		#subfooter > div {
+			width: 50%;
+		}
+	}
+/* fine footer - Sabrina - 02.11 */
+
+/* inizio fix home avviso utenza */
+.home main {
+    clear: both;
+}
+/* fine fix home avviso utenza */
+
+/*** box accesso servizi offline - Sabrina - 10.02 ***/
+body.servizi div.pulsante {
+	height: auto !important;
+}
+body.servizi div.bordo > p {
+	min-height: 0px !important;
+}
+body.servizi div.bordo > div {
+	min-height: 6em !important;
+}
+body.servizi div.pulsante.btnfake .dijitInlineEditBoxDisplayModeHover {
+	background: #002e5f !important;
+} 
+/*** fine box accesso servizi offline - Sabrina - 10.02 ***/
+
+/**** box accedi ai servizi online Anna 30.11 ****/
+body.servizi div.pulsante.btnfake.petblue .dijitInlineEditBoxDisplayModeHover {
+    background: #1E6665 !important;
+}
+/**** fine box accedi ai servizi online Anna 30.11 ****/
+
+/*Box in evidenza - listacolonne - Anna 15.02*/
+.home_sezione .listacolonne.editMode{
+	-moz-column-count: 1;
+}
+.home_sezione .listacolonne.editMode .emptyIndicatorText {
+  display: block !important;
+}
+/*Fine Box in evidenza - listacolonne - Anna 15.02*/

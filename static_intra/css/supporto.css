@@ -1,0 +1,180 @@
+/* 
+#002e5f -> blu (font, sfondi, bottoni, decorazioni, etc)
+#000000 -> nero (font main) refuso?
+#333333 -> grigio scuro (font base)
+#Eaedf2 -> grigio (sfondi strutture e navigazione)
+#BCBCBC -> grigio chiaro (bordi input e bottoni)
+#707070 -> grigio chiaro (placeholder)
+#D7D7D7 -> grigio chiaro (bordi menu responsive)
+
+#1E6665 -> verde petrolio (colore a contrasto: bottone servizi e altre funzionalità dinamiche)
+
+css per archivio news - newsletter
+*/
+
+/* supporto */
+
+body.supporto main ul.supporto
+{
+list-style: none;
+padding-left:0;
+margin:20px 0 30px 0;
+}
+
+.blu
+{
+color:#002e5f;
+}
+
+
+body.supporto div.content h3
+{
+margin-top:0;
+}
+
+
+body.supporto h3
+{
+background-color:none;
+margin-left:0;
+color: #002e5f;
+margin:10px 0;
+}
+
+.supporto div.content h3 a
+{
+background-color: inherit;
+color: #002e5f;
+}
+
+
+.supporto h4
+{
+background-color:none;
+margin:3px 0 5px 0;
+color: #002e5f;
+font-size: 1em;
+font-weight: bold;
+text-transform: none;
+}
+
+.supporto h4.left
+{
+float:left;
+margin:20px 0;
+}
+
+.supporto span.inline
+{
+float:left;
+
+margin:18px 0;
+padding:0 0 0 20px;
+}
+
+
+.supporto .blocco_video p img
+{
+width:100%;
+
+}
+
+
+.supporto div.blocco_video .col-md-4:first-child
+{
+padding-left:0;
+padding-right:30px;
+}
+
+.supporto div.blocco_video .col-md-4:last-child
+{
+padding-right:0;
+padding-left:30px;
+}
+
+.supporto div.blocco_video .col-md-4
+{
+padding:0;
+margin-bottom:30px;
+}
+
+@media (max-width: 766px){
+.supporto div.blocco_video .col-md-4, .supporto div.blocco_video .col-md-4:first-child, .supporto div.blocco_video .col-md-4:last-child
+{
+padding-left:0;
+padding-right:0;
+
+}
+
+.supporto div.vedi_tutti
+{
+border:1px solid lime;
+}
+
+}
+
+.supporto ul.contatti
+{
+padding:20px 0;
+list-style:none;
+margin:0;
+}
+
+.supporto ul.contatti li
+{
+display:block;
+margin:20px 20px 0 0;
+min-height:50px;
+}
+
+@media (min-width: 480px){
+	.supporto ul.contatti li
+	{
+	display:inline;
+	margin:20px 20px 20px 0;
+	}
+}
+/*.supporto ul.contatti li.fisso
+{
+background-image:url('../img/tel_fisso.png');
+background-repeat:no-repeat;
+background-position:10px left;
+padding:10px 10px 30px 50px;
+margin-top:10px;
+}
+
+.supporto ul.contatti li.mobile
+{
+background-image:url('../img/tel_mobile.png');
+background-repeat:no-repeat;
+background-position:10px left;
+padding:10px 10px 30px 50px;
+margin-top:10px;
+}
+
+.supporto ul.contatti li.agenda
+{
+background-image:url('../img/agenda.png');
+background-repeat:no-repeat;
+background-position:10px left;
+padding:10px 10px 30px 50px;
+margin-top:10px;
+}*/
+
+/* customizzazione form pagina supporto */
+
+.supporto main form
+{
+	background-color: #f2f2f2;
+    color: #333;	
+	margin-bottom: 30px;
+	padding: 25px 0 15px;
+	margin-right:0;
+	margin-left:0;
+}
+
+.supporto main form .bottoni {
+    margin: 15px 15px 0;
+}
+
+/* fine customizzazione form pagina supporto */

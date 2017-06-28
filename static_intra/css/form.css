@@ -1,0 +1,328 @@
+/* fix form ricerca header */
+div#menuprincipale form {
+	margin:0;
+}
+/* fine fix form ricerca header */
+
+form fieldset, form.activebg, div.activebg {
+    background-color: #f2f2f2;
+    color: #333;	
+	margin-bottom: 30px;
+	padding: 25px 0 15px;
+}
+
+form legend{
+	background-color: #fff;
+	color: #002e5f;
+	padding: 6px 0;
+	margin-top: -12px;
+	margin-bottom: 0;
+	border: 0;
+    font-size: 1.1em;
+}
+
+
+form fieldset p{
+	min-height: 35px !important;
+}
+
+form p label, table label{
+    display: none;
+}
+
+form p input, form p textarea{
+    background-color: #fff;
+    color: #333;	
+	border: 1px solid #bcbcbc;
+	font-size: 1em;
+	padding: 6px 12px;
+	cursor: pointer;
+}
+
+form p input[type="file"] {
+	padding: 3px 12px;
+}
+
+form p select{
+    background-color: #fff;
+    color: #333;	
+	border: 1px solid #bcbcbc;
+	font-size: 1em;
+	padding: 5px 12px 4.5px;
+	cursor: pointer;
+}
+
+form p input{
+	width: 100%;
+}
+
+form p.date input{
+	width: 50%;
+	background: #fff url("../img/icona_calendario.png") no-repeat scroll right center;
+	padding: 6px 36px 6px 12px;
+}
+
+form p select{
+	width: 70%;
+	cursor: pointer;
+}
+
+form.activebg select, div.activebg form select{
+	width: 100%;
+}
+
+form p textarea{
+	width: 100%;
+	min-height: 150px;
+}
+
+form .checkbox, form .radio{
+    margin-top: 0;
+}
+
+form .checkbox input[type="checkbox"], form .radio input[type="radio"]{
+    margin-left: 0;
+	width: auto;
+}
+
+form .checkbox label, form .radio label{
+    display: inline;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.bottoni{
+    text-align: right;
+}
+
+form.activebg .bottoni, div.activebg form .bottoni{
+	margin: 15px 15px 0;
+}
+
+.bottoni input[type="reset"], .annulla input[type="reset"]{
+	background-color: transparent;
+	color: #002e5f;
+    width: auto;
+	border: none;
+	text-decoration: underline;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.bottoni input[type="submit"]{
+	background-color: #002e5f;
+	color: #fff;
+    width: auto;
+	border: none;
+	text-transform: uppercase;
+	padding: 2px 40px;
+}
+
+.bottoni a{
+	background-color: inherit;
+	color: #002e5f;
+    width: auto;
+	border: none;
+	text-decoration: underline;
+	font-weight: bold; 
+	text-transform: capitalize;
+}
+
+.bottoni a.annulla {
+	font-size: 1em;
+	padding: 6px 12px;
+}
+
+/* Ninni 26/06 - stile per filtri in corpo pagina */
+
+div.activebg div.filtro_supporto div.filtro_in_pagina h4 a.accordion-toggle{
+	font-family: 'Open Sans semibold', sans-serif;
+	font-size: 0.95em !important;
+	font-weight: normal;
+	color:#002e5f;
+}
+
+div.activebg div.filtro_supporto div.filtro_in_pagina h4 a.accordion-toggle.collapsed{
+background:url('../img/icona-filtri_freccia-su.png')no-repeat right top;
+padding:0 20px 0 0;
+}
+
+div.activebg div.filtro_supporto div.filtro_in_pagina  h4 a.accordion-toggle{
+padding:0 20px 0 0;
+background:url('../img/icona-filtri_freccia-giu.png')no-repeat right top;
+text-decoration: none;
+}
+
+div.activebg div.filtro_supporto div.filtro_in_pagina div.panel-group div.panel.panel-primary {
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+}
+div.activebg div.filtro_supporto div.filtro_in_pagina div {
+    background-color: #e4e4e4;
+    width: 100%;
+	float: left;
+}
+div.activebg div.filtro_supporto div.filtro_in_pagina div.panel-heading {
+    margin-top:-35px;
+}
+div.activebg div.filtro_supporto div.filtro_in_pagina div.panel-body {
+    background-color: #f2f2f2;
+}
+div.activebg div.filtro_supporto form#filterForm{
+   padding-top: 0;
+}
+div.activebg div.filtro_supporto div.filtro_in_pagina ul li{
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+div.activebg div.filtro_supporto div.filtro_in_pagina ul li label{
+	margin-left: 5px;
+	font-weight: normal;
+}
+div.activebg div.filtro_supporto div.filtro_in_pagina ul li input{
+	float:left;
+}
+
+/* Ninni 26/06 - fine stile per filtri in corpo pagina */
+
+/* modelli applicativi - Sabrina - 26.09 */
+form .bottoni input[type="button"]{
+	background-color: #002e5f;
+	color: #fff;
+    width: auto;
+	border: none;
+	text-transform: uppercase;
+	padding: 2px 40px;
+}
+/* fine modelli applicativi - Sabrina - 26.09 */
+
+/* inizio filtri in pagina per canale sicurezza - Futura - 22.10*/
+form#filterForm{
+background-color: #f2f2f2;
+    color: #333;	
+	margin-bottom: 30px;
+	padding: 25px 0 15px;
+}
+
+.filtro_in_pagina label[for=dataStart], .filtro_in_pagina label[for=dataEnd]  {
+    display: inline-block;
+}
+
+form#filterForm .bottoni{
+	margin: 15px 15px 0;
+}
+
+.bottoni button[type="submit"]{
+	background-color: #002e5f;
+	color: #fff;
+    width: auto;
+	border: none;
+	text-transform: uppercase;
+	padding: 2px 40px;
+}
+
+.bottoni button[type="button"]{
+	background-color: transparent;
+	color: #002e5f;
+    width: auto;
+	border: none;
+	text-decoration: underline;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+/* fine filtri in pagina per canale sicurezza - 22.10*/
+/* Specifiche pagina di login */
+.login main h2{
+	display: none;
+}
+
+.login main form fieldset{
+    margin-bottom: 0;
+    padding: 0 !important;
+}
+
+.login main form fieldset legend{
+	background-color: transparent;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.4em;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
+.login main form fieldset p{
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.login main form fieldset p input{
+	width: 50%;
+	display: inline !important;
+}
+
+.login main form fieldset p.bottoni {
+	margin-bottom: 20px;
+	margin-top: 40px;
+}
+
+.login main form fieldset p.bottoni input{
+	background-color: #1e6665;
+	color: #fff;
+	padding: 15px 50px;
+}
+
+@media (min-width: 480px){
+	.login main form fieldset p.bottoni input{
+		padding: 15px 100px;
+	}
+}
+
+.login main form fieldset p.linkservizio a{
+	background-color: inherit;
+	color: #000;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+/* inizio gestione messaggi errori e successo */
+div.error_message {
+    padding: 15px 40px 0 20px;
+    margin-bottom: 20px;
+    border: 1px solid #C8281A;
+}
+div.success_message {
+    padding: 15px 40px 0 20px;
+    margin-bottom: 20px;
+    border: 1px solid #0E821A;
+}
+div.success_message  strong{
+    color:#0E821A;
+}
+/* fine gestione messaggi errori e successo */
+
+/* gestione pulsanti disabilitati */
+input:disabled, input[type="submit"]:disabled {
+    background-color: #d2d2d2;
+    color: #002e5f;
+    cursor: default;
+}
+
+input.disabled {
+    background-color: #d2d2d2;
+    color: #002e5f;
+    cursor: default;
+}
+/*fine gestione pulsanti disabilitati */
+
+
+/* ACCEDI AI SERVIZI ONLINE - SPID added 05.04.2016 */
+.login .spid-row{
+	text-align:center;
+	margin-top:50px;
+}
+/* FINE ACCEDI AI SERVIZI ONLINE - SPID added 05.04.2016  */
+
+

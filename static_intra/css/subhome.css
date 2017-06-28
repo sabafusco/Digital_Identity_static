@@ -1,0 +1,328 @@
+.subhome main h3 {
+  background-image: url(../img/icona_titoli.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-color: inherit;
+  color: #002e5f;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 0 0 8px;
+  margin:5px 0 8px 0;
+  font-size: 1.25em;
+  }
+
+  .subhome main  a, .subhome main  a {
+  background-color: inherit;
+  color: #002e5f;
+  
+  }
+
+.subhome h4
+{
+  margin: 3px 0 5px 0;
+  color: #002e5f;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.subhome .ppiano h4{
+  font-size: 1.23em;
+}
+
+.subhome .tpiano h4{
+  padding-bottom: 25px;
+  font-size: 1em;
+}
+
+.subhome .row .triplets h3, .subhome .row.multimedia h3, .subhome .row .comunicati h3, .subhome .row .contatti h3
+{
+	margin: 3px 0 5px 0;
+	color: #002e5f;
+	/*font-size: 1.2em;*/
+	font-weight: normal;
+	text-transform: none;
+	background-image: none;
+	text-transform:uppercase;
+}
+
+
+.row .triplets .etichetta, .row .bgtriplets .etichetta, .row .comunicati p.etichetta
+{
+background-color:inherit;
+  color: #002e5f;
+float:none;
+padding:0;
+min-height:inherit;
+}
+
+.row .triplets
+{
+margin: 30px 0 0;
+}
+
+.row .triplets h4{
+  font-size: 1em;
+}
+
+.row .triplets .etichetta
+{
+font-size:0.8em;
+}
+
+.row .ppiano p.etichetta, .row .tpiano p.etichetta
+{
+float:none;
+background-color:inherit;
+color:inherit;
+padding:8px 10px 8px 0;
+margin:0;
+min-height:inherit;
+font-size:0.8em;
+}
+
+.row .tpiano p.etichetta
+{
+float:none;
+background-color:inherit;
+color:inherit;
+padding:0px 10px 0px 0;
+margin:0;
+min-height:inherit;
+font-size:0.8em;
+}
+
+.row .bgtriplets .etichetta
+{
+padding:8px 10px 0 0;
+margin:0;
+font-size:0.8em;
+}
+
+/*.boxavvisiscadenze .etichetta  
+{
+  float: left;
+  font-size: 0.8em;
+  line-height: 0.9em;
+  margin-right: 12px;
+  }*/
+  
+/* Box Primo Piano*/
+
+.ppiano
+{
+padding-left:0;
+padding-right:0;
+}
+
+.tpiano
+{
+padding-right:0;
+margin-bottom:20px;
+}
+
+.first_block
+{
+margin-bottom:40px;
+}
+
+@media (max-width: 767px)
+{
+
+	.tpiano
+	{
+
+	margin-left:0;
+	}
+
+	.tpiano div.col-xs-12
+	{
+
+	padding-left:0;
+	margin-left:-15px;
+	}
+
+}
+
+/* Fine Box Primo Piano*/  
+  
+ /* Box Avvisi e scadenze */
+ 
+
+.subhome main .boxavvisiscadenze h3{
+	margin-left: 15px;
+	margin-bottom: 20px;
+}
+
+.subhome main .boxavvisiscadenze div div{
+	padding-bottom: 30px;
+}
+
+.subhome main .boxavvisiscadenze div div h4{
+	font-size: 1.25em;
+	text-transform: uppercase;
+	margin-left: 100px;
+}
+
+.subhome main .boxavvisiscadenze div div p{
+	margin-left: 100px;
+}
+
+.subhome main .boxavvisiscadenze div div .etichetta{
+    background-color: #Eaedf2;
+    color: #002e5f;
+	margin-left: 0;
+}
+
+ /* Fine Box Avvisi e scadenze */
+ 
+ /* Sala stampa */
+ 
+ .subhome .row .sala_stampa h4
+ {
+ text-transform:uppercase;
+ margin:5px 0 10px 0;
+ }
+ 
+ .subhome .row .sala_stampa p img, .subhome .ppiano p img
+  {
+  width:100%;
+  }
+  
+ .subhome main div ul.in_breve
+{
+margin-left:0;
+padding:0;
+} 
+  
+.subhome main div ul.in_breve li
+{
+background-image: url(../img/icona_freccia-azzurra.png);
+  background-repeat: no-repeat;
+  background-position: left 0.4em;
+  background-color: #fff;
+  color: #333;
+  margin: 0 0 5px;
+  padding: 0 0 0 10px;
+  text-align: left;
+  list-style:none;
+}
+
+.subhome main div ul.in_breve li a
+{
+color: #333;
+}
+
+.subhome .row .comunicati{
+	padding-left:0;
+	margin: 40px 0 20px;
+}
+
+.subhome .row .contatti{
+	padding-left:20px;
+	margin: 40px 0 20px
+}
+
+.subhome .row .comunicati div
+{
+padding-left:0;
+}
+
+.subhome .row .comunicati div p
+{
+padding-bottom:15px;
+}
+
+.subhome .row .comunicati div p.etichetta
+{
+padding-bottom:4px;
+margin:0;
+}
+
+/*
+.subhome ul.contatti
+{
+
+margin-left:15px;
+}
+
+.subhome ul.contatti li
+{
+list-style:none;
+}
+
+.subhome ul.contatti li.fisso
+{
+background-image:url('../img/tel_fisso.png');
+background-repeat:no-repeat;
+background-position:10px left;
+padding:10px 10px 15px 50px;
+}
+
+.subhome ul.contatti li.stampante
+{
+background-image:url('../img/fax.png');
+background-repeat:no-repeat;
+background-position:10px left;
+padding:10px 10px 15px 50px;
+}
+
+.subhome ul.contatti li.mail
+{
+background-image:url('../img/mail.png');
+background-repeat:no-repeat;
+background-position:10px left;
+padding:10px 10px 15px 50px;
+}
+
+.subhome ul.contatti li.rss
+{
+background-image:url('../img/rss_39x39.png');
+background-repeat:no-repeat;
+background-position:10px left;
+padding:10px 10px 15px 50px;
+}
+
+.subhome ul.contatti li.mail_alert
+{
+background-image:url('../img/mail_alert.png');
+background-repeat:no-repeat;
+background-position:10px left;
+padding:10px 10px 15px 50px;
+}
+
+.subhome ul.contatti li.newsletter
+{
+background-image:url('../img/newsletter.png');
+background-repeat:no-repeat;
+background-position:10px left;
+padding:10px 10px 15px 50px;
+}
+
+.subhome ul.contatti li.indirizzo
+{
+background-image:url('../img/indirizzo.png');
+background-repeat:no-repeat;
+background-position:10px left;
+padding:10px 10px 15px 50px;
+}
+*/
+
+   
+ /* Fine sala stampa */
+ 
+ .subhome .ppiano_title {
+ 	color: #002e5f;
+ 	background-color: inherit;
+ 	background-image: none;
+ 	font-family: inherit;
+    font-weight: 500;
+    font-size: 1.65em;
+    margin-bottom: 30px;
+    margin-top: 0;
+    line-height: 1.1;
+    text-transform: inherit;
+ }
+
+ .subhome .ppiano_title:FIRST-LETTER {
+	text-transform: uppercase;
+}

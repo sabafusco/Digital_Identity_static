@@ -1,0 +1,389 @@
+/* 
+#002e5f -> blu (font, sfondi, bottoni, decorazioni, etc)
+#000000 -> nero (font main) refuso?
+#333333 -> grigio scuro (font base)
+#Eaedf2 -> grigio (sfondi strutture e navigazione)
+#BCBCBC -> grigio chiaro (bordi input e bottoni)
+#707070 -> grigio chiaro (placeholder)
+#D7D7D7 -> grigio chiaro (bordi menu responsive)
+
+#1E6665 -> verde petrolio (colore a contrasto: bottone servizi e altre funzionalit� dinamiche)
+
+css per newsletter portale
+*/
+
+
+/* newsletter */
+
+.newsletter_portale main ul
+{
+padding-left:0;
+}
+
+.newsletter_portale p.data_simple
+{
+font-size:0.8em;
+padding:0 0 5px 0;
+margin:0;
+}
+
+.newsletter_portale main h3
+{
+font-family: "Open Sans semibold",sans-serif;
+background-image: url(../img/icona_titoli.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-color: inherit;
+    color: #002e5f;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 0 0 8px;
+    margin: 5px 0 8px 0;
+    font-size: 1.25em;
+}
+
+.newsletter_portale main h3 a
+{
+background-color: inherit;
+color: #002e5f;
+}
+
+.newsletter_portale main ul li
+{
+list-style:none;
+padding:0;
+margin:0 0 25px 0;
+/*float:left; */ /* fix 24.11 */
+clear:left;
+}
+
+
+@media (min-width: 480px) {
+	.newsletter_portale main ul li img
+	{
+	display:block;
+	float:left;
+	padding:0 33px 20px 0;
+	width: 33%;
+	}
+}
+
+.newsletter_portale p.data
+
+{
+background-color: #Eaedf2;
+color: #002e5f;
+}
+
+
+.newsletter_portale .row
+{
+margin-bottom:40px;
+}
+
+.newsletter_portale .row.numero_newsletter
+{
+background-color:#002e5f;
+}
+
+.newsletter_portale .row.numero_newsletter p
+{
+text-align:right;
+color:#fff;
+padding-top:6px;
+margin-bottom:6px !important;
+padding-right:10px;
+}
+
+.newsletter_portale .row.center p
+{
+text-align:center;
+margin-bottom:20px;
+padding:6px 100px;
+}
+
+.newsletter_portale .row.center p.logo
+{
+margin-bottom:0;
+}
+
+.newsletter_portale .row .banner
+{
+width:100%;
+}
+
+.newsletter_portale  .sfondo_blocco
+{
+background-color:#eaedf2;
+}
+
+.newsletter_portale  .sfondo_blocco img
+{
+width:100%;
+}
+
+.newsletter_portale .sfondo_blocco h3
+{
+padding:10px;
+margin:0 !important;
+}
+
+.newsletter_portale .sfondo_blocco p
+{
+padding:0 10px 10px 10px;
+}
+
+
+
+.newsletter_portale .boxsfondolink.sfondo {
+    
+    color: #333;
+    padding: 20px 30px !important;
+	background-color:#Eaedf2;
+	}
+   
+.newsletter_portale .boxsfondolink:first-child
+{
+padding:0 20px 0 0;
+}  
+
+ .newsletter_portale .boxsfondolink:last-child
+ {
+ padding:0 0 0 20px;
+ }
+ 
+ @media (max-width:991px)
+ {
+	.newsletter_portale .boxsfondolink:first-child
+	{
+	padding-right:0;
+	}
+	
+	.newsletter_portale .boxsfondolink:last-child
+	{
+	padding-left:0;
+	}
+ }
+   
+.newsletter_portale .boxsfondolink div
+{
+background-color: #Eaedf2;
+padding:20px 30px;
+}  
+
+.newsletter_portale .boxsfondolink.nopadding div
+{
+background-color:inherit;
+padding:20px 0 0 0;
+}
+
+.newsletter_portale .boxsfondolink.nopadding div ul
+{
+padding-top:5px !important;
+
+}
+
+.newsletter_portale .boxsfondolink.doublebanner p
+{
+background:inherit;
+padding:0 0 20px 0;
+}
+
+.newsletter_portale .row.negative_bottom
+{
+margin-bottom:0;
+}
+	
+.newsletter_portale .triplets
+{
+margin-right:0 !important;
+}
+
+.newsletter_portale .triplets .col-md-4
+{
+margin-bottom:0 !important;
+}	
+
+.newsletter_portale .row.negative
+{
+margin-left:0 !important;
+margin-right:0 !important;
+}
+	
+.newsletter_portale .boxsfondolink  h4
+{
+background-color: inherit;
+    color: #002e5f;
+	font-family: 'Open Sans semibold', sans-serif;
+    font-size: 1.15em;
+    text-transform: uppercase;
+   font-weight: normal;
+   margin: 3px 0 5px 0 !important;
+}
+
+.newsletter_portale .doppioblocco
+{
+padding-left:0;
+}
+
+.newsletter_portale .doppioblocco:first-child
+{
+padding-right:30px;
+}
+
+@media (max-width: 991px)
+{
+.newsletter_portale .doppioblocco:first-child
+{
+	padding-right:15px;
+}
+}
+
+.newsletter_portale .triplets  h4, .newsletter_portale .doppioblocco h4
+{
+margin: 3px 0 5px 0 !important;
+font-size:1.15em;
+}	
+
+.newsletter_portale   h4 a, .newsletter_portale  h4 a 
+{
+    color: #002e5f !important;
+}	
+
+.newsletter_portale .boxsfondolink ul
+{
+padding-top:15px;
+}
+
+.newsletter_portale .boxsfondolink ul li
+{
+background: url(../img/icona_freccia-azzurra.png) no-repeat left 0.4em;
+    list-style: none;
+    font-family: 'Open Sans semibold', sans-serif !important;
+    font-weight: normal;
+    padding-left: 8px;
+    padding-bottom: 10px;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+margin-bottom:0;	
+}
+
+.newsletter_portale .boxsfondolink ul li a
+{
+
+background-color: inherit;
+color: #000;
+text-decoration:underline;
+}	
+
+
+.newsletter_portale .boxdati div, .newsletter_portale .doppioblocco div  {
+    display: block;
+    margin: 0;
+    padding: 10px 0;
+	}
+	
+	
+	
+
+@media (min-width: 768px) {
+	.newsletter_portale .boxdati div
+	{
+	float:left;
+	}
+}
+
+@media (min-width: 768px) {
+	.newsletter_portale .boxdati.singolo div
+	{
+	float:none;
+	}
+	
+	.newsletter_portale .boxdati.singola_news div
+	{
+	float:none;
+	}
+	
+}
+
+
+
+@media (min-width: 768px) {
+	.newsletter_portale .doppioblocco div
+	{
+	float:left;
+	width:100%;
+	}
+}	
+
+@media (min-width: 480px)
+{
+.newsletter_portale .boxdati div img {
+    display: block;
+    width: 51%;
+    float: left;
+    margin: 0;
+    padding: 0 10px 0 0;
+	}
+}	
+
+@media (min-width: 480px)
+{
+.newsletter_portale .boxdati.singolo div img {
+    display: block;
+    width: 20%;
+    float: left;
+    margin: 0;
+    padding: 0 10px 0 0;
+	}
+}	
+
+@media (min-width: 480px)
+{
+.newsletter_portale .boxdati.singola_news div img {
+    display: block;
+    width: 33%;
+    float: left;
+    margin: 0;
+    padding: 0 10px 0 0;
+	}
+}	
+
+@media (min-width: 480px)
+{
+.newsletter_portale .doppioblocco div img {
+    display: block;
+    width: 40%;
+    float: left;
+    margin: 0;
+    padding: 0 10px 0 0;
+	}
+}	
+
+.newsletter_portale .boxdati.singolo, .newsletter_portale .boxdati.singola_news 
+{
+padding-left:0 !important;
+}
+
+.newsletter_portale .boxdati.singolo h4 
+{
+text-transform:uppercase;
+margin-top:10px !important;
+}
+
+.newsletter_portale .boxdati.singola_news h4 
+{
+margin-top:5px !important;
+}
+
+.newsletter_portale p.iscrizione_cancellazione a, .newsletter_portale p.iscrizione_cancellazione a:hover
+{
+color:#002e5f;
+}
+
+/* fine newsletter */
+
+
+
+
+

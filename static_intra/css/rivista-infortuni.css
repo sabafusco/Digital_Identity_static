@@ -1,0 +1,319 @@
+/* 
+#002D62 -> blu (font, sfondi, bottoni, decorazioni, etc)
+#000000 -> nero (font main) refuso?
+#333333 -> grigio scuro (font base)
+#F2F2F2 -> grigio (sfondi strutture e navigazione)
+#BCBCBC -> grigio chiaro (bordi input e bottoni)
+#707070 -> grigio chiaro (placeholder)
+#D7D7D7 -> grigio chiaro (bordi menu responsive)
+
+#1E6665 -> verde petrolio (colore a contrasto: bottone servizi e altre funzionalita' dinamiche)
+
+*/
+
+/* css per rivista infortuni */
+
+.foglia main img.contimg { /* MKO - 07_11_2016 - regola ripristinata per risolvere un problema con le dimensioni delle immagini. Se ci dovessero essere conflitti con altre regole, questa va comunque mantenuta attiva */
+    width: auto;
+    /*max-width: 20%;*/ /*Mko - 08_02_2017 - per uniformità ho ripristinato i valori presenti nelle altre immagini di tipo "lista-archivio"*/
+    max-height: 190px;
+}
+
+@media (min-width: 992px){
+    .foglia .row .box:nth-child(even){
+        padding-left: 0;
+    }
+}
+
+.row .triplets .etichetta, .row .bgtriplets .etichetta, .row .comunicati p.etichetta {
+    background-color: inherit;
+    float: none;
+    color: inherit;
+    padding: 0;
+    min-height: inherit;
+}
+
+.foglia h4 {
+    margin: 0 0 5px 0;
+    color: #002d62;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: none;
+}
+
+.triplets p span.anteprima {
+    margin-top: -20px;
+    display: block;
+    width: auto;
+    max-width: 50%;
+    background-color: #f2f2f2;
+    text-align: center;
+    color: #184c87;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.triplets p img {
+    width: auto;
+    max-width: 50%;
+}
+
+#multimediacarousel .item img {
+    width: auto;
+    max-width: 50%;
+}
+
+.lista_archivio main ul li ul li {
+    list-style-image: url(../img/icona_lista.png);
+    margin: 0;
+    clear: inherit;
+    list-style-position: inside;
+}
+
+ul.contatti{
+    padding:20px 0;
+    list-style:none;
+    margin:0;
+}
+ul.contatti li {
+    display:block;
+    margin:20px 20px 0 0;
+    min-height:50px;
+}
+
+@media (min-width: 480px){
+    body.lista_archivio ul li img { /* MKO 07_11_2016 - questa regola è stata ripristinata per gestire correttamente le dimensioni delle immagini nelle liste. Se ci sono problemi in altri punti della struttura, l'eventuale bug va gestito lasciando attiva questa regola */
+        width: auto;
+        max-width: 50%;
+        max-height: 190px;
+    }
+    ul.contatti li{
+        display:inline;
+        margin:20px 20px 20px 0;
+    }
+}
+
+
+.lista_archivio ul.alfabeto {
+    background-color:#012c5f;
+    padding:0;
+    float:left;
+    width:100%;
+}
+
+.lista_archivio ul.alfabeto li {
+    display:inline;
+    padding:6px 9px;
+    float:left;
+    margin-bottom: 0;
+    clear: inherit;
+}
+
+.lista_archivio ul.alfabeto li a {
+    color:#fff;
+    text-decoration:none;
+}
+
+.lista_archivio ul.alfabeto li.selected {
+    background-color:#eaedf2;
+}
+
+.lista_archivio ul.alfabeto li.selected a {
+    color:#012c5f;
+}
+
+.lista_autori h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+ul.lista_articoli {
+    list-style-image: none;
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+.lista_archivio ul.lista_articoli li {
+    margin-bottom: 5px;
+}
+ul.lista_articoli p.articolo, ul.lista_articoli p.anno_fascicolo  {
+    margin: 0;
+}
+
+.foglia ul.glossario_item
+{
+    padding:0;
+    margin:0;
+    padding-bottom: 10px;
+}
+
+.foglia ul.glossario_item li
+{
+    border-bottom:1px solid #002e5f;
+    list-style:none;
+    margin-bottom: 40px;
+    padding-bottom:10px;
+    color: #002e5f;
+}
+
+.foglia ul.glossario_item li h3
+{
+    color: #002e5f;
+}
+.foglia ul.glossario_item li p
+{
+    color:#000;
+}
+
+.foglia h3.faq
+{
+    display:block;
+}
+
+.foglia p.link_faq
+{
+    margin-top:10px;
+}
+
+.pls_open {
+    background-image:url(../img/icona_accordion_open.png);
+    background-repeat:no-repeat;
+    background-position:center right;
+    width:35px;
+    height:35px;
+    float:right;
+    margin:-8px 0 0 0;
+
+}
+
+.pls_close
+{
+    background-image:url(../img/icona_accordion_close.png);
+    background-repeat:no-repeat;
+    background-position:center right;
+    width:35px;
+    height:35px;
+    float:right;
+    margin:-8px 0 0 0;
+}
+
+.lista_archivio .tab-content li {
+    padding-bottom: 10px;
+}
+
+p.note {
+    margin-top: 40px;
+    margin-bottom: 0px;
+    font-size: 0.8em;
+}
+
+ul.note {
+    list-style-image: none;
+    list-style-type: none;
+    font-size: 0.8em;
+}
+main .content h3 {
+    margin-bottom: 10px;
+}
+main .content div.row h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    clear: both;
+}
+p.autore {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+.lista_archivio .tab-content li p.etichetta.categoria-scaffale {
+    text-transform: uppercase;
+    padding: 5px;
+    margin:0px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    background-color: #F2f2f2;
+    color: #002e5f;
+    font-size: 0.7em;
+    font-weight: bold;
+    min-height: 18px;
+    min-width: inherit;
+
+}
+
+
+/*Elenco "SPECIALE" */
+
+.foglia ul.glossario_item li .special_section {
+    background-color: #Eaedf2;
+    color: #333;
+    padding: 15px 15px 30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.foglia ul.glossario_item li .special_section h5 {
+    background-color: inherit;
+    color: #333;
+    font-family: 'Open Sans bold', sans-serif;
+    font-size: 1.1em;
+    text-transform: none;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.foglia ul.glossario_item li .special_section h6, .foglia ul.glossario_item li .special_section h6 a {
+    background-color: inherit;
+    color: #002e5f;
+    font-family: 'Open Sans bold', sans-serif;
+    font-size: 1em;
+    text-transform: none;
+    margin-top: 5px;
+    margin-bottom: 0;
+
+}
+
+.foglia ul.glossario_item li h5 {
+    color: #002e5f;
+    font-family: "Open Sans semibold", Sans-serif;
+    font-size: 1em;
+    margin-bottom: -10px;
+    margin-top: 50px;
+}
+
+.item.link_faq .item {
+    padding-bottom: 50px;
+}
+
+.glossario_item .item.link_faq .item {
+    padding-bottom: 10px;
+}
+
+a.riviste, a.ri_sottotitolo {
+    display: inline-block;
+    width: auto;
+    color: #002e5f;
+}
+a.ri_sottotitolo {
+    font-family: "Open Sans semibold", sans-serif;
+}
+
+a.ri_articolo {
+    font-size: .8em;
+    font-family: "Open Sans semibold", sans-serif;
+    margin-right: 10px;
+    display: block;
+    color: #002e5f;
+;
+}
+
+a.summary_link {
+    display: block;
+    /*width: 60px;*/
+    font-size: .8em;
+    font-weight: bold;
+    margin-top: 5px;
+    /* margin-bottom: 30px; */
+    color: #002e5f;
+    /* float: right; */
+}
+
+/* fine rivista infortuni */

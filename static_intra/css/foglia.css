@@ -1,0 +1,465 @@
+.foglia main img.contimg{
+	display: block;
+	width: 100%;
+	margin: 20px 0;
+}
+
+.foglia  main ul.contatti {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+@media (min-width: 480px){	
+	.foglia main img.contimg{
+		float: right;
+		width: auto;
+		margin: 0 0 30px 30px;
+		max-width: 190px;
+	}
+}
+
+/* Navigazione 5* e 6* livello */
+
+.foglia .submenu{
+	margin: 0 -18px 30px 0;
+	padding: 0;
+	list-style: none;
+}
+
+.foglia .submenu > li{
+	font-family: 'Open Sans semibold', sans-serif;
+	list-style: none;
+	padding-left: 0;
+}
+
+.foglia .submenu > li span{
+	display: table !important;
+	min-height: 50px;
+	width: 100%;
+}
+
+.foglia .submenu > li  span > a{
+    background-color: #002e5f;
+    color: #fff;
+    display: table-cell;
+    vertical-align: middle;
+	padding: 10px ;
+	text-decoration: none;
+	cursor: pointer;
+	border: 1px solid #Eaedf2;
+}
+
+@media (min-width: 992px){
+	.foglia .submenu > li  span > a{
+		text-align:center;
+		height: 80px;
+		padding: 2px;
+		border: 0;
+	}
+}
+
+.foglia .submenu > li.open  span > a{
+    background-color: #Eaedf2;
+    color: #002e5f;
+}
+
+.foglia .submenu li ul{
+    display: none;
+}
+
+.foglia .submenu li.open ul{
+    background-color: #Eaedf2;
+    color: #333;
+	margin: 0;
+	padding: 5px 10px 10px;
+    display: block;
+}
+
+.foglia .submenu li ul li{
+	font-family: 'Open Sans semibold', sans-serif;
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background: rgba(0, 0, 0, 0) url("../img/icona_freccia-azzurra.png") no-repeat scroll left 0.4em;
+    list-style: outside none none;
+    padding-bottom: 10px;
+    padding-left: 8px;
+	font-size: 0.85em;
+}
+
+/* Box servizi, allegati, link interni e link esterni */
+
+.foglia .box{
+	margin-bottom: 45px;
+}
+
+.foglia .row .box{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+@media (min-width: 992px){
+	.foglia .row > .box:nth-child(even){
+		padding-left: 15px;
+	}
+
+	.foglia .row > .box:nth-child(odd){
+		padding-right: 15px;
+	}
+}
+
+.foglia .box_sfondo{
+    background-color: #Eaedf2;
+    color: #333;
+	padding: 20px 20px 20px 70px;
+}
+
+.foglia .box_sfondo ul li a {
+	font-family: 'Open Sans semibold', sans-serif;
+	background: rgba(0, 0, 0, 0) url("../img/icona_freccia-azzurra.png") no-repeat scroll left 0.4em;
+	color: #333;
+	margin: 0 0 10px;
+	padding: 0 0 0 8px;
+	list-style: none;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.foglia .box h3{
+	margin: 0;
+}
+
+.foglia .box ul.servizi, .foglia .box ul.allegati, .foglia .box ul.link, .foglia .box ul.link_ext, .foglia .box ul.formazione {
+	margin: 15px 0 0;
+	padding: 0 0 0 70px;
+	list-style: none;
+}
+
+.foglia .allegati{
+	background-image: url("../img/icona_allegati.png");
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+.foglia .servizi{
+	background-image: url("../img/icona_servizi.png");
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+.foglia .link{
+	background-image: url("../img/icona_link.png");
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+.foglia .link_ext {
+	background-image: url("../img/icona_link_ext.png");
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+.foglia .box ul{
+	margin: 15px 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+.foglia .box ul li{
+	margin: 0;
+	padding: 8px 0;
+	list-style: none;
+}
+
+.foglia .box_sfondo ul li{
+	font-family: 'Open Sans semibold', sans-serif;
+	color: #333;
+	margin: 0 0 10px;
+	padding: 0 0 0 8px;
+	list-style: none;
+
+}
+
+.foglia .box ul li a{
+	font-family: 'Open Sans semibold', sans-serif;
+	background: rgba(0, 0, 0, 0) url("../img/icona_freccia-azzurra.png") no-repeat scroll left 0.4em;
+	color: #333;
+	margin: 0 0 10px;
+	padding: 0 0 0 8px;
+	list-style: none;
+}
+
+/* Liste personalizzate */
+
+.upperalpha{
+	background-color: inherit;
+    color: #002e5f;
+	list-style-image: none;
+	list-style-type: upper-alpha;
+	font-weight: bold;
+}
+
+.upperalpha ul, .upperalpha ol{
+	background-color: inherit;
+    color: #333;
+	font-weight: normal;
+}
+
+/* Carosello gallery - http://sevenx.de/demo/bootstrap-carousel/inc.carousel/thumbnail-navigation.html */
+
+#gallerycarousel{
+	clear: both;
+}
+
+#gallerycarousel .content{
+	font-size: 0.9em;
+	margin: 0;
+	padding: 0;
+}
+
+#gallerycarousel .carousel-indicators {
+    float: left;
+    width: 100%;
+	position: static;
+	margin: 10px 0 10%; /* modificato */
+}
+
+#gallerycarousel .carousel-indicators li {
+    border: medium none;
+    border-radius: 0;
+    float: left;
+    height: auto !important;
+    margin: 0 2% 2% 0;
+	padding: 0;
+	width: 18.4%;
+	text-indent: initial;
+}
+
+#gallerycarousel .carousel-indicators li:nth-child(5n+5){
+    margin-right: 0;
+}
+
+#gallerycarousel .carousel-indicators a:focus img {
+    border: 2px dotted #337ab7;
+    float: left;
+}
+
+#gallerycarousel .carousel-indicators img {
+    border: 2px solid #Eaedf2;
+    float: left;
+    left: 0;
+	width: 100%;
+}
+
+#gallerycarousel .carousel-indicators .active img {
+    border: 2px solid #002e5f;
+
+}
+
+/*Fotogallery*/
+
+.ug-gallery-wrapper {
+	font-family: "Open Sans", sans-serif !important;
+}
+
+.ug-gallery-wrapper .ug-slider-wrapper {
+	background-color: #fff !important;
+}
+
+.ug-gallery-wrapper .ug-textpanel-bg {
+	opacity: 1 !important;
+	width: 900px;
+	height: 50px;
+	background-color: #002e5f !important;
+}
+
+.ug-default-button-hidepanel .ug-default-button-hidepanel-bg{
+	background-color: #002e5f !important;
+	opacity: 1 !important;
+}
+
+.ug-strip-panel {
+	background-color: #Eaedf2 !important;
+}
+
+.ug-arrow-left.ug-skin-default, .ug-arrow-right.ug-skin-default,.ug-arrow-left.ug-skin-default.ug-arrow-hover {
+	width: 15px;
+	height: 30px;
+	background-image: url('../img/icona_freccia-blu_carousel.png') !important;
+	background-position: 0px 0px !important;
+}
+
+.ug-arrow-right.ug-skin-default,
+.ug-arrow-right.ug-skin-default.ug-arrow-hover {
+	background-image: url('../img/icona_freccia-blu-reverse_carousel.png') !important;
+}
+
+.ug-arrow-left.ug-skin-default.ug-arrow-hover,.ug-arrow-right.ug-skin-default.ug-arrow-hover {
+	opacity: .5!important;
+}
+
+.ug-strip-panel .ug-strip-arrow-left.ug-skin-default .ug-strip-arrow-tip {
+	background-image: url('../img/icona_freccia-blu_reverse.png') !important;
+	background-position: center center !important;
+	background-repeat: no-repeat;
+	width: 14px !important;
+	height: 28px !important;
+	background-size: 6px !important;
+}
+
+.ug-strip-panel .ug-strip-arrow-right.ug-skin-default .ug-strip-arrow-tip {
+	background-image: url('../img/icona_freccia-blu.png') !important;
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+	width: 14px !important;
+	height: 28px !important;
+	background-size: 6px !important;
+}
+
+/* Video */
+.foglia .azuremediaplayer-small {
+	float: right;
+	margin: 0 0 20px 20px;
+}
+
+/* Funzioni Social */
+
+.foglia div.social_invia_stampa
+{
+
+width:100%;
+margin:0 0 20px 0;
+text-align:right;
+clear: both;
+}
+.foglia div.social_invia_stampa ul.social
+{
+margin:5px 10px;
+padding:0;
+display:inline;
+}
+
+.foglia div.social_invia_stampa ul.social li
+{
+display:inline;
+padding:0 5px;
+}
+
+.foglia  div.social_invia_stampa ul.invia_stampa
+{
+
+margin:5px 0;
+padding:0;
+display:inline;
+}
+
+.foglia div.social_invia_stampa ul.invia_stampa li
+{
+display:inline;
+padding:0 5px;
+}
+
+/* gestione tabelle responsive
+@media (min-width: 320px) and (max-width:767px)
+{ */
+	table
+	{
+	max-width: 100%;
+	overflow-x: auto;
+	display: block;
+	}
+/* }
+fine gestione tabelle responsive */
+
+@media (min-width: 768px) { /* Ninni 16/03 - aggiunto per gestire le tabelle della pagina chi siamo dei minisiti*/
+table.tabella_personale_struttura {
+    display: table;
+}
+}
+
+/* foglia box allegati - Anna Rosa - 06.09 */
+
+.foglia .allegati {
+	margin-bottom: 25px;
+}
+.foglia .allegati h3, .foglia .allegati>p, .foglia .allegati ul {
+	margin-left: 10%;
+}
+.foglia .box h3{
+	margin-top: 25px;
+}
+/* fine foglia box allegati - Anna Rosa - 06.09 */
+
+/* regione box link - Sabrina - 22.09 */
+.boxLink{
+	padding-left: 0px !important;
+	margin-bottom: 0px !important;
+}
+/* fine regione box link - Sabrina - 22.09 */
+
+/* foglia pagina "Privacy" - Pompea - 18.11 */
+.foglia .noLeftMenu h2 {
+	padding-left: 25px;
+}
+
+.foglia .noLeftMenu .content{
+	padding-left:25px;
+}
+/* fine pagina Privacy - Pompea - 18.11 */
+/* Foglia Gallery - descrizione video - Anna 23.12 */
+.foglia .video_resp .videoDetails {
+    float: left;
+    width: 100%;
+}
+.foglia .video_resp .videoDetails .title{
+	padding-top: 2%;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+/* Fine foglia Gallery - descrizione video - Anna 23.12 */
+/* Foglia corsi - link prenota - Anna 13.05 */
+.foglia .formazione{
+	background-image: url("../img/icon_formazione.png");
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+/* Fine foglia corsi - link prenota - Anna 13.05 */
+
+
+/* mappa del sito*/ /* Ninni 20/03 - stile per la mappa del sito */
+.mappasito{
+	padding-top:20px;
+	}
+.mappasito a:hover {
+	color:#002e5f;
+	}
+.mappasito ul{
+	padding-left:20px;
+	}
+.mappasito ul li{
+	background: url(../img/icona_freccia-azzurra.png) no-repeat left 1em;
+	list-style: none;
+	padding: 8px 0 0 10px;
+	margin: 0;
+	}
+.mappasito ul.primolivello li, .mappasito ul.secondolivello li{
+    font-weight: bold;
+}
+.mappasito ul.primolivello li {
+    font-size: 1.1em;
+}
+.mappasito ul.primolivello {
+	background-color: #Eaedf2;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+}
+.mappasito ul.terzolivello li {
+    font-weight: normal;
+}
+.mappasito ul.terzolivello, .mappasito ul.quartolivello, .mappasito ul.quintolivello, .mappasito ul.sestolivello {
+	line-height:1.2em;
+	padding-left:10px;
+}
+
+/* fine mappa del sito*/

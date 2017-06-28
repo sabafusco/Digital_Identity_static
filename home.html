@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<link rel="shortcut icon" href="static_intra/img/favicon.ico" />
+	<title>Intranet - My Home - INAIL</title> 
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="data-scopes" content="intranet"/>
+	<link rel="stylesheet" href="static_intra/css/bootstrap.css" media="screen"/>
+	<link rel="stylesheet" href="static_intra/css/foglia.css" media="screen"/>
+	<link rel="stylesheet" href="static_intra/css/custom.css" media="screen"/>
+	<link rel="stylesheet" href="static_intra/css/form.css"  media="screen">
+	<link rel="stylesheet" href="static_intra/font-awesome-4.3.0/css/font-awesome.min.css"/>
+ 	<link rel="stylesheet" href="static_intra/js/datepicker/bootstrap-datepicker3.standalone.css"/>
+	<link rel="stylesheet" href="static_intra/css/home_sezione.css" media="screen"/>
+	<link rel="stylesheet" href="static_intra/css/servizi.css" media="screen"/>
+	<link rel="stylesheet" href="static_intra/css/intranet.css" media="screen"/>
+	<link rel="stylesheet" href="static_intra/css/intranet_custom.css" media="screen"/>
+	<link rel="stylesheet" href="static_intra/css/jquery-ui.css" media="screen"/>
+	<script src="static_intra/js/modernizr.js"></script>
+	<!--[if lt IE 9]>
+		<script src="js/Respond-master/dest/respond.min.js"></script>
+  	<![endif]-->
+  	<script src="static_intra/js/jquery-1.11.1.js"></script>
+  	<script src="static_intra/js/jquery-ui.min.js"></script>
+	<script src="static_intra/js/bootstrap.min.js"></script>
+	<script src="static_intra/js/datepicker/bootstrap-datepicker.js" charset="UTF-8"></script>
+	<script src="static_intra/js/datepicker/bootstrap-datepicker.it.min.js" charset="UTF-8"></script>
+	<script src="static_intra/vendor/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+	<script src="static_intra/js/main.js"></script>
+       <link rel="stylesheet" type="text/css" href="static_intra/css/print.css" media="print" />
+       <link rel="stylesheet" type="text/css" href="static_intra/css/print_intranet.css" media="print" />
+	</head>
+	<body class="home home_sezione intranet">
+		<div class="container">
+			<header>
+		<h1 class="nocrawl">INAIL - Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro</h1>
+		<a href='/cs/internet/home.html' title="torna alla homepage INAIL">
+			<img src="static_intra/img/LogoInail.svg" alt="INAIL - Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro" class="img-responsive">
+		</a>
+	      	<h2 id="navinterna" class="hidden">Menu di navigazione interna alla pagina</h2>
+			<ul class="hidden">
+				<li><a accesskey="1" href="#contenutoprincipale"
+					title="vai al contenuto di questa pagina">Contenuto della pagina</a>
+					(accesskey: 1)</li>
+				<li><a accesskey="r" href="#testoricerca"
+					title="vai alla ricerca nel sito">Ricerca</a> (accesskey: r)</li>
+				<li><a accesskey="2" href="#navigazioneprincipale"
+					title="vai al men&amp;ugrave; di navigazione del portale">Navigazione
+						del portale</a> (accesskey: 2)</li>
+				<li><a accesskey="3" href="#navigazioneutente"
+					title="vai al men&amp;ugrave; di navigazione per tipologia di utenza">Navigazione
+						per tipologia di utenza</a> (accesskey: 3)</li>
+				<li><a accesskey="4" href="#correlati"
+					title="vai agli argomenti correlati al contenuto di pagina">Argomenti
+						correlati</a> (accesskey: 4)</li>
+				<li><a accesskey="5" href="#navigazionealternativa"
+					title="vai alla navigazione di accesso alternativo ai contenuti di portale">Navigazione
+						alternativa</a> (accesskey: 5)</li>
+				<li><a accesskey="6" href="#menuservizio"
+					title="vai ai servizi e informazioni">Servizi e informazioni</a>
+					(accesskey: 6)</li>
+				<li><a accesskey="7" href="#menusocial"
+					title="INAIL nei Social Network">INAIL nei Social Network</a>
+					(accesskey: 7)</li>
+				<li><a accesskey="l" href="#menulingua" title="Language version">Language
+						version</a> (accesskey: l)</li>
+			</ul>
+	<hr class="hidden">
+					<h2 class="sr-only">Menu delle pagine di ricerca</h2>
+							<ul id="menuNavigazioneRicerca" class="sr-only">
+							<li>
+								<a accesskey='p' href="https://www.inail.it/intracs/intranet/informazioni/contatti/cerca-persone-fp.html" title="vai al cerca persone" >Cerca persone</a>
+								(accesskey: p)
+							</li>
+							<li>
+								<a  accesskey='g' href="https://www.inail.it/intracs/intranet/informazioni/contatti/cerca-strutture-fp.html" title="vai al cerca strutture" >Cerca strutture</a>
+								(accesskey: g)
+							</li>
+						</ul>
+	<hr class="hidden">
+	
+	<div id="header_internet"></div>    
+
+	<div class="row" id="menusecondario">
+		<nav class="navbar navbar-utente col-xs-12 col-sm-3 col-md-4">
+				<div class="utente-loggato">
+					<a href="/intracs/intranet/gestione-profilo.html" title="Vai al profilo dell'utente">
+						<img class="visible-md visible-lg" alt="Immagine del profilo dell'utente" src="static_intra/img/anonimo.jpg">
+						<span class="lync available">utente online</span>
+						<span class="utente-loggato-nome">Yeus132 </span>
+						<span class="utente-loggato-ruolo hidden">dipendente</span>
+					</a>
+				</div>
+		</nav>
+		<nav class="navbar col-xs-12 col-sm-7 col-md-6">
+			<div class="navbar-header">
+				<p class="navbar-toggle fa fa-2x fa-chevron-circle-down visible-xs pull-left" data-toggle="collapse" data-target="#menusecondarioelenco">
+					<span class="sr-only">Menu</span>
+				</p>
+			</div>
+			<div class="collapse navbar-collapse " id="menusecondarioelenco">
+    <ul class="nav navbar-nav">
+			<li id="menuIntranet_intranet" />			   	
+	</ul>
+			</div>
+		</nav>
+		<nav class="navbar pull-right">
+				<div class="notifiche-utente">
+					<a class="strumenti-profilo" title="Vai alla sezione Cerca Contatti" href="javascript:void(0)" data-toggle="collapse" data-target="#menucercautente">
+						<span class="fa-stack">
+							<span class="fa fa-user fa-stack-2x"></span>
+							<span class="fa-stack-lg">
+								<span class="fa fa-circle fa-stack-1x"></span>
+								<span class="fa fa-search fa-stack-lg"></span>
+							</span>
+							<span class="hidden">Cerca Contatti</span>
+						</span>
+					</a>
+				</div>
+		</nav>
+	</div>
+	<div class="row collapse" id="menucercautente">
+		<form onsubmit="encodeForm('formCercaUtenteHeader')" id="formCercaUtenteHeader" action="/intracs/intranet/informazioni/contatti/cerca-persone-fp.html"  method="get"  class="navbar-form col-xs-12 searchsite utente">
+			<h2 class="hidden">Cerca utente</h2>
+			<p class="form-group">
+				<label class="hidden" for="testoricercautente">Parametro di ricerca</label>
+				<input type="text" name="campo_unico_menu"  id="testoricercautente" class="form-control" placeholder="Cerca utente" title="inserisci il parametro da cercare su tutto il sito">
+				<button type="submit" class="btn btn-default">Cerca</button>
+			</p>
+				<input type="hidden" name="_authkey_" value='null' />
+				<input type="hidden" name="cerca" value='cercaHeader' />
+		</form>
+	</div>
+			</header>
+			<hr class="hidden"/>
+			<div id="homePage-prefs-ko" class="row" data-bind="component: 'ko-home-prefs'" >
+				<aside class="col-xs-12 col-sm-3 col-lg-3" id="spalla-sx">
+						<div id="attiHome_intranet" ></div>
+						<div class="box-preferiti collapse in" role="presentation">
+								<h2 class="box-home-intra">
+									Preferiti
+									<a href="javascript:void(0);" class="pull-right fa fa-edit ko-edit-preferiti-show" title="Modifica" data-toggle="collapse" data-target=".box-preferiti-edit, .box-preferiti">
+										<span class="sr-only  ">Personalizza</span>
+									</a>
+								</h2>	
+								<div id="preferiti-loading" class="home-box-loading" ></div> 
+								<div class="content box-home-intra">
+									<ul data-bind="foreach: preferiti">
+										<li>
+											<a title="Preferito" href="" class="ko-item-preferiti" target="_blank" ></a>
+										</li>
+									</ul>
+								</div>
+						</div>
+				<div class="box-preferiti-edit personalizza collapse" role="presentation">
+					<h2 class="box-home-intra">
+						Preferiti
+						<a data-target=".box-preferiti, .box-preferiti-edit " data-toggle="collapse" title="Salva" class="pull-right ko-edit-preferiti-save" href="javascript:void(0);">
+							Salva
+						</a>
+						<a data-target=".box-preferiti, .box-preferiti-edit" data-toggle="collapse" title="Annulla" class="pull-right ko-edit-preferiti-annulla " href="javascript:void(0);">
+							Annulla
+						</a>
+					</h2>
+					<div class="content box-home-intra">
+						<div class="ko-remove-preferiti-box">
+							<h3>Rimuovi link esistente</h3>
+							<div class="form-group" data-bind="foreach: preferitiEdit">
+								<div class="media">
+									<div class="media-body">
+										<a class="ko-edit-preferiti" target="_blank"></a>
+									</div>
+									<div class="media-right">
+										<span class="fa fa-close ko-edit-preferiti-button"><span class="hidden">Chiudi</span></span> 
+									</div>
+								</div>
+							</div>
+							<div class="sr-only" >
+								<a data-target=".box-preferiti, .box-preferiti-edit " data-toggle="collapse" title="Salva" class="pull-right ko-edit-preferiti-save" href="javascript:void(0);">
+									Salva
+								</a>
+								<a data-target=".box-preferiti, .box-preferiti-edit" data-toggle="collapse" title="Annulla" class="pull-right ko-edit-preferiti-annulla " href="javascript:void(0);">
+									Annulla
+								</a>
+							</div>
+						</div>
+						<div class="form-group">
+							<h3>Nuovo link</h3>
+							<p id="ko-edit-preferiti-check-counter" ></p>
+							<label for="descrizione-preferito">Descrizione</label>
+							<input type="text" placeholder="Descrizione" class="form-control" id="descrizione-preferito">
+							<label for="link-preferito">Indirizzo</label>
+							<input type="text" placeholder="Indirizzo" class="form-control" id="link-preferito">
+							<input type="submit" value="Aggiungi" class="btn btn-default pull-right ko-edit-preferiti-button-add">
+						</div>
+					</div>
+				</div>
+					</aside>
+					<hr class="hidden">
+					<main class="col-xs-12 col-sm-6 col-lg-6" id="contenutoprincipale">
+				<div  class="box-angolo-dipendente collapse in " style="" role="presentation" > 
+					 <h2 class="box-home-intra">
+						<a title="Gestisco la mia posizione" href="https://www.inail.it/intracs/intranet/strumenti/gestisco-la-mia-posizione.html">Gestisco la mia posizione</a>
+						<a data-target=".box-angolo-dipendente-edit, .box-angolo-dipendente" data-toggle="collapse" title="Modifica" class="pull-right fa fa-edit ko-edit-angolo-dipendente-show" href="javascript:void(0);">
+							<span class="sr-only">Personalizza</span>
+						</a>
+					</h2>
+					<div id="angolo-dipendente-loading" class="home-box-loading" ></div>
+					<div class="content box-home-intra">
+						<ul data-bind="foreach: angoloDipendente" >
+							<li>
+								<a title="Preferenza angolo dipendente" href="" class="ko-item-angolo-dipendente" target="_blank"></a>
+							</li>
+						</ul>
+					</div> 
+				</div>
+				<div class="box-angolo-dipendente-edit personalizza collapse" style="height: 0px;" role="presentation">
+					<h2 class="box-home-intra">
+						<a title="Gestisco la mia posizione" href="https://www.inail.it/intracs/intranet/strumenti/gestisco-la-mia-posizione.html">Gestisco la mia posizione</a>
+						<a data-target=".box-angolo-dipendente, .box-angolo-dipendente-edit " data-toggle="collapse" title="Salva" class="pull-right ko-edit-angolo-dipendente-save " href="javascript:void(0);">
+							Salva
+						</a>
+						<a data-target=".box-angolo-dipendente, .box-angolo-dipendente-edit " data-toggle="collapse" title="Annulla" class="pull-right ko-edit-angolo-dipendente-annulla " href="javascript:void(0);">
+							Annulla
+						</a>
+					</h2>
+					<div id="edit-angolo-dipendente-loading" class="home-box-loading" ></div>
+					<div class="content box-home-intra">
+						<div class="row">
+							<div class="col-xs-12 col-sm-7">
+								<h3>Seleziona funzionalit&agrave;</h3>
+								<p class="form-group">
+									<label for="cercaApplicativiInput" class="hidden">Cerca applicativi e strumenti</label>
+									<input type="text" title="Cerca angolo del dipendente" placeholder="Cerca applicativi e strumenti" class="cerca-applicativi-input form-control" id="cercaApplicativiInput">
+									<button class="btn btn-default ko-edit-angolo-dipendente-search-button" type="submit">Cerca</button>
+								</p>
+									<p id="ko-edit-angolo-dipendente-check-counter" class="checkbox-counter"></p>
+									<ul class="ko-edit-angolo-dipendente-disp-list" >
+										<li>
+											<label for="checkbox_ang_dip_" class="hidden ko-edit-angolo-dipendente-disp-label">Angolo dipendente</label>
+											<input type="checkbox" id="checkbox_ang_dip_" class="ko-edit-angolo-dipendente-disp" /><span class="ko-edit-angolo-dipendente-disp-val"></span>
+										</li>
+									</ul>
+							</div>
+							<div class="col-xs-12 col-sm-5">
+								<h3>Selezionati <span class="ko-edit-angolo-dipendente-selected"></span>/10</h3>
+									<div class="ko-edit-angolo-dipendente-list" > 
+											<div class="media">
+												<div class="media-body">
+													<a title="Preferenze selezionate angolo dipendente" href="" class="ko-edit-angolo-dipendente" target="_blank"></a>
+												</div>
+												<div class="media-right">
+													 <span class="fa fa-close ko-edit-angolo-dipendente-button"><span class="hidden" >Chiudi</span></span> 
+												</div>
+											</div>
+									</div>
+									<div class="sr-only">
+										<a data-target=".box-angolo-dipendente, .box-angolo-dipendente-edit " data-toggle="collapse" title="Salva" class="pull-right ko-edit-angolo-dipendente-save " href="javascript:void(0);">
+											Salva
+										</a>
+										<a data-target=".box-angolo-dipendente, .box-angolo-dipendente-edit " data-toggle="collapse" title="Annulla" class="pull-right ko-edit-angolo-dipendente-annulla " href="javascript:void(0);">
+											Annulla
+										</a>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+<div class="box-applicativi-strumenti collapse in" style="" role="presentation"> 
+	<h2 class="box-home-intra">
+		<a title="Applicazioni e Procedure" href="https://www.inail.it/intracs/intranet/strumenti/applicazioni-e-procedure.html">Applicazioni e procedure</a>
+		<a data-target=".box-applicativi-strumenti,.box-applicativi-strumenti-edit" data-toggle="collapse" title="Modifica" class="pull-right fa fa-edit ko-edit-strumenti-show" href="javascript:void(0);">
+			<span class="sr-only">Personalizza</span>
+		</a>
+	</h2>
+	<div id="applicativi-loading" class="home-box-loading" ></div> 
+	<div class="content box-home-intra ">
+		<ul data-bind="foreach: strumenti">
+			<li>
+				<a  title="Preferenze applicazioni e procedure" href="" class="ko-item-strumenti" target="_blank"></a>
+			</li>
+		</ul>
+	</div>
+</div>
+			<div class="box-applicativi-strumenti-edit personalizza collapse" role="presentation" style="height: 0px;">
+					<h2 class="box-home-intra">
+						<a title="Applicazioni e Procedure" href="https://www.inail.it/intracs/intranet/strumenti/applicazioni-e-procedure.html">Applicazioni e Procedure</a>
+						<a data-target=".box-applicativi-strumenti-edit, .box-applicativi-strumenti " data-toggle="collapse" title="Salva" class="pull-right ko-edit-strumenti-save " href="javascript:void(0);">
+							Salva
+						</a>
+						<a data-target=".box-applicativi-strumenti-edit, .box-applicativi-strumenti " data-toggle="collapse" title="Annulla" class="pull-right ko-edit-strumenti-annulla " href="javascript:void(0);">
+							Annulla
+						</a>
+					</h2>
+					<div id="edit-applicativi-loading" class="home-box-loading" ></div>
+					<div class="content box-home-intra">
+						<div class="row">
+							<div class="col-xs-12 col-sm-7">
+								<h3>Seleziona applicazioni e procedure</h3>
+								<p class="form-group">
+									<label for="cercaApplicativiInputStr" class="hidden">Cerca applicazioni e procedure</label>
+									<input type="text" title="Cerca applicazioni e procedure" placeholder="Cerca applicazioni e procedure" class="cerca-applicativi-input  form-control" id="cercaApplicativiInputStr">
+									<button class="btn btn-default ko-edit-strumenti-search-button" type="submit">Cerca</button>
+								</p>
+									<p id="ko-edit-strumenti-check-counter" class="checkbox-counter"></p>
+									<ul class="ko-edit-strumenti-disp-list">
+                                                                                <li class="ko-edit-strumenti-disp-categoria" ></li>
+										<li>
+											<label for="checkbox_strumenti_" class="hidden ko-edit-strumenti-disp-label">Applicazioni e Procedure</label>
+											<input type="checkbox" id="checkbox_strumenti_" class="ko-edit-strumenti-disp"> <span class="ko-edit-strumenti-disp-val"></span>
+										</li>
+									</ul>
+							</div>
+							<div class="col-xs-12 col-sm-5">
+								<h3>Selezionati <span class="ko-edit-strumenti-selected"></span>/10</h3>
+								<div  class="ko-edit-strumenti-list">
+										<div class="media" >
+											<div class="media-body">
+												<a title="Preferenze selezionate Applicazioni e procedure" href="" class="ko-edit-strumenti" target="_blank" ></a>
+											</div>
+											<div class="media-right">
+												<span class="fa fa-close ko-edit-strumenti-button"><span class="hidden">Chiudi</span></span>
+											</div>
+										</div>
+								</div>
+								<div class="sr-only" >
+									<a data-target=".box-applicativi-strumenti-edit, .box-applicativi-strumenti " data-toggle="collapse" title="Salva" class="pull-right ko-edit-strumenti-save " href="javascript:void(0);">
+										Salva
+									</a>
+									<a data-target=".box-applicativi-strumenti-edit, .box-applicativi-strumenti " data-toggle="collapse" title="Annulla" class="pull-right ko-edit-strumenti-annulla " href="javascript:void(0);">
+										Annulla
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="newsEventi" class="content box-home-intra row in-evidenza">
+				</div>
+		<div class="box-minisito collapse in" role="presentation">
+				<h2 class="box-home-intra">
+					<a title="Minisiti" href="https://www.inail.it/intracs/intranet/informazioni/minisiti.html">Minisiti</a>
+					<a data-target=".box-minisito-edit, .box-minisito" data-toggle="collapse" title="Modifica" class="pull-right fa fa-edit ko-edit-minisiti-show" href="javascript:void(0);">
+							<span class="sr-only">Personalizza</span>
+						</a>
+				</h2>
+				<div id="minisiti-loading" class="home-box-loading" ></div> 
+				<div class="content box-home-intra" data-bind="foreach: minisiti">
+					<div class="media"  >
+						<div class="media-left">
+							<a title="" href="" class="ko-item-minisiti-img-a">
+								<img alt="imgMinisito" src="javascript:void(0);" class="media-object ko-item-minisiti-img">
+							</a>
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">
+								<a title="Preferenze minisiti" href="" class="ko-item-minisiti-nome">Minisiti...</a>
+							</h3>
+							<div class="testo-commento" >
+								<p class="ko-item-minisiti-desc" ></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	<div class="box-minisito-edit personalizza collapse" style="height: 0px;" role="presentation"> 
+					<h2 class="box-home-intra">
+						<a title="Minisiti" href="https://www.inail.it/intracs/intranet/informazioni/minisiti.html">Minisiti</a>
+						<a data-target=".box-minisito, .box-minisito-edit " data-toggle="collapse" title="Salva" class="pull-right ko-edit-minisiti-save " href="javascript:void(0);">
+							Salva
+						</a>
+						<a data-target=".box-minisito, .box-minisito-edit " data-toggle="collapse" title="Annulla" class="pull-right ko-edit-minisiti-annulla " href="javascript:void(0);">
+							Annulla
+						</a>
+					</h2>
+					<div id="edit-minisiti-loading" class="home-box-loading" ></div>
+					<div class="content box-home-intra">
+						<div class="row">
+							<div class="col-xs-12 col-sm-7">
+								<h3>Seleziona minisiti</h3>
+								<p class="form-group">
+									<label for="cercaApplicativiInputMinisiti" class="hidden">Cerca applicativi e strumenti</label>
+									<input type="text" title="Cerca minisito" placeholder="Cerca minisito" class="form-control cerca-applicativi-input " id="cercaApplicativiInputMinisiti">
+									<button class="btn btn-default ko-edit-minisiti-search-button" type="submit">Cerca</button>
+								</p>
+									<p id="ko-edit-minisiti-check-counter" class="checkbox-counter"></p>
+									<ul class="ko-edit-minisiti-disp-list">
+										<li>
+											<label for="checkbox_minisiti_" class="hidden ko-edit-minisiti-disp-label">Minisito</label>
+											<input type="checkbox" id="checkbox_minisiti_" class="ko-edit-minisiti-disp"> <span class="ko-edit-minisiti-disp-val"></span>
+										</li>
+									</ul>
+							</div>
+							<div class="col-xs-12 col-sm-5">
+								<h3>Selezionati <span class="ko-edit-minisiti-selected"></span>/10</h3>
+								<div class="ko-edit-minisiti-list" > 
+									<div class="media">
+										<div class="media-body">
+											<a title="Selezionati minisiti" href="" class="ko-edit-minisiti"></a>
+										</div>
+										<div class="media-right">
+											<span class="fa fa-close ko-edit-minisiti-button"><span class="hidden">Chiudi</span></span> 
+										</div>
+									</div>
+								</div>
+								<div class="sr-only">
+									<a data-target=".box-minisito, .box-minisito-edit " data-toggle="collapse" title="Salva" class="pull-right ko-edit-minisiti-save " href="javascript:void(0);">
+										Salva
+									</a>
+									<a data-target=".box-minisito, .box-minisito-edit " data-toggle="collapse" title="Annulla" class="pull-right ko-edit-minisiti-annulla " href="javascript:void(0);">
+										Annulla
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="content box-home-intra row in-evidenza">
+					<div id="newsEventi_intranet" > </div>		
+				</div>
+<div class="box-cruscotti-cruscotti collapse in" style="" role="presentation"> 
+	<h2 class="box-home-intra">
+		<a title="Cruscotti" href="https://www.inail.it/intracs/intranet/strumenti/cruscotti.html">Cruscotti</a>
+		<a data-target=".box-cruscotti-cruscotti,.box-cruscotti-cruscotti-edit" data-toggle="collapse" title="Modifica" class="pull-right fa fa-edit ko-edit-cruscotti-show" href="javascript:void(0);">
+			<span class="sr-only">Personalizza</span>
+		</a>
+	</h2>
+	<div id="cruscotti-loading" class="home-box-loading" ></div> 
+	<div class="content box-home-intra ">
+		<ul data-bind="foreach: cruscotti">
+			<li>
+				<a  title="Preferiti cruscotti" href="" class="ko-item-cruscotti" target="_blank"></a>
+			</li>
+		</ul>
+	</div>
+</div>
+			<div class="box-cruscotti-cruscotti-edit personalizza collapse" role="presentation" style="height: 0px;">
+					<h2 class="box-home-intra">
+						<a title="Cruscotti" href="https://www.inail.it/intracs/intranet/strumenti/cruscotti.html">Cruscotti</a>
+						<a data-target=".box-cruscotti-cruscotti-edit, .box-cruscotti-cruscotti " data-toggle="collapse"  title="Salva" class="pull-right ko-edit-cruscotti-save " href="javascript:void(0);">
+							Salva
+						</a>
+						<a data-target=".box-cruscotti-cruscotti-edit, .box-cruscotti-cruscotti " data-toggle="collapse"  title="Annulla" class="pull-right ko-edit-cruscotti-annulla " href="javascript:void(0);">
+							Annulla
+						</a>
+					</h2>
+					<div id="edit-cruscotti-loading" class="home-box-loading" ></div>
+					<div class="content box-home-intra">
+						<div class="row">
+							<div class="col-xs-12 col-sm-7">
+								<h3>Seleziona cruscotti</h3>
+								<p class="form-group">
+									<label for="cercaCruscottiInputStr" class="hidden">Cerca cruscotti</label>
+									<input type="text" title="Cerca cruscotti" placeholder="Cerca cruscotti" class="cerca-cruscotti-input  form-control" id="cercaCruscottiInputStr">
+									<button class="btn btn-default ko-edit-cruscotti-search-button" type="submit">Cerca</button>
+								</p>
+									<p id="ko-edit-cruscotti-check-counter" class="checkbox-counter"></p>
+									<ul class="ko-edit-cruscotti-disp-list">
+										<li>
+											<label for="checkbox_cruscotti_" class="hidden ko-edit-cruscotti-disp-label">Cruscotto</label>
+											<input type="checkbox" id="checkbox_cruscotti_" class="ko-edit-cruscotti-disp"> <span class="ko-edit-cruscotti-disp-val"></span>
+										</li>
+									</ul>
+							</div>
+							<div class="col-xs-12 col-sm-5">
+								<h3>Selezionati <span class="ko-edit-cruscotti-selected"></span>/10</h3>
+								<div  class="ko-edit-cruscotti-list">
+										<div class="media" >
+											<div class="media-body">
+												<a title="Selezionati cruscotti" href="" class="ko-edit-cruscotti" target="_blank" ></a>
+											</div>
+											<div class="media-right">
+												<span class="fa fa-close ko-edit-cruscotti-button"><span class="hidden">Chiudi</span></span>
+											</div>
+										</div>
+								</div>
+								<div class="sr-only">
+									<a data-target=".box-cruscotti-cruscotti-edit, .box-cruscotti-cruscotti " data-toggle="collapse"  title="Salva" class="pull-right ko-edit-cruscotti-save " href="javascript:void(0);">
+										Salva
+									</a>
+									<a data-target=".box-cruscotti-cruscotti-edit, .box-cruscotti-cruscotti " data-toggle="collapse"  title="Annulla" class="pull-right ko-edit-cruscotti-annulla " href="javascript:void(0);">
+										Annulla
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+								<p class="hidden"><a title="torna alla navigazione interna alla pagina" href="#navinterna">Torna alla navigazione interna</a></p>
+					</main>
+					<aside class="col-xs-12 col-sm-3 col-lg-3" id="spalla-dx">
+<h2 class="box-home-intra"><a title="Vai alla pagina cerca strutture cerca persone" href="https://www.inail.it/intracs/intranet/informazioni/contatti.html">Persone / strutture</a></h2>
+<div class="content box-home-intra">
+		  <ul role="tablist" class="nav nav-tabs"> 
+		    <li class="active" role="presentation"><a data-toggle="tab" role="tab" aria-controls='cercaPersone' href="#cercaPersone" aria-expanded="true">Persone</a></li>
+		    <li role="presentation" class=""><a data-toggle="tab" role="tab" aria-controls='cercaStrutture' href="#cercaStrutture" aria-expanded="false">Strutture
+			</a></li>
+		  </ul>
+		  <div class="tab-content">
+				    <div id="cercaPersone" class="tab-pane active" role="tabpanel">
+							<form onsubmit="encodeForm('formCercaPersonaWidget')" id="formCercaPersonaWidget" method="get"  action='https://www.inail.it/intracs/intranet/informazioni/contatti/cerca-persone-fp.html'>
+								 <label for="cercaPersoneInput" class="hidden">Cerca persone</label>
+								 <input name="campo_unico" type="text" title="Cerca persone" placeholder="Cerca persone" class="form-control" id="cercaPersoneInput">
+								 <button type="submit" class="btn btn-default" >Cerca</button>
+								 <a class="pull-right" href='https://www.inail.it/intracs/intranet/informazioni/contatti/cerca-persone-fp.html'>Avanzata</a>
+								<input type="hidden" name="_authkey_" value='null' />
+								<input type="hidden" name="cerca" value='cercaHome' />
+							</form>
+				    </div>
+				    <div id="cercaStrutture" class="tab-pane" role="tabpanel">
+							<form onsubmit="encodeForm('formCercaStrutturaWidget')" id="formCercaStrutturaWidget" method="get"  action='https://www.inail.it/intracs/intranet/informazioni/contatti/cerca-strutture-fp.html'>
+								 <label for="cercaStruttureInput" class="hidden">Cerca strutture</label>
+								 <input name="nome" type="text" title="Cerca strutture" placeholder="Cerca strutture" class="form-control" id="cercaStruttureInput">
+								 <button type="submit" class="btn btn-default" >Cerca</button>
+								 <a class="pull-right" href='https://www.inail.it/intracs/intranet/informazioni/contatti/cerca-strutture-fp.html'>Avanzata</a>
+								<input type="hidden" name="_authkey_" value='null' />
+								<input type="hidden" name="cerca" value='cercaHome' />
+							</form>
+				    </div>
+		  </div>
+</div>
+
+<div id="formazione_intranet"></div>
+
+<div class="box-contatti-utili collapse in"  style="" role="presentation">
+				<h2 class="box-home-intra">Contatti utili
+					<a data-target=".box-contatti-utili-edit, .box-contatti-utili" data-toggle="collapse" title="Modifica" class="pull-right fa fa-edit ko-edit-numeriutili-show" href="javascript:void(0);">
+						<span class="sr-only">Personalizza</span>
+					</a>
+				</h2>
+				<div id="numeri-utili-loading" class="home-box-loading" ></div> 
+				<div class="content box-home-intra">
+					<div class="media">
+						<div class="media-body">
+							<h3 class="media-heading">Service catalog</h3>
+							<ul>
+								<li><a title="accedi" href='http://servicecatalogprod.inail.it/CAServiceCatalog/caisd_access.aspx'>accedi</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- ko foreach: numeriutili -->
+					<div class="media">
+						<div class="media-body">
+							<h3 class="media-heading ko-item-numeriutili">&nbsp;</h3>
+							<ul data-bind="if: link" >
+									<li>
+										<a class="ko-item-numeriutili-vis-link"  href="#" title="..."></a>
+									</li>
+							</ul>
+							<p data-bind="if: email">
+								<a class="ko-item-numeriutili-vis-email" href="#" title="...">
+									<span class="fa fa-envelope"></span>
+									<span class="text-label ko-item-numeriutili-vis-email-label"></span>
+								</a>
+							</p>
+							<p data-bind="if: tel">
+								<span class="fa fa-phone" ></span>
+								<span class="text-label ko-item-numeriutili-vis-tel"></span>
+							</p>
+						</div>
+					</div>
+					<!-- /ko -->
+				</div>
+</div>			
+				<div class="box-contatti-utili-edit personalizza collapse" role="presentation"  style="height: 0px;">
+					<h2 class="box-home-intra">
+						Contatti utili
+						<a data-target=".box-contatti-utili, .box-contatti-utili-edit " data-toggle="collapse" title="Salva" class="pull-right ko-edit-numeriutili-save" href="javascript:void(0);">
+							Salva
+						</a>
+						<a data-target=".box-contatti-utili, .box-contatti-utili-edit" data-toggle="collapse" title="Annulla" class="pull-right ko-edit-numeriutili-annulla " href="javascript:void(0);">
+							Annulla
+						</a>
+					</h2>
+					<div id="edit-numeri-utili-loading" class="home-box-loading" ></div>
+					<div class="content box-home-intra">
+							<p class="form-group">
+								<label for="cercaNumeroInput" class="hidden">Cerca numero utile</label>
+								<input type="text" title="Cerca numero utile" placeholder="Cerca numero utile" class="cerca-applicativi-input  form-control" id="cercaNumeroInput">
+								<button class="btn btn-default ko-edit-numeriutili-search-button " type="submit">Cerca</button>
+							</p>
+						<div class="form-group">
+							<h3>Rimuovi numero esistente</h3>
+							<div class="ko-edit-numeriutili-list" > 
+									<div class="media">
+										<div class="media-body">
+											<p class="contatto telefono">
+													<span class="ko-edit-numeriutili-val"></span>
+													<span class="ko-edit-numeriutili-tel"></span>
+													<span class="ko-edit-numeriutili-email" ></span>
+													<span class="ko-edit-numeriutili-link" ></span>
+											</p>
+										</div>
+										<div class="media-right">
+											<span class="fa fa-close ko-edit-numeriutili-button"><span class="hidden">Chiudi</span></span>
+										</div>
+									</div>
+							</div>
+							<div class="sr-only">
+								<a data-target=".box-contatti-utili, .box-contatti-utili-edit " data-toggle="collapse" title="Salva" class="pull-right ko-edit-numeriutili-save" href="javascript:void(0);">
+									Salva
+								</a>
+								<a data-target=".box-contatti-utili, .box-contatti-utili-edit" data-toggle="collapse" title="Annulla" class="pull-right ko-edit-numeriutili-annulla " href="javascript:void(0);">
+									Annulla
+								</a>
+							</div>
+						</div>
+						<div class="form-group">
+							<h3>Aggiungi nuovo numero</h3>
+							<p id="ko-edit-numeriutili-check-counter" ></p>
+							<div class="ko-edit-numeriutili-disp-list">
+									<div class="media">
+										<div class="media-left">
+											<label for="checkbox_numeriutili_" class="hidden ko-edit-numeriutili-disp-label">Numero</label>
+											<input type="checkbox" id="checkbox_numeriutili_" class="ko-edit-numeriutili-disp" >
+										</div>
+										<div class="media-body ">
+											<p class="contatto telefono">
+														<span class="ko-edit-numeriutili-disp-val" ></span>
+														<span class="ko-edit-numeriutili-disp-tel" ></span>
+														<span class="ko-edit-numeriutili-disp-email" ></span>
+														<span class="ko-edit-numeriutili-disp-link" ></span>
+											</p>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					</aside>
+				</div>
+			<hr class="hidden">
+			<div id="footer_internet"></div>
+			<script type="text/javascript">
+var pgName=document.location.pathname.match(/[^\/]+$/)[0];
+if (pgName=='risultati_ricerca.html'){
+	var xT=$('#contenutoprincipale h2').html();
+	kT=xT.split('"')[1];
+	xT=xT.split('(')[1].trim().replace(')','');
+	$('head').append('<meta name="WT.oss" content="'+kT+'" />');
+	$('head').append('<meta name="WT.oss_r" content="'+xT+'" />');
+}
+				  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+				  ga('create', 'UA-48734544-1', 'auto');
+				  ga('send', 'pageview');	
+			 </script> 
+<script>
+			window.webtrendsAsyncInit=function(){
+			    var dcs=new Webtrends.dcs().init({
+			        dcsid:"dcs222co4zca4b0ba2wru16o7_8z9t",
+			        domain:"statse.webtrendslive.com",
+			        timezone:1,
+			        i18n:true,
+			        download:true,
+			        downloadtypes:"xls,doc,pdf,txt,csv,zip,docx,xlsx,rar,gzip",
+			        fpcdom:".inail.it",
+			        plugins:{
+			            hm:{src:"//s.webtrends.com/js/webtrends.hm.js"},
+			            facebook:{src:"//s.webtrends.com/js/webtrends.fb.js"},
+			            yt:{src:"//s.webtrends.com/js/webtrends.yt.js"}
+			        }
+			        }).track();
+			};
+			(function(){
+			    var s=document.createElement("script"); s.async=true; s.src="static_intra/js/webtrends.min.js";    
+			    var s2=document.getElementsByTagName("script")[0]; s2.parentNode.insertBefore(s,s2);
+			}());		
+</script>
+		</div> 
+		<script>
+		var wcpUrl = 'http://social.escl.inail.it' ;
+		var wcpRootUrl = wcpUrl + "/rest/api/";
+		
+		var urlLoadPreference = 'http://sperimentazione.inail.it/preference/user' ;
+		var urlLoadPreferenceDISP = 'http://sperimentazione.inail.it/preference/category/' ;
+		var urlToken = 'http://sperimentazione.inail.it/token' ;
+		var salvaPreferenza = 'http://sperimentazione.inail.it/preference/user/salvapreferenze' ;
+		
+		var urlLogout="";
+		var urlRecuperoHeader="http://sperimentazione.inail.it/section/header";
+		var urlRecuperoFooter="http://sperimentazione.inail.it/section/footer";
+		var urlRecuperoAtti="http://sperimentazione.inail.it/section/atti";
+		var urlRecuperoNewsEventi="http://sperimentazione.inail.it/section/newsavvisi";		
+		var urlRecuperoFormazione="http://sperimentazione.inail.it/section/formazione";
+		var urlRecuperoMenuIntranet="http://sperimentazione.inail.it/section/menuintranet";
+		
+		</script>
+		<script src="static_intra/js/jquery.form.js" charset="UTF-8"></script>
+		<script src="static_intra/js/moment.min.js" charset="UTF-8"></script>
+		<script src="static_intra/js/knockout/knockout-3.2.0.js" charset="UTF-8"></script>
+		<script src="static_intra/js/knockout/jquery.unobtrusive-knockout.min.js" charset="UTF-8"></script>				
+		<script src="static_intra/js/knockout/viewmodel/vm_ESC.js" charset="UTF-8"></script>				
+		<script src="static_intra/js/knockout/binding/bnd_ESC.js" charset="UTF-8"></script>
+		<script src="static_intra/js/knockout/viewmodel/vm_homeIntranet.js" charset="UTF-8"></script>				
+		<script src="static_intra/js/knockout/binding/bnd_homeIntranet.js" charset="UTF-8"></script>	
+		<script>
+		showLoadingAnimation("#angolo-dipendente-loading");
+		showLoadingAnimation("#applicativi-loading");
+		showLoadingAnimation("#cruscotti-loading");
+		showLoadingAnimation("#preferiti-loading");
+		showLoadingAnimation("#minisiti-loading");
+		showLoadingAnimation("#numeri-utili-loading");
+
+		var numMaxPreferiti = 10;
+		var numMaxNumeriUtili = 10;
+		var numMaxApplicativi = 10;
+		initPreferenze();
+		</script>
+		
+		<script>
+		
+		///RECUPERO HEADER
+		$.get(urlRecuperoHeader, function(data, status){
+			$('#header_internet').replaceWith(data);
+			//////////    LOGOUT       //////////////
+			$("#logoutButton").attr("href", urlLogout);
+		});
+
+		///RECUPERO FOOTER
+		$.get(urlRecuperoFooter, function(data, status){
+			$('#footer_internet').replaceWith(data);
+		});
+		
+		///RECUPERO ATTI
+		$.get(urlRecuperoAtti, function(data, status){
+			$('#attiHome_intranet').replaceWith(data);
+		});
+		
+		///RECUPERO NEWSEVENTI
+		$.get(urlRecuperoNewsEventi, function(data, status){
+			$('#newsEventi_intranet').replaceWith(data);
+		});
+		
+		///RECUPERO FORMAZIONE
+		$.get(urlRecuperoFormazione, function(data, status){
+			$('#formazione_intranet').replaceWith(data);
+		});
+		
+		///RECUPERO MENU
+		$.get(urlRecuperoMenuIntranet, function(data, status){
+			$('#menuIntranet_intranet').replaceWith(data);
+		});
+		</script>
+		
+		
+ 	</body>	
+</html>
