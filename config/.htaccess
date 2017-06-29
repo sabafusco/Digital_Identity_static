@@ -1,4 +1,4 @@
-<IfModule mod_rewrite.so>
+<IfModule mod_rewrite.c>
 
 Options +FollowSymLinks
 RewriteEngine on
