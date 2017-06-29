@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+
+Options +FollowSymLinks
+RewriteEngine on
+
+	RewriteRule	^preference/user	http://servizirestcoll.inail.it/rest-preference-fe-rs-web/rest/api/preference/user [P]
+	RewriteRule	^preference/category/(.*)	http://servizirestcoll.inail.it/rest-preference-fe-rs-web/rest/api/meta/metadatapreference/category/$1 [P]
+	RewriteRule	^token	http://servizirestcoll.inail.it/rest-preference-fe-rs-web/rest/api/token [P]
+	RewriteRule	^preference/user/salvapreferenze	http://servizirestcoll.inail.it/rest-preference-fe-rs-web/rest/api/preference/user/salvapreferenze [P]
+	
+	RewriteRule	^section/header http://header-digital-identity.rhel-cdk.10.1.2.2.xip.io:3000/html [P]
+	RewriteRule	^section/footer http://footer-digital-identity.rhel-cdk.10.1.2.2.xip.io:3000/html [P]
+	RewriteRule	^section/atti http://atti-digital-identity.rhel-cdk.10.1.2.2.xip.io:3000/html [P]
+	RewriteRule	^section/newsavvisi http://newsavvisi-digital-identity.rhel-cdk.10.1.2.2.xip.io:3000/html [P]		
+	RewriteRule	^section/formazione http://formazione-digital-identity.rhel-cdk.10.1.2.2.xip.io:3000/html [P]
+	RewriteRule	^section/menuintranet http://menuintranet-digital-identity.rhel-cdk.10.1.2.2.xip.io:3000/html [P]
+
+</IfModule>
