@@ -694,17 +694,17 @@ if (pgName=='risultati_ricerca.html'){
 		<script src="static_intra/js/moment.min.js" charset="UTF-8"></script>
 		<script src="static_intra/js/knockout/knockout-3.2.0.js" charset="UTF-8"></script>
 		<script src="static_intra/js/knockout/jquery.unobtrusive-knockout.min.js" charset="UTF-8"></script>				
-		<script src="static_intra/js/knockout/viewmodel/vm_ESC.js" charset="UTF-8"></script>				
+<!--		<script src="static_intra/js/knockout/viewmodel/vm_ESC.js" charset="UTF-8"></script>				
 		<script src="static_intra/js/knockout/binding/bnd_ESC.js" charset="UTF-8"></script>
 		<script src="static_intra/js/knockout/viewmodel/vm_homeIntranet.js" charset="UTF-8"></script>				
-		<script src="static_intra/js/knockout/binding/bnd_homeIntranet.js" charset="UTF-8"></script>	
+		<script src="static_intra/js/knockout/binding/bnd_homeIntranet.js" charset="UTF-8"></script>	-->
 		<script>
-		showLoadingAnimation("#angolo-dipendente-loading");
-		showLoadingAnimation("#applicativi-loading");
-		showLoadingAnimation("#cruscotti-loading");
-		showLoadingAnimation("#preferiti-loading");
-		showLoadingAnimation("#minisiti-loading");
-		showLoadingAnimation("#numeri-utili-loading");
+//		showLoadingAnimation("#angolo-dipendente-loading");
+//		showLoadingAnimation("#applicativi-loading");
+//		showLoadingAnimation("#cruscotti-loading");
+//		showLoadingAnimation("#preferiti-loading");
+//		showLoadingAnimation("#minisiti-loading");
+//		showLoadingAnimation("#numeri-utili-loading");
 
 		var numMaxPreferiti = 10;
 		var numMaxNumeriUtili = 10;
@@ -726,25 +726,25 @@ if (pgName=='risultati_ricerca.html'){
 			$('#footer_internet').replaceWith(data);
 		});
 		
-		///RECUPERO ATTI
-		$.get(urlRecuperoAtti, function(data, status){
-			$('#attiHome_intranet').replaceWith(data);
-		});
-		
-		///RECUPERO NEWSEVENTI
-		$.get(urlRecuperoNewsEventi, function(data, status){
-			$('#newsEventi_intranet').replaceWith(data);
-		});
-		
-		///RECUPERO FORMAZIONE
-		$.get(urlRecuperoFormazione, function(data, status){
-			$('#formazione_intranet').replaceWith(data);
-		});
-		
-		///RECUPERO MENU
-		$.get(urlRecuperoMenuIntranet, function(data, status){
-			$('#menuIntranet_intranet').replaceWith(data);
-		});
+//		///RECUPERO ATTI
+//		$.get(urlRecuperoAtti, function(data, status){
+//			$('#attiHome_intranet').replaceWith(data);
+//		});
+//		
+//		///RECUPERO NEWSEVENTI
+//		$.get(urlRecuperoNewsEventi, function(data, status){
+//			$('#newsEventi_intranet').replaceWith(data);
+//		});
+//		
+//		///RECUPERO FORMAZIONE
+//		$.get(urlRecuperoFormazione, function(data, status){
+//			$('#formazione_intranet').replaceWith(data);
+//		});
+//		
+//		///RECUPERO MENU
+//		$.get(urlRecuperoMenuIntranet, function(data, status){
+//			$('#menuIntranet_intranet').replaceWith(data);
+//		});
 		</script>
 		
 		
