@@ -8,7 +8,7 @@ RewriteEngine on
 	RewriteRule	^token	http://servizirestcoll.inail.it/rest-preference-fe-rs-web/rest/api/token [P]
 	RewriteRule	^preference/user/salvapreferenze	http://servizirestcoll.inail.it/rest-preference-fe-rs-web/rest/api/preference/user/salvapreferenze [P]
 	
-	RewriteRule	^section/header http://header-digital-identity.rhel-cdk.10.1.2.2.xip.io:3000/html [P]
+	RewriteRule	^section/header http://header:8080/html [P]
 	RewriteRule	^section/footer http://footer-digital-identity.rhel-cdk.10.1.2.2.xip.io:3000/html [P]
 	RewriteRule	^section/atti http://atti-digital-identity.rhel-cdk.10.1.2.2.xip.io:3000/html [P]
 	RewriteRule	^section/newsavvisi http://newsavvisi-digital-identity.rhel-cdk.10.1.2.2.xip.io:3000/html [P]		
