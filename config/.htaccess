@@ -7,7 +7,10 @@ RewriteEngine on
 	RewriteRule	^preference/category/(.*)	http://servizirestcoll.inail.it/rest-preference-fe-rs-web/rest/api/meta/metadatapreference/category/$1 [P]
 	RewriteRule	^token	http://servizirestcoll.inail.it/rest-preference-fe-rs-web/rest/api/token [P]
 	RewriteRule	^preference/user/salvapreferenze	http://servizirestcoll.inail.it/rest-preference-fe-rs-web/rest/api/preference/user/salvapreferenze [P]
-	
+        
+        RewriteRule	^rest-intranet-services-rs-web/(.*)	http://servizirestcoll.inail.it/rest-intranet-services-rs-web/$1 [P]
+        RewriteRule	^rest-user-informations-fe-rs/(.*) http://servizirestcoll.inail.it/rest-user-informations-fe-rs/$1 [P]
+
 	RewriteRule	^section/header http://header:8080/html [P]
 	RewriteRule	^section/footer http://footer:8080/html [P]
 	RewriteRule	^section/atti http://atti:8080/html [P]
@@ -15,6 +18,5 @@ RewriteEngine on
 	RewriteRule	^section/formazione http://formazione:8080/html [P]
 	RewriteRule	^section/menuintranet http://menuintranet:8080/html [P]
 
-        RewriteRule	^rest-intranet-services-rs-web/(.*)	http://servizirestcoll.inail.it/rest-intranet-services-rs-web/$1 [P]
-        RewriteRule	^rest-user-informations-fe-rs/(.*) http://servizirestcoll.inail.it/rest-user-informations-fe-rs/$1 [P]
+       
 </IfModule>

@@ -87,9 +87,9 @@
 		<nav class="navbar navbar-utente col-xs-12 col-sm-3 col-md-4">
 				<div class="utente-loggato">
 					<a href="/intracs/intranet/gestione-profilo.html" title="Vai al profilo dell'utente">
-						<img class="visible-md visible-lg" alt="Immagine del profilo dell'utente" src="static_intra/img/anonimo.jpg">
+						<img class="visible-md visible-lg profile_header_img" id="profile_header_img" alt="Immagine del profilo dell'utente" src="static_intra/img/anonimo.jpg">
 						<span class="lync available">utente online</span>
-						<span class="utente-loggato-nome">Yeus132 </span>
+						<span class="utente-loggato-nome"> </span>
 						<span class="utente-loggato-ruolo hidden">dipendente</span>
 					</a>
 				</div>
@@ -633,120 +633,19 @@
 				</div>
 			<hr class="hidden">
 			<div id="footer_internet"></div>
-			<script type="text/javascript">
-var pgName=document.location.pathname.match(/[^\/]+$/)[0];
-if (pgName=='risultati_ricerca.html'){
-	var xT=$('#contenutoprincipale h2').html();
-	kT=xT.split('"')[1];
-	xT=xT.split('(')[1].trim().replace(')','');
-	$('head').append('<meta name="WT.oss" content="'+kT+'" />');
-	$('head').append('<meta name="WT.oss_r" content="'+xT+'" />');
-}
-				  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-				  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-				  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-				  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-				  ga('create', 'UA-48734544-1', 'auto');
-				  ga('send', 'pageview');	
-			 </script> 
-<script>
-			window.webtrendsAsyncInit=function(){
-			    var dcs=new Webtrends.dcs().init({
-			        dcsid:"dcs222co4zca4b0ba2wru16o7_8z9t",
-			        domain:"statse.webtrendslive.com",
-			        timezone:1,
-			        i18n:true,
-			        download:true,
-			        downloadtypes:"xls,doc,pdf,txt,csv,zip,docx,xlsx,rar,gzip",
-			        fpcdom:".inail.it",
-			        plugins:{
-			            hm:{src:"//s.webtrends.com/js/webtrends.hm.js"},
-			            facebook:{src:"//s.webtrends.com/js/webtrends.fb.js"},
-			            yt:{src:"//s.webtrends.com/js/webtrends.yt.js"}
-			        }
-			        }).track();
-			};
-			(function(){
-			    var s=document.createElement("script"); s.async=true; s.src="static_intra/js/webtrends.min.js";    
-			    var s2=document.getElementsByTagName("script")[0]; s2.parentNode.insertBefore(s,s2);
-			}());		
-</script>
+ 
+
 		</div> 
-		<script>
-		var wcpUrl = 'http://social.escl.inail.it' ;
-		var wcpRootUrl = wcpUrl + "/rest/api/";
-		
-		var urlLoadPreference = 'preference/user' ;
-		var urlLoadPreferenceDISP = 'preference/category/' ;
-		var urlToken = 'token' ;
-		var salvaPreferenza = 'preference/user/salvapreferenze' ;
-		
-		var urlLogout="";
-		var urlRecuperoHeader="section/header";
-		var urlRecuperoFooter="section/footer";
-		var urlRecuperoAtti="section/atti";
-		var urlRecuperoNewsEventi="section/newsavvisi";		
-		var urlRecuperoFormazione="section/formazione";
-		var urlRecuperoMenuIntranet="section/menuintranet";
-		
-		</script>
+
 		<script src="static_intra/js/jquery.form.js" charset="UTF-8"></script>
 		<script src="static_intra/js/moment.min.js" charset="UTF-8"></script>
 		<script src="static_intra/js/knockout/knockout-3.2.0.js" charset="UTF-8"></script>
 		<script src="static_intra/js/knockout/jquery.unobtrusive-knockout.min.js" charset="UTF-8"></script>				
-<!--		<script src="static_intra/js/knockout/viewmodel/vm_ESC.js" charset="UTF-8"></script>				
+		<script src="static_intra/js/knockout/viewmodel/vm_ESC.js" charset="UTF-8"></script>				
 		<script src="static_intra/js/knockout/binding/bnd_ESC.js" charset="UTF-8"></script>
 		<script src="static_intra/js/knockout/viewmodel/vm_homeIntranet.js" charset="UTF-8"></script>				
-		<script src="static_intra/js/knockout/binding/bnd_homeIntranet.js" charset="UTF-8"></script>	-->
-		<script>
-//		showLoadingAnimation("#angolo-dipendente-loading");
-//		showLoadingAnimation("#applicativi-loading");
-//		showLoadingAnimation("#cruscotti-loading");
-//		showLoadingAnimation("#preferiti-loading");
-//		showLoadingAnimation("#minisiti-loading");
-//		showLoadingAnimation("#numeri-utili-loading");
-
-		var numMaxPreferiti = 10;
-		var numMaxNumeriUtili = 10;
-		var numMaxApplicativi = 10;
-		initPreferenze();
-		</script>
-		
-		<script>
-		
-		///RECUPERO HEADER
-		$.get(urlRecuperoHeader, function(data, status){
-			$('#header_internet').replaceWith(data);
-			//////////    LOGOUT       //////////////
-			$("#logoutButton").attr("href", urlLogout);
-		});
-
-		///RECUPERO FOOTER
-		$.get(urlRecuperoFooter, function(data, status){
-			$('#footer_internet').replaceWith(data);
-		});
-		
-		///RECUPERO ATTI
-		$.get(urlRecuperoAtti, function(data, status){
-			$('#attiHome_intranet').replaceWith(data);
-		});
-		
-		///RECUPERO NEWSEVENTI
-		$.get(urlRecuperoNewsEventi, function(data, status){
-			$('#newsEventi_intranet').replaceWith(data);
-		});
-		
-		///RECUPERO FORMAZIONE
-		$.get(urlRecuperoFormazione, function(data, status){
-			$('#formazione_intranet').replaceWith(data);
-		});
-		
-		///RECUPERO MENU
-		$.get(urlRecuperoMenuIntranet, function(data, status){
-			$('#menuIntranet_intranet').replaceWith(data);
-		});
-		</script>
-		
+		<script src="static_intra/js/knockout/binding/bnd_homeIntranet.js" charset="UTF-8"></script>	
+	
 		
  	</body>	
 </html>

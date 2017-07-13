@@ -3,12 +3,69 @@
  */
 
 var MSG_USER_UNAUTHORIZED = "Utente non autorizzato ad accedere a questo servizio."; // orfeo
+	  var wcpUrl = 'http://social.escl.inail.it' ;
+		var wcpRootUrl = wcpUrl + "/rest/api/";
+		
+		var urlLoadPreference = 'preference/user' ;
+		var urlLoadPreferenceDISP = 'preference/category/' ;
+		var urlToken = 'token' ;
+		var salvaPreferenza = 'preference/user/salvapreferenze' ;
+		
+		var urlLogout="";
+		var urlRecuperoHeader="section/header";
+		var urlRecuperoFooter="section/footer";
+		var urlRecuperoAtti="section/atti";
+		var urlRecuperoNewsEventi="section/newsavvisi";		
+		var urlRecuperoFormazione="section/formazione";
+		var urlRecuperoMenuIntranet="section/menuintranet";
+    
+    
+
 
 jQuery(document).ready(function () {
-    /*jQuery(".fc-event").click(function(){
-     jQuery(".box-dettaglio-evento").collapse('toggle');
-     jQuery(".box-calendario-eventi").collapse('toggle');
-     });*/
+    
+    showLoadingAnimation("#angolo-dipendente-loading");
+		showLoadingAnimation("#applicativi-loading");
+		showLoadingAnimation("#cruscotti-loading");
+		showLoadingAnimation("#preferiti-loading");
+		showLoadingAnimation("#minisiti-loading");
+		showLoadingAnimation("#numeri-utili-loading");
+
+		var numMaxPreferiti = 10;
+		var numMaxNumeriUtili = 10;
+		var numMaxApplicativi = 10;
+		initPreferenze();
+	  ///RECUPERO LA MATRICOLA UTENTE
+    caricaUserInformation();
+		///RECUPERO HEADER
+		$.get(urlRecuperoHeader, function(data, status){
+			$('#header_internet').replaceWith(data);
+			//////////    LOGOUT       //////////////
+			$("#logoutButton").attr("href", urlLogout);
+		});
+      ///RECUPERO FOOTER
+    loadWidgetNew(urlRecuperoFooter,"#footer_internet");
+    ///RECUPERO ATTI
+    loadWidgetNew(urlRecuperoAtti,"#attiHome_intranet");
+		
+		
+		
+		///RECUPERO NEWSEVENTI
+		$.get(urlRecuperoNewsEventi, function(data, status){
+			$('#newsEventi_intranet').replaceWith(data);
+		});
+		
+		///RECUPERO FORMAZIONE
+		$.get(urlRecuperoFormazione, function(data, status){
+			$('#formazione_intranet').replaceWith(data);
+		});
+		
+		///RECUPERO MENU
+		$.get(urlRecuperoMenuIntranet, function(data, status){
+			$('#menuIntranet_intranet').replaceWith(data);
+		});
+    
+   
 
 	/* GESTISCO IL VALORE NULLO DELLE NOTIFICHE - corregge un bug sull'allineamento delle icone */
 	jQuery('.notifica-social.hidden').text("0");
@@ -52,6 +109,18 @@ jQuery(document).ready(function () {
 	});
 
 });
+
+
+function loadWidgetNew(url, widget) {
+  jQuery.ajax({
+    url: url,
+    success: function(data) {
+      $(widget).html(data);
+    }
+  
+  });
+}
+
 
 function fnUpdateCount() {
 	var generallen = $(".box-angolo-dipendente-edit input:checked").length;
@@ -685,4 +754,48 @@ var encodeFormInputValue = function (formId){
 //        url = "http://" + url;
 //    }
 //    return url;
-//} 
+//}
+var matricolaUtente = "";
+var urlRest = "/rest-intranet-services-rs-web/rest/";
+function loadHeaderFoto(urlRest,matricolaCorrente) {
+	var url;
+  
+	url = urlRest + "personeStrutture/getFoto/" + matricolaCorrente;
+	$.ajax({
+		type: 'GET',
+		url: url,
+		timeout:7000, //millisecondi
+		complete: function(xhr,status) {
+			if(xhr.status > 199 && xhr.status < 300){
+				$("#profile_header_img").attr("src","data:image/png;base64," + xhr.responseText);
+			}else{
+				$("#profile_header_img").attr("src","/static/img/anonimo.jpg");
+			}
+		}
+	});
+} 
+var userAuthenticatedUrl="/rest-user-informations-fe-rs/rest/userinfos";
+  
+  function caricaUserInformation()
+{
+	$.ajax({
+		url: userAuthenticatedUrl,
+		jsonp: "callback",
+		dataType: "jsonp",
+
+		success: function(userInfos){
+			if(userInfos.logged == "true"){
+				
+		      
+				
+          $(".utente-loggato-nome").html(userInfos.username);
+           matricolaCorrente= userInfos.username;
+           loadHeaderFoto(urlRest,matricolaCorrente);
+				
+			
+			}
+		}
+	});
+}
+
+
